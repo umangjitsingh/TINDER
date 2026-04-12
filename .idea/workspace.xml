@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90c21c9f-65bd-4d3c-ab8b-874bb411c3f7" name="Changes" comment="" />
+    <list default="true" id="90c21c9f-65bd-4d3c-ab8b-874bb411c3f7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/src/config/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/config/jwt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/controllers/user.controllers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/middlewares/AuthM.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/models/blacklistedToken.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/models/user.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/routes/user.routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/highlightedFiles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/highlightedFiles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,14 +40,20 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "to.speed.mode.migration.done": "true"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2025.3.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\16479\Desktop\tinder\backend\src" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -52,11 +70,22 @@
       <updated>1776005196001</updated>
       <workItem from="1776005197307" duration="122000" />
       <workItem from="1776005506255" duration="4657000" />
-      <workItem from="1776010219137" duration="1014000" />
+      <workItem from="1776010219137" duration="12419000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="draftsState">
+      <draftsState>
+        <option name="requests">
+          <list>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;harry&quot;,&#10;  &quot;lastName&quot;: &quot;potter&quot;,&#10;  &quot;option&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;Harry@12&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="102273ed-9d3d-4f74-85e2-eac02adee5d1" />
+              <option name="method" value="POST" />
+              <option name="name" value="register user" />
+              <option name="url" value="http://localhost:9999/api/user/register" />
+            </requestState>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  //  &quot;firstName&quot;: &quot;harry&quot;,&#10;  //  &quot;lastName&quot;: &quot;potter&quot;,&#10;  &quot;option&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;Harry@12&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="bd41dbc0-215e-4b2e-8438-effd5a1e6017" />
+              <option name="method" value="POST" />
+              <option name="name" value="login user" />
+              <option name="url" value="http://localhost:9999/api/user/login" />
+            </requestState>
+            <requestState>
+              <option name="id" value="9ec44cb9-b380-4357-8e5a-2161cd4c51fa" />
+              <option name="method" value="GET" />
+              <option name="name" value="logout user" />
+              <option name="url" value="http://localhost:9999/api/user/logout" />
+            </requestState>
+          </list>
+        </option>
+      </draftsState>
+    </option>
+    <option name="id" value="f7f00d77-cdaa-4b40-b5ae-79939a203154" />
+    <option name="version" value="6" />
+  </component>
+</project>
