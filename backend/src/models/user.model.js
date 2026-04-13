@@ -47,8 +47,24 @@ const userSchema = new mongoose.Schema(
          type: String,
          enum: ["male", "female", "others"],
       },
+      about:{
+         type: String,
+         maxlength: 1000,
+      },
+      photoUrl:{
+         type: String,
+         maxlength: 1000,
+         default:"https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg"
+      },
+      skills:{
+         type: [String],
+         maxlength: 200,
+      },
+      resetPasswordCode: String,
+      resetPasswordCodeExpiry: Date,
 
-},{timestamps:true});
+
+   },{timestamps:true});
 
 
 userSchema.virtual("fullName")

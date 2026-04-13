@@ -408,66 +408,6 @@
           <option name="workspaceId" value="drafts" />
         </requestHistoryState>
         <requestHistoryState>
-          <option name="dateTime" value="1776022084965" />
-          <option name="id" value="f26ed47d-4e83-4ec1-9f1d-50c3476ff923" />
-          <option name="request">
-            <requestState>
-              <option name="id" value="9ec44cb9-b380-4357-8e5a-2161cd4c51fa" />
-              <option name="method" value="GET" />
-              <option name="name" value="logout user" />
-              <option name="url" value="http://localhost:9999/api/user/logout" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiSW52YWxpZCB0b2tlbiIsImVycm9yIjoiQ2Fubm90IHJlYWQgcHJvcGVydGllcyBvZiB1bmRlZmluZWQgKHJlYWRpbmcgJ3Rva2VuJykifQ==" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Invalid token&quot;,&#10;  &quot;error&quot;: &quot;Cannot read properties of undefined (reading 'token')&quot;&#10;}" />
-              <option name="code" value="401" />
-              <option name="connectionEstablishingTime" value="1" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="91" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;5b-UiExJ1thjcNCV1kb5ghZP5bJKE8&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Sun, 12 Apr 2026 19:28:04 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="f26ed47d-4e83-4ec1-9f1d-50c3476ff923" />
-              <option name="message" value="Unauthorized" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Invalid token&quot;,&quot;error&quot;:&quot;Cannot read properties of undefined (reading 'token')&quot;}" />
-              <option name="size" value="91" />
-              <option name="time" value="2" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
           <option name="dateTime" value="1776022095941" />
           <option name="id" value="259059ba-83d8-4852-b405-8169033ad956" />
           <option name="request">
@@ -1287,6 +1227,2669 @@
               <option name="rawBodyString" value="{&quot;message&quot;:&quot;Logout successful&quot;}" />
               <option name="size" value="31" />
               <option name="time" value="248" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776027134515" />
+          <option name="id" value="bb41664a-dc5a-45d0-bd65-4d638631cbac" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;harry&quot;,&#10;  &quot;lastName&quot;: &quot;potter&quot;,&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;Harry@12&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="102273ed-9d3d-4f74-85e2-eac02adee5d1" />
+              <option name="method" value="POST" />
+              <option name="name" value="register user" />
+              <option name="url" value="http://localhost:9999/api/user/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiVXNlciBhbHJlYWR5IHByZXNlbnQifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;User already present&quot;&#10;}" />
+              <option name="code" value="400" />
+              <option name="connectionEstablishingTime" value="102" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="34" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;22-qAfcJ6GYCaK15jeDMInm1WX5AAI&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 12 Apr 2026 20:52:14 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="bb41664a-dc5a-45d0-bd65-4d638631cbac" />
+              <option name="message" value="Bad Request" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;User already present&quot;}" />
+              <option name="size" value="34" />
+              <option name="time" value="212" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776027151828" />
+          <option name="id" value="fa041ede-687a-46ad-80f4-478c80fa3900" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  //  &quot;firstName&quot;: &quot;harry&quot;,&#10;  //  &quot;lastName&quot;: &quot;potter&quot;,&#10;  &quot;option&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;Harry@12&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="bd41dbc0-215e-4b2e-8438-effd5a1e6017" />
+              <option name="method" value="POST" />
+              <option name="name" value="login user" />
+              <option name="url" value="http://localhost:9999/api/user/login" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiTG9naW4gc3VjY2Vzc2Z1bGx5In0=" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Login successfully&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="1" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGJlM2M1NjY4NGEzNGZmMmU0MWNlOSIsImlhdCI6MTc3NjAyNzE1MSwiZXhwIjoxNzc2ODkxMTUxfQ.oCucp5r5zN7HikZkB58SObNVy_wcjmDIYlKKNzexJk0; Max-Age=864000; Path=/; Expires=Wed, 22 Apr 2026 20:52:31 GMT; HttpOnly; SameSite=Strict" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="32" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;20-1UOGHh8Wx9PTVQrIjyvCP5U06IQ&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 12 Apr 2026 20:52:31 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="fa041ede-687a-46ad-80f4-478c80fa3900" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Login successfully&quot;}" />
+              <option name="size" value="32" />
+              <option name="time" value="98" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776089529892" />
+          <option name="id" value="09b53f62-bbd9-47f7-a164-bfb15f8d6056" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  //  &quot;firstName&quot;: &quot;harry&quot;,&#10;  //  &quot;lastName&quot;: &quot;potter&quot;,&#10;  &quot;option&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;Harry@12&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="bd41dbc0-215e-4b2e-8438-effd5a1e6017" />
+              <option name="method" value="POST" />
+              <option name="name" value="login user" />
+              <option name="url" value="http://localhost:9999/api/user/login" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiTG9naW4gc3VjY2Vzc2Z1bGx5In0=" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Login successfully&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="117" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGJlM2M1NjY4NGEzNGZmMmU0MWNlOSIsImlhdCI6MTc3NjA4OTUyOSwiZXhwIjoxNzc2OTUzNTI5fQ.4hjp3RAZMDK0Z8aQJgX1zAwENwMbUybD545jTe_DCIY; Max-Age=864000; Path=/; Expires=Thu, 23 Apr 2026 14:12:09 GMT; HttpOnly; SameSite=Strict" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="32" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;20-1UOGHh8Wx9PTVQrIjyvCP5U06IQ&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 14:12:09 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="09b53f62-bbd9-47f7-a164-bfb15f8d6056" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Login successfully&quot;}" />
+              <option name="size" value="32" />
+              <option name="time" value="276" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776089541187" />
+          <option name="id" value="adc81a5b-8819-4db9-bd65-f7c39d0b33b2" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="20" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills" />
+                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="&quot;i am jadugar&quot;" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="&quot;male&quot;" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\zyra.jpg" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiRXJyb3IgdXBkYXRpbmcgcHJvZmlsZTogcGhvdG9VcmwgaXMgbm90IGRlZmluZWQifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Error updating profile: photoUrl is not defined&quot;&#10;}" />
+              <option name="code" value="500" />
+              <option name="connectionEstablishingTime" value="8" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="61" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;3d-0xfJiYKUyrSO2PAVGjLLOxPhHtI&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 14:12:21 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="adc81a5b-8819-4db9-bd65-f7c39d0b33b2" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Error updating profile: photoUrl is not defined&quot;}" />
+              <option name="size" value="61" />
+              <option name="time" value="229" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776089753672" />
+          <option name="id" value="d73dc78a-9703-4a64-a397-fd61951a613f" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="20" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills" />
+                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="&quot;i am jadugar&quot;" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="&quot;male&quot;" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\zyra.jpg" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiRXJyb3IgdXBkYXRpbmcgcHJvZmlsZTogcGhvdG9VcmwgaXMgbm90IGRlZmluZWQifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Error updating profile: photoUrl is not defined&quot;&#10;}" />
+              <option name="code" value="500" />
+              <option name="connectionEstablishingTime" value="6" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="61" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;3d-0xfJiYKUyrSO2PAVGjLLOxPhHtI&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 14:15:53 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="d73dc78a-9703-4a64-a397-fd61951a613f" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Error updating profile: photoUrl is not defined&quot;}" />
+              <option name="size" value="61" />
+              <option name="time" value="1197" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776091359042" />
+          <option name="id" value="61beb734-7483-47ff-98c1-5cb6bf650a43" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;spider&quot;,&#10;  &quot;lastName&quot;: &quot;man&quot;,&#10;  &quot;email&quot;: &quot;spider@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;Spider@12&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="102273ed-9d3d-4f74-85e2-eac02adee5d1" />
+              <option name="method" value="POST" />
+              <option name="name" value="register user" />
+              <option name="url" value="http://localhost:9999/api/user/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiVXNlciBjcmVhdGVkIHN1Y2Nlc3NmdWxseSIsInNhZmVVc2VyIjp7Il9pZCI6IjY5ZGQwMGRlNGU1Yjc1OWVhM2Y1YWU2NCIsImZpcnN0TmFtZSI6InNwaWRlciIsImxhc3ROYW1lIjoibWFuIiwiZW1haWwiOiJzcGlkZXJAZ21haWwuY29tIiwicGhvdG9VcmwiOiJodHRwczovL3RodW1icy5kcmVhbXN0aW1lLmNvbS9iL2RlZmF1bHQtcHJvZmlsZS1waWN0dXJlLWF2YXRhci1waG90by1wbGFjZWhvbGRlci12ZWN0b3ItaWxsdXN0cmF0aW9uLWRlZmF1bHQtcHJvZmlsZS1waWN0dXJlLWF2YXRhci1waG90by1wbGFjZWhvbGRlci12ZWN0b3ItMTg5NDk1MTU4LmpwZyIsInNraWxscyI6W10sImNyZWF0ZWRBdCI6IjIwMjYtMDQtMTNUMTQ6NDI6MzguODE0WiIsInVwZGF0ZWRBdCI6IjIwMjYtMDQtMTNUMTQ6NDI6MzguODE0WiIsIl9fdiI6MH19" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;User created successfully&quot;,&#10;  &quot;safeUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;firstName&quot;: &quot;spider&quot;,&#10;    &quot;lastName&quot;: &quot;man&quot;,&#10;    &quot;email&quot;: &quot;spider@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;    &quot;skills&quot;: [],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T14:42:38.814Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T14:42:38.814Z&quot;,&#10;    &quot;__v&quot;: 0&#10;  }&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGQwMGRlNGU1Yjc1OWVhM2Y1YWU2NCIsImlhdCI6MTc3NjA5MTM1OSwiZXhwIjoxNzc2OTU1MzU5fQ.7vObiz72eB62bsUqbTpKcUUD_ltf7Bh4uyxyD9WDwdo; Max-Age=864000; Path=/; Expires=Thu, 23 Apr 2026 14:42:39 GMT; HttpOnly; SameSite=Strict" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="432" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1b0-WPIq1zQlOydtQ64htD+sg+oZNL8&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 14:42:39 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="61beb734-7483-47ff-98c1-5cb6bf650a43" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;User created successfully&quot;,&quot;safeUser&quot;:{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;email&quot;:&quot;spider@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[],&quot;createdAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;__v&quot;:0}}" />
+              <option name="size" value="432" />
+              <option name="time" value="370" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776091389139" />
+          <option name="id" value="30abd283-568c-422b-8de2-bfedd5e07519" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  //  &quot;firstName&quot;: &quot;harry&quot;,&#10;  //  &quot;lastName&quot;: &quot;potter&quot;,&#10;  &quot;option&quot;: &quot;spider@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;Spider@12&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="bd41dbc0-215e-4b2e-8438-effd5a1e6017" />
+              <option name="method" value="POST" />
+              <option name="name" value="login user" />
+              <option name="url" value="http://localhost:9999/api/user/login" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiTG9naW4gc3VjY2Vzc2Z1bGx5In0=" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Login successfully&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGQwMGRlNGU1Yjc1OWVhM2Y1YWU2NCIsImlhdCI6MTc3NjA5MTM4OSwiZXhwIjoxNzc2OTU1Mzg5fQ.61pxnwfj9Qh8CdYgvtcPgbok5G1Mw2EvlEtxWR0FYmk; Max-Age=864000; Path=/; Expires=Thu, 23 Apr 2026 14:43:09 GMT; HttpOnly; SameSite=Strict" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="32" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;20-1UOGHh8Wx9PTVQrIjyvCP5U06IQ&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 14:43:09 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="30abd283-568c-422b-8de2-bfedd5e07519" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Login successfully&quot;}" />
+              <option name="size" value="32" />
+              <option name="time" value="95" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776091483997" />
+          <option name="id" value="b5295abe-6405-48ce-bdae-11732774d513" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="20" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills" />
+                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="&quot;i am jadugar&quot;" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="&quot;male&quot;" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\spiderman.webp" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiRXJyb3IgdXBkYXRpbmcgcHJvZmlsZTogVmFsaWRhdGlvbiBmYWlsZWQ6IGdlbmRlcjogYFwibWFsZVwiYCBpcyBub3QgYSB2YWxpZCBlbnVtIHZhbHVlIGZvciBwYXRoIGBnZW5kZXJgLiJ9" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Error updating profile: Validation failed: gender: `\&quot;male\&quot;` is not a valid enum value for path `gender`.&quot;&#10;}" />
+              <option name="code" value="500" />
+              <option name="connectionEstablishingTime" value="3" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="120" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;78-04fFgkd6fPVIsF/fmWCznz8a6t8&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 14:44:43 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="b5295abe-6405-48ce-bdae-11732774d513" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Error updating profile: Validation failed: gender: `\&quot;male\&quot;` is not a valid enum value for path `gender`.&quot;}" />
+              <option name="size" value="120" />
+              <option name="time" value="194" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776091550372" />
+          <option name="id" value="6e9b8b99-8dab-4527-874b-4fba08376924" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="20" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills" />
+                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\spiderman.webp" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZDAwZGU0ZTViNzU5ZWEzZjVhZTY0IiwiZmlyc3ROYW1lIjoic3BpZGVyIiwibGFzdE5hbWUiOiJtYW4iLCJlbWFpbCI6InNwaWRlckBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vdGh1bWJzLmRyZWFtc3RpbWUuY29tL2IvZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci1pbGx1c3RyYXRpb24tZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci0xODk0OTUxNTguanBnIiwic2tpbGxzIjpbIltcImhvY2tleVwiLFwiY3JpY2tldFwiXSJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQyOjM4LjgxNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQ1OjUwLjI5OFoiLCJfX3YiOjAsImFib3V0IjoiaSBhbSBqYWR1Z2FyIiwiYWdlIjoyMCwiZ2VuZGVyIjoibWFsZSJ9fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;firstName&quot;: &quot;spider&quot;,&#10;    &quot;lastName&quot;: &quot;man&quot;,&#10;    &quot;email&quot;: &quot;spider@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T14:42:38.814Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T14:45:50.298Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="511" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1ff-gZd2udfV4+7MVr/4ztZh893f8Gk&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 14:45:50 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="6e9b8b99-8dab-4527-874b-4fba08376924" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;email&quot;:&quot;spider@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[&quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;],&quot;createdAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T14:45:50.298Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}}" />
+              <option name="size" value="511" />
+              <option name="time" value="239" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776091727089" />
+          <option name="id" value="a93705fe-2f7b-480f-8476-3dbe1fbd2a0d" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="20" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills" />
+                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Downloads\spiderman1776091688.jpg" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZDAwZGU0ZTViNzU5ZWEzZjVhZTY0IiwiZmlyc3ROYW1lIjoic3BpZGVyIiwibGFzdE5hbWUiOiJtYW4iLCJlbWFpbCI6InNwaWRlckBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vdGh1bWJzLmRyZWFtc3RpbWUuY29tL2IvZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci1pbGx1c3RyYXRpb24tZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci0xODk0OTUxNTguanBnIiwic2tpbGxzIjpbIltcImhvY2tleVwiLFwiY3JpY2tldFwiXSJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQyOjM4LjgxNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQ4OjQ3LjAwNFoiLCJfX3YiOjAsImFib3V0IjoiaSBhbSBqYWR1Z2FyIiwiYWdlIjoyMCwiZ2VuZGVyIjoibWFsZSJ9fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;firstName&quot;: &quot;spider&quot;,&#10;    &quot;lastName&quot;: &quot;man&quot;,&#10;    &quot;email&quot;: &quot;spider@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T14:42:38.814Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T14:48:47.004Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="3" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="511" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1ff-g6POo4vhx7VxXILDBYzqe/STAc8&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 14:48:47 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="a93705fe-2f7b-480f-8476-3dbe1fbd2a0d" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;email&quot;:&quot;spider@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[&quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;],&quot;createdAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T14:48:47.004Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}}" />
+              <option name="size" value="511" />
+              <option name="time" value="277" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776091769034" />
+          <option name="id" value="e0333c72-4912-4767-8158-0be39152d4af" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="20" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills" />
+                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Downloads\spiderman1776091688.jpg" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZDAwZGU0ZTViNzU5ZWEzZjVhZTY0IiwiZmlyc3ROYW1lIjoic3BpZGVyIiwibGFzdE5hbWUiOiJtYW4iLCJlbWFpbCI6InNwaWRlckBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vdGh1bWJzLmRyZWFtc3RpbWUuY29tL2IvZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci1pbGx1c3RyYXRpb24tZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci0xODk0OTUxNTguanBnIiwic2tpbGxzIjpbIltcImhvY2tleVwiLFwiY3JpY2tldFwiXSJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQyOjM4LjgxNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQ5OjI4Ljk1MloiLCJfX3YiOjAsImFib3V0IjoiaSBhbSBqYWR1Z2FyIiwiYWdlIjoyMCwiZ2VuZGVyIjoibWFsZSJ9fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;firstName&quot;: &quot;spider&quot;,&#10;    &quot;lastName&quot;: &quot;man&quot;,&#10;    &quot;email&quot;: &quot;spider@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T14:42:38.814Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T14:49:28.952Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="6" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="511" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1ff-p4mkq/vZrEQ9pldteT0mVz2jVII&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 14:49:29 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="e0333c72-4912-4767-8158-0be39152d4af" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;email&quot;:&quot;spider@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[&quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;],&quot;createdAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T14:49:28.952Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}}" />
+              <option name="size" value="511" />
+              <option name="time" value="324" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776091797352" />
+          <option name="id" value="1b6c5080-a1ea-4997-9ec7-00d7f095b7c4" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="20" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills" />
+                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\zyra.jpg" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZDAwZGU0ZTViNzU5ZWEzZjVhZTY0IiwiZmlyc3ROYW1lIjoic3BpZGVyIiwibGFzdE5hbWUiOiJtYW4iLCJlbWFpbCI6InNwaWRlckBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vdGh1bWJzLmRyZWFtc3RpbWUuY29tL2IvZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci1pbGx1c3RyYXRpb24tZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci0xODk0OTUxNTguanBnIiwic2tpbGxzIjpbIltcImhvY2tleVwiLFwiY3JpY2tldFwiXSJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQyOjM4LjgxNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQ5OjU3LjI4MloiLCJfX3YiOjAsImFib3V0IjoiaSBhbSBqYWR1Z2FyIiwiYWdlIjoyMCwiZ2VuZGVyIjoibWFsZSJ9fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;firstName&quot;: &quot;spider&quot;,&#10;    &quot;lastName&quot;: &quot;man&quot;,&#10;    &quot;email&quot;: &quot;spider@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T14:42:38.814Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T14:49:57.282Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="511" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1ff-G8JpR+TQ3s3t38OkyJj9cBMB4/E&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 14:49:57 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="1b6c5080-a1ea-4997-9ec7-00d7f095b7c4" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;email&quot;:&quot;spider@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[&quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;],&quot;createdAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T14:49:57.282Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}}" />
+              <option name="size" value="511" />
+              <option name="time" value="249" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776091891337" />
+          <option name="id" value="da18bd53-9bba-4427-a9ec-6ad455fb7ffe" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="20" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills" />
+                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\zyra.jpg" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZDAwZGU0ZTViNzU5ZWEzZjVhZTY0IiwiZmlyc3ROYW1lIjoic3BpZGVyIiwibGFzdE5hbWUiOiJtYW4iLCJlbWFpbCI6InNwaWRlckBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vdGh1bWJzLmRyZWFtc3RpbWUuY29tL2IvZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci1pbGx1c3RyYXRpb24tZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci0xODk0OTUxNTguanBnIiwic2tpbGxzIjpbIltcImhvY2tleVwiLFwiY3JpY2tldFwiXSJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQyOjM4LjgxNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjUxOjMxLjI1NVoiLCJfX3YiOjAsImFib3V0IjoiaSBhbSBqYWR1Z2FyIiwiYWdlIjoyMCwiZ2VuZGVyIjoibWFsZSJ9fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;firstName&quot;: &quot;spider&quot;,&#10;    &quot;lastName&quot;: &quot;man&quot;,&#10;    &quot;email&quot;: &quot;spider@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T14:42:38.814Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T14:51:31.255Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="7" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="511" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1ff-PcecVjM5Tp8uwaRE964oGdp9DPc&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 14:51:31 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="da18bd53-9bba-4427-a9ec-6ad455fb7ffe" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;email&quot;:&quot;spider@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[&quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;],&quot;createdAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T14:51:31.255Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}}" />
+              <option name="size" value="511" />
+              <option name="time" value="301" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776092023230" />
+          <option name="id" value="c6bce051-564a-4cbb-8105-650f8ea266ff" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="20" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills" />
+                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\zyra.jpg" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZDAwZGU0ZTViNzU5ZWEzZjVhZTY0IiwiZmlyc3ROYW1lIjoic3BpZGVyIiwibGFzdE5hbWUiOiJtYW4iLCJlbWFpbCI6InNwaWRlckBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2Rjb2ZxY3lxOC9pbWFnZS91cGxvYWQvdjE3NzYwOTIwMjIvemh6dDdydmpjNXVhY2VvcWNiY2IuanBnIiwic2tpbGxzIjpbIltcImhvY2tleVwiLFwiY3JpY2tldFwiXSJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQyOjM4LjgxNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjUzOjQzLjEzMloiLCJfX3YiOjAsImFib3V0IjoiaSBhbSBqYWR1Z2FyIiwiYWdlIjoyMCwiZ2VuZGVyIjoibWFsZSJ9fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;firstName&quot;: &quot;spider&quot;,&#10;    &quot;lastName&quot;: &quot;man&quot;,&#10;    &quot;email&quot;: &quot;spider@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776092022/zhzt7rvjc5uaceoqcbcb.jpg&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T14:42:38.814Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T14:53:43.132Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="427" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1ab-jqxbM5ElkwUX1KX1nIZaEN08uSA&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 14:53:43 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="c6bce051-564a-4cbb-8105-650f8ea266ff" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;email&quot;:&quot;spider@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776092022/zhzt7rvjc5uaceoqcbcb.jpg&quot;,&quot;skills&quot;:[&quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;],&quot;createdAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T14:53:43.132Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}}" />
+              <option name="size" value="427" />
+              <option name="time" value="1373" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776092042200" />
+          <option name="id" value="0e893fbc-01fb-4b12-bece-03286ad6fbef" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="20" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills" />
+                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\spiderman.webp" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZDAwZGU0ZTViNzU5ZWEzZjVhZTY0IiwiZmlyc3ROYW1lIjoic3BpZGVyIiwibGFzdE5hbWUiOiJtYW4iLCJlbWFpbCI6InNwaWRlckBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2Rjb2ZxY3lxOC9pbWFnZS91cGxvYWQvdjE3NzYwOTIwNDEvbGFiZzF2cDh3bWI4NHY4ajlobmkud2VicCIsInNraWxscyI6WyJbXCJob2NrZXlcIixcImNyaWNrZXRcIl0iXSwiY3JlYXRlZEF0IjoiMjAyNi0wNC0xM1QxNDo0MjozOC44MTRaIiwidXBkYXRlZEF0IjoiMjAyNi0wNC0xM1QxNDo1NDowMi4xMTlaIiwiX192IjowLCJhYm91dCI6ImkgYW0gamFkdWdhciIsImFnZSI6MjAsImdlbmRlciI6Im1hbGUifX0=" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;firstName&quot;: &quot;spider&quot;,&#10;    &quot;lastName&quot;: &quot;man&quot;,&#10;    &quot;email&quot;: &quot;spider@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776092041/labg1vp8wmb84v8j9hni.webp&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T14:42:38.814Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T14:54:02.119Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="4" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="428" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1ac-68MAzTl3op5KRQn/kQG0AH4n7qk&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 14:54:02 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="0e893fbc-01fb-4b12-bece-03286ad6fbef" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;email&quot;:&quot;spider@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776092041/labg1vp8wmb84v8j9hni.webp&quot;,&quot;skills&quot;:[&quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;],&quot;createdAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T14:54:02.119Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}}" />
+              <option name="size" value="428" />
+              <option name="time" value="1219" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776095994762" />
+          <option name="id" value="4a8b021c-aca9-4c1c-a700-b4a0cabd2bd0" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="68097844-c7e9-4724-8544-b50ffe01371e" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="forget password" />
+              <option name="url" value="http://localhost:9999/api/edit/forget-password" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="aGVsbG93" />
+              <option name="bodyString" value="hellow" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="4" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;6-Y9HLHURkYTnubZyfc6pdjc9z2Tg&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 15:59:54 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4a8b021c-aca9-4c1c-a700-b4a0cabd2bd0" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="hellow" />
+              <option name="size" value="6" />
+              <option name="time" value="2324" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776096092119" />
+          <option name="id" value="6c77c0e5-7255-4c00-b230-be6536daf461" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="68097844-c7e9-4724-8544-b50ffe01371e" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="forget password" />
+              <option name="url" value="http://localhost:9999/api/edit/forget-password" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="aGVsbG93" />
+              <option name="bodyString" value="hellow" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="6" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;6-Y9HLHURkYTnubZyfc6pdjc9z2Tg&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:01:32 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="6c77c0e5-7255-4c00-b230-be6536daf461" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="hellow" />
+              <option name="size" value="6" />
+              <option name="time" value="2362" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776096483389" />
+          <option name="id" value="ae3e4b3e-9b2b-4a6d-b882-27ee77d85cc5" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="68097844-c7e9-4724-8544-b50ffe01371e" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="forget password" />
+              <option name="url" value="http://localhost:9999/api/edit/forget-password" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiVmVyaWZpY2F0aW9uIGNvZGUgc2VudCB0byB5b3VyIGVtYWlsIiwiY29kZSI6OTUyNDk3fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Verification code sent to your email&quot;,&#10;  &quot;code&quot;: 952497&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="4" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="64" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;40-//66hw2nTFHcNroUUwluNDd2sSI&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:08:03 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="ae3e4b3e-9b2b-4a6d-b882-27ee77d85cc5" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Verification code sent to your email&quot;,&quot;code&quot;:952497}" />
+              <option name="size" value="64" />
+              <option name="time" value="2442" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776096719448" />
+          <option name="id" value="66eb727f-c2a1-46a1-a224-8da34b709db6" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;umang&quot;,&#10;  &quot;lastName&quot;: &quot;singh&quot;,&#10;  &quot;email&quot;: &quot;umangjit_1987@yahoo.com&quot;,&#10;  &quot;password&quot;: &quot;umang@12&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="102273ed-9d3d-4f74-85e2-eac02adee5d1" />
+              <option name="method" value="POST" />
+              <option name="name" value="register user" />
+              <option name="url" value="http://localhost:9999/api/user/register" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiVXNlciBjcmVhdGVkIHN1Y2Nlc3NmdWxseSIsInNhZmVVc2VyIjp7Il9pZCI6IjY5ZGQxNWNmYjQwMWY0MGFlZmYzZjA0MSIsImZpcnN0TmFtZSI6InVtYW5nIiwibGFzdE5hbWUiOiJzaW5naCIsImVtYWlsIjoidW1hbmdqaXRfMTk4N0B5YWhvby5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vdGh1bWJzLmRyZWFtc3RpbWUuY29tL2IvZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci1pbGx1c3RyYXRpb24tZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci0xODk0OTUxNTguanBnIiwic2tpbGxzIjpbXSwiY3JlYXRlZEF0IjoiMjAyNi0wNC0xM1QxNjoxMTo1OS4yNzZaIiwidXBkYXRlZEF0IjoiMjAyNi0wNC0xM1QxNjoxMTo1OS4yNzZaIiwiX192IjowfX0=" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;User created successfully&quot;,&#10;  &quot;safeUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd15cfb401f40aeff3f041&quot;,&#10;    &quot;firstName&quot;: &quot;umang&quot;,&#10;    &quot;lastName&quot;: &quot;singh&quot;,&#10;    &quot;email&quot;: &quot;umangjit_1987@yahoo.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;    &quot;skills&quot;: [],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T16:11:59.276Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T16:11:59.276Z&quot;,&#10;    &quot;__v&quot;: 0&#10;  }&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="6" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGQxNWNmYjQwMWY0MGFlZmYzZjA0MSIsImlhdCI6MTc3NjA5NjcxOSwiZXhwIjoxNzc2OTYwNzE5fQ.q55YNfD62oGi0ElY3z8CAIXsc0UxAS6Hs5tqVdOU2Ug; Max-Age=864000; Path=/; Expires=Thu, 23 Apr 2026 16:11:59 GMT; HttpOnly; SameSite=Strict" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="440" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1b8-4YENzmdHCPmH4WG4llvJo+Itw0s&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:11:59 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="66eb727f-c2a1-46a1-a224-8da34b709db6" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;User created successfully&quot;,&quot;safeUser&quot;:{&quot;_id&quot;:&quot;69dd15cfb401f40aeff3f041&quot;,&quot;firstName&quot;:&quot;umang&quot;,&quot;lastName&quot;:&quot;singh&quot;,&quot;email&quot;:&quot;umangjit_1987@yahoo.com&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[],&quot;createdAt&quot;:&quot;2026-04-13T16:11:59.276Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T16:11:59.276Z&quot;,&quot;__v&quot;:0}}" />
+              <option name="size" value="440" />
+              <option name="time" value="269" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776096775812" />
+          <option name="id" value="1900d0e2-1e9f-4b31-ba55-0810eba75ab1" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  //  &quot;firstName&quot;: &quot;harry&quot;,&#10;  //  &quot;lastName&quot;: &quot;potter&quot;,&#10;  &quot;option&quot;: &quot;umangjit_1987@yahoo.com&quot;,&#10;  &quot;password&quot;: &quot;umang@12&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="bd41dbc0-215e-4b2e-8438-effd5a1e6017" />
+              <option name="method" value="POST" />
+              <option name="name" value="login user" />
+              <option name="url" value="http://localhost:9999/api/user/login" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiTG9naW4gc3VjY2Vzc2Z1bGx5In0=" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Login successfully&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="4" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGQxNWNmYjQwMWY0MGFlZmYzZjA0MSIsImlhdCI6MTc3NjA5Njc3NSwiZXhwIjoxNzc2OTYwNzc1fQ.ZVPxR9HdRuLoyR6Tu7UGsVQjQfJv82Gv19rTH7OAUkw; Max-Age=864000; Path=/; Expires=Thu, 23 Apr 2026 16:12:55 GMT; HttpOnly; SameSite=Strict" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="32" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;20-1UOGHh8Wx9PTVQrIjyvCP5U06IQ&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:12:55 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="1900d0e2-1e9f-4b31-ba55-0810eba75ab1" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Login successfully&quot;}" />
+              <option name="size" value="32" />
+              <option name="time" value="94" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776096814830" />
+          <option name="id" value="159d91b4-fd80-45a3-8708-bf51d9964817" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;umangjit_1987@yahoo.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="68097844-c7e9-4724-8544-b50ffe01371e" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="forget password" />
+              <option name="url" value="http://localhost:9999/api/edit/forget-password" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiVmVyaWZpY2F0aW9uIGNvZGUgc2VudCB0byB5b3VyIGVtYWlsIiwiY29kZSI6Mjk4MTc1fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Verification code sent to your email&quot;,&#10;  &quot;code&quot;: 298175&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="3" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="64" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;40-wkYxlK+DwEirojsL+3EqRMvR62o&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:13:34 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="159d91b4-fd80-45a3-8708-bf51d9964817" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Verification code sent to your email&quot;,&quot;code&quot;:298175}" />
+              <option name="size" value="64" />
+              <option name="time" value="1961" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776097903837" />
+          <option name="id" value="c98437f1-eb81-419d-8221-14838de589b2" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="9ec44cb9-b380-4357-8e5a-2161cd4c51fa" />
+              <option name="method" value="GET" />
+              <option name="name" value="logout user" />
+              <option name="url" value="http://localhost:9999/api/user/logout" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiTG9nb3V0IHN1Y2Nlc3NmdWwifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Logout successful&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="token=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="31" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1f-vYmtThEV0qgPmOaoi5WLoJuDA80&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:31:43 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="c98437f1-eb81-419d-8221-14838de589b2" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Logout successful&quot;}" />
+              <option name="size" value="31" />
+              <option name="time" value="271" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776097934498" />
+          <option name="id" value="e2878842-c832-41ee-8023-aaf4c05c95b0" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  //  &quot;firstName&quot;: &quot;harry&quot;,&#10;  //  &quot;lastName&quot;: &quot;potter&quot;,&#10;  &quot;option&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;Harry@12&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="bd41dbc0-215e-4b2e-8438-effd5a1e6017" />
+              <option name="method" value="POST" />
+              <option name="name" value="login user" />
+              <option name="url" value="http://localhost:9999/api/user/login" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiTG9naW4gc3VjY2Vzc2Z1bGx5In0=" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Login successfully&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="3" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGJlM2M1NjY4NGEzNGZmMmU0MWNlOSIsImlhdCI6MTc3NjA5NzkzNCwiZXhwIjoxNzc2OTYxOTM0fQ.7lyVS-9VnrbwoU9K5MWYai9PVpPSaivQDtIe8K-YXXQ; Max-Age=864000; Path=/; Expires=Thu, 23 Apr 2026 16:32:14 GMT; HttpOnly; SameSite=Strict" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="32" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;20-1UOGHh8Wx9PTVQrIjyvCP5U06IQ&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:32:14 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="e2878842-c832-41ee-8023-aaf4c05c95b0" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Login successfully&quot;}" />
+              <option name="size" value="32" />
+              <option name="time" value="113" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776097972628" />
+          <option name="id" value="fefc7f73-a8a2-42bb-8c99-8ac69d2d0de7" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="68097844-c7e9-4724-8544-b50ffe01371e" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="forget password" />
+              <option name="url" value="http://localhost:9999/api/edit/forget-password" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiVmVyaWZpY2F0aW9uIGNvZGUgc2VudCB0byB5b3VyIGVtYWlsIiwiY29kZSI6NDI3MjAyfQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Verification code sent to your email&quot;,&#10;  &quot;code&quot;: 427202&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="4" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="64" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;40-eF+9CwMXUhlIkDH0rvufmK/CVp4&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:32:52 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="fefc7f73-a8a2-42bb-8c99-8ac69d2d0de7" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Verification code sent to your email&quot;,&quot;code&quot;:427202}" />
+              <option name="size" value="64" />
+              <option name="time" value="2138" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776098078076" />
+          <option name="id" value="6b52844b-a387-4959-be6f-b37d5588cbfb" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;code&quot;: &quot;427202&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="5588a282-7d08-40f9-99db-0346274fed94" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="verify-code" />
+              <option name="url" value="http://localhost:9999/api/edit/forget-password" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiVmVyaWZpY2F0aW9uIGNvZGUgc2VudCB0byB5b3VyIGVtYWlsIiwiY29kZSI6NjM1OTY2fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Verification code sent to your email&quot;,&#10;  &quot;code&quot;: 635966&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="4" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="64" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;40-kCwdL5Rrcs6rKGc2G5qFhPgthHw&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:34:38 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="6b52844b-a387-4959-be6f-b37d5588cbfb" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Verification code sent to your email&quot;,&quot;code&quot;:635966}" />
+              <option name="size" value="64" />
+              <option name="time" value="2317" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776098123654" />
+          <option name="id" value="df5a3a35-55ca-492b-9ac4-04245cc3e043" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;code&quot;: &quot;635966&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="5588a282-7d08-40f9-99db-0346274fed94" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="verify-code" />
+              <option name="url" value="http://localhost:9999/api/edit/verify-code" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiSW52YWxpZCBvciBleHBpcmVkIGNvZGUifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Invalid or expired code&quot;&#10;}" />
+              <option name="code" value="400" />
+              <option name="connectionEstablishingTime" value="2" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="37" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;25-JCOTywBuQZZZni4+dkhPXck5Cio&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:35:23 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="df5a3a35-55ca-492b-9ac4-04245cc3e043" />
+              <option name="message" value="Bad Request" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Invalid or expired code&quot;}" />
+              <option name="size" value="37" />
+              <option name="time" value="71" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776098137624" />
+          <option name="id" value="4296f6ef-f0aa-4e2a-9e0f-e54137da7143" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="68097844-c7e9-4724-8544-b50ffe01371e" />
+              <option name="method" value="POST" />
+              <option name="name" value="forget password" />
+              <option name="url" value="http://localhost:9999/api/edit/forget-password" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9InV0Zi04Ij4KPHRpdGxlPkVycm9yPC90aXRsZT4KPC9oZWFkPgo8Ym9keT4KPHByZT5DYW5ub3QgUE9TVCAvYXBpL2VkaXQvZm9yZ2V0LXBhc3N3b3JkPC9wcmU+CjwvYm9keT4KPC9odG1sPgo=" />
+              <option name="bodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot POST /api/edit/forget-password&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="code" value="404" />
+              <option name="connectionEstablishingTime" value="3" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Security-Policy" />
+                    <option name="value" value="default-src 'none'" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="164" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:35:37 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4296f6ef-f0aa-4e2a-9e0f-e54137da7143" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot POST /api/edit/forget-password&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="size" value="164" />
+              <option name="time" value="8" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776098156633" />
+          <option name="id" value="225042bd-736c-4db4-8286-80523963f8c0" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="68097844-c7e9-4724-8544-b50ffe01371e" />
+              <option name="method" value="POST" />
+              <option name="name" value="forget password" />
+              <option name="url" value="http://localhost:9999/api/edit/forget-password" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9InV0Zi04Ij4KPHRpdGxlPkVycm9yPC90aXRsZT4KPC9oZWFkPgo8Ym9keT4KPHByZT5DYW5ub3QgUE9TVCAvYXBpL2VkaXQvZm9yZ2V0LXBhc3N3b3JkPC9wcmU+CjwvYm9keT4KPC9odG1sPgo=" />
+              <option name="bodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot POST /api/edit/forget-password&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="code" value="404" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Security-Policy" />
+                    <option name="value" value="default-src 'none'" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="164" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:35:56 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="225042bd-736c-4db4-8286-80523963f8c0" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot POST /api/edit/forget-password&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="size" value="164" />
+              <option name="time" value="7" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776098166770" />
+          <option name="id" value="874c2c9c-8f92-4fa3-8d84-93096354edc0" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  //  &quot;firstName&quot;: &quot;harry&quot;,&#10;  //  &quot;lastName&quot;: &quot;potter&quot;,&#10;  &quot;option&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;Harry@12&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="bd41dbc0-215e-4b2e-8438-effd5a1e6017" />
+              <option name="method" value="POST" />
+              <option name="name" value="login user" />
+              <option name="url" value="http://localhost:9999/api/user/login" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiTG9naW4gc3VjY2Vzc2Z1bGx5In0=" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Login successfully&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="2" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGJlM2M1NjY4NGEzNGZmMmU0MWNlOSIsImlhdCI6MTc3NjA5ODE2NiwiZXhwIjoxNzc2OTYyMTY2fQ.AEFei2QGBe2Sgi3r_ZI-72XJi9cfVKhXJTE9rWrIoCc; Max-Age=864000; Path=/; Expires=Thu, 23 Apr 2026 16:36:06 GMT; HttpOnly; SameSite=Strict" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="32" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;20-1UOGHh8Wx9PTVQrIjyvCP5U06IQ&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:36:06 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="874c2c9c-8f92-4fa3-8d84-93096354edc0" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Login successfully&quot;}" />
+              <option name="size" value="32" />
+              <option name="time" value="89" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776098174645" />
+          <option name="id" value="b77c8f77-6835-4ce0-b8b4-6ead880703ea" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="68097844-c7e9-4724-8544-b50ffe01371e" />
+              <option name="method" value="POST" />
+              <option name="name" value="forget password" />
+              <option name="url" value="http://localhost:9999/api/edit/forget-password" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9InV0Zi04Ij4KPHRpdGxlPkVycm9yPC90aXRsZT4KPC9oZWFkPgo8Ym9keT4KPHByZT5DYW5ub3QgUE9TVCAvYXBpL2VkaXQvZm9yZ2V0LXBhc3N3b3JkPC9wcmU+CjwvYm9keT4KPC9odG1sPgo=" />
+              <option name="bodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot POST /api/edit/forget-password&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="code" value="404" />
+              <option name="connectionEstablishingTime" value="4" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Security-Policy" />
+                    <option name="value" value="default-src 'none'" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Content-Type-Options" />
+                    <option name="value" value="nosniff" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="164" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:36:14 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="b77c8f77-6835-4ce0-b8b4-6ead880703ea" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot POST /api/edit/forget-password&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+              <option name="size" value="164" />
+              <option name="time" value="7" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776098221526" />
+          <option name="id" value="1d3e4a61-af9d-4eac-a715-278082fad7ed" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="68097844-c7e9-4724-8544-b50ffe01371e" />
+              <option name="method" value="POST" />
+              <option name="name" value="forget password" />
+              <option name="url" value="http://localhost:9999/api/edit/forget-password" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiVmVyaWZpY2F0aW9uIGNvZGUgc2VudCB0byB5b3VyIGVtYWlsIiwiY29kZSI6MzIyNzY2fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Verification code sent to your email&quot;,&#10;  &quot;code&quot;: 322766&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="3" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="64" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;40-hvIBq3CwXJSLvM4asBtz17sI/qU&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:37:01 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="1d3e4a61-af9d-4eac-a715-278082fad7ed" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Verification code sent to your email&quot;,&quot;code&quot;:322766}" />
+              <option name="size" value="64" />
+              <option name="time" value="2161" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776098244855" />
+          <option name="id" value="1d4dfd59-1dd5-422d-a97a-207868fa7691" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;code&quot;: &quot;322766&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="5588a282-7d08-40f9-99db-0346274fed94" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="verify-code" />
+              <option name="url" value="http://localhost:9999/api/edit/verify-code" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiSW52YWxpZCBvciBleHBpcmVkIGNvZGUifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Invalid or expired code&quot;&#10;}" />
+              <option name="code" value="400" />
+              <option name="connectionEstablishingTime" value="2" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="37" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;25-JCOTywBuQZZZni4+dkhPXck5Cio&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:37:24 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="1d4dfd59-1dd5-422d-a97a-207868fa7691" />
+              <option name="message" value="Bad Request" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Invalid or expired code&quot;}" />
+              <option name="size" value="37" />
+              <option name="time" value="68" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776098250583" />
+          <option name="id" value="695c5427-b29d-405b-9d17-d3108f3686fc" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;code&quot;: &quot;322766&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="5588a282-7d08-40f9-99db-0346274fed94" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="verify-code" />
+              <option name="url" value="http://localhost:9999/api/edit/verify-code" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiSW52YWxpZCBvciBleHBpcmVkIGNvZGUifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Invalid or expired code&quot;&#10;}" />
+              <option name="code" value="400" />
+              <option name="connectionEstablishingTime" value="3" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="37" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;25-JCOTywBuQZZZni4+dkhPXck5Cio&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:37:30 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="695c5427-b29d-405b-9d17-d3108f3686fc" />
+              <option name="message" value="Bad Request" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Invalid or expired code&quot;}" />
+              <option name="size" value="37" />
+              <option name="time" value="77" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776098515078" />
+          <option name="id" value="b74b138a-4175-4b94-9397-37e493918f0b" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;code&quot;: &quot;322766&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="5588a282-7d08-40f9-99db-0346274fed94" />
+              <option name="method" value="GET" />
+              <option name="name" value="verify-code" />
+              <option name="url" value="http://localhost:9999/api/edit/verify-code" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiQ29kZSB2ZXJpZmllZCBzdWNjZXNzZnVsbHkifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Code verified successfully&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="40" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;28-loWvkrAPfoRUXIE6QC7KKHcG2LA&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 16:41:55 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="b74b138a-4175-4b94-9397-37e493918f0b" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Code verified successfully&quot;}" />
+              <option name="size" value="40" />
+              <option name="time" value="110" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776099808782" />
+          <option name="id" value="47e156b3-b7b6-4f24-98a7-0cab31e89d9d" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="68097844-c7e9-4724-8544-b50ffe01371e" />
+              <option name="method" value="POST" />
+              <option name="name" value="forget password" />
+              <option name="url" value="http://localhost:9999/api/edit/forget-password" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiVmVyaWZpY2F0aW9uIGNvZGUgc2VudCB0byB5b3VyIGVtYWlsIiwiY29kZSI6ODI2ODgwfQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Verification code sent to your email&quot;,&#10;  &quot;code&quot;: 826880&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="2" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="64" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;40-HuVC/rec14gHnAuvxkHwMNr152k&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 17:03:28 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="47e156b3-b7b6-4f24-98a7-0cab31e89d9d" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Verification code sent to your email&quot;,&quot;code&quot;:826880}" />
+              <option name="size" value="64" />
+              <option name="time" value="2519" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776099952827" />
+          <option name="id" value="80fe0ccf-1944-4455-9dde-8f5bfe8a707f" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&quot;email&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;code&quot;: 826880,&#10; &quot;newPassword&quot;: &quot;harry@124&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="5588a282-7d08-40f9-99db-0346274fed94" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="reset password" />
+              <option name="url" value="http://localhost:9999/api/edit/reset" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUGFzc3dvcmQgcmVzZXQgc3VjY2Vzc2Z1bCIsInVwZGF0ZWRVc2VyIjp7Il9pZCI6IjY5ZGJlM2M1NjY4NGEzNGZmMmU0MWNlOSIsImZpcnN0TmFtZSI6ImhhcnJ5IiwibGFzdE5hbWUiOiJwb3R0ZXIiLCJlbWFpbCI6ImhhcnJ5QGdtYWlsLmNvbSIsImNyZWF0ZWRBdCI6IjIwMjYtMDQtMTJUMTg6MjY6MTMuMDY5WiIsInVwZGF0ZWRBdCI6IjIwMjYtMDQtMTNUMTc6MDU6NTIuNzQ5WiIsIl9fdiI6MCwiYWJvdXQiOiJJIGFtIGRpc25leSBjaGFyYWN0ZXIiLCJhZ2UiOjIwLCJnZW5kZXIiOiJtYWxlIiwicGhvdG9VcmwiOiJodHRwczovL3N0YXRpYy5pbmRlcGVuZGVudC5jby51ay9zM2ZzLXB1YmxpYy90aHVtYm5haWxzL2ltYWdlLzIwMTMvMDkvMTIvMTcvcG90dGVyLmpwZyIsInNraWxscyI6WyJmbHkiLCJydW4iXSwicmVzZXRQYXNzd29yZENvZGUiOiI4MjY4ODAiLCJyZXNldFBhc3N3b3JkQ29kZUV4cGlyeSI6IjIwMjYtMDQtMTNUMTc6MTM6MjYuMzYzWiJ9fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Password reset successful&quot;,&#10;  &quot;updatedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dbe3c56684a34ff2e41ce9&quot;,&#10;    &quot;firstName&quot;: &quot;harry&quot;,&#10;    &quot;lastName&quot;: &quot;potter&quot;,&#10;    &quot;email&quot;: &quot;harry@gmail.com&quot;,&#10;    &quot;createdAt&quot;: &quot;2026-04-12T18:26:13.069Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T17:05:52.749Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;I am disney character&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/09/12/17/potter.jpg&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;fly&quot;,&#10;      &quot;run&quot;&#10;    ],&#10;    &quot;resetPasswordCode&quot;: &quot;826880&quot;,&#10;    &quot;resetPasswordCodeExpiry&quot;: &quot;2026-04-13T17:13:26.363Z&quot;&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="502" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1f6-tgHtLUFkFo0LHy2BO/UaM0kkNI0&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Apr 2026 17:05:52 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="80fe0ccf-1944-4455-9dde-8f5bfe8a707f" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Password reset successful&quot;,&quot;updatedUser&quot;:{&quot;_id&quot;:&quot;69dbe3c56684a34ff2e41ce9&quot;,&quot;firstName&quot;:&quot;harry&quot;,&quot;lastName&quot;:&quot;potter&quot;,&quot;email&quot;:&quot;harry@gmail.com&quot;,&quot;createdAt&quot;:&quot;2026-04-12T18:26:13.069Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T17:05:52.749Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;I am disney character&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;,&quot;photoUrl&quot;:&quot;https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/09/12/17/potter.jpg&quot;,&quot;skills&quot;:[&quot;fly&quot;,&quot;run&quot;],&quot;resetPasswordCode&quot;:&quot;826880&quot;,&quot;resetPasswordCodeExpiry&quot;:&quot;2026-04-13T17:13:26.363Z&quot;}}" />
+              <option name="size" value="502" />
+              <option name="time" value="169" />
             </responseState>
           </option>
           <option name="workspaceId" value="drafts" />

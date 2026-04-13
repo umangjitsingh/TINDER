@@ -89,7 +89,6 @@ export const loginController = async (req, res) => {
    }
 };
 
-
 export async function logoutController(req, res) {
    try {
     const token =req.cookies.token;

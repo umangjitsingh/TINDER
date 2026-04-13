@@ -5,6 +5,7 @@ import cookieParser from "cookie-parser";
 
 import {connectDB} from "./config/db.js";
 import userRouter from "./routes/user.routes.js";
+import editProfileRouter from "./routes/editProfile.routes.js";
 
 const port = process.env.PORT;
 const app= express()
@@ -13,7 +14,8 @@ app.use(express.json());
 app.use(cookieParser())
 
 
-app.use("/api/user", userRouter)
+app.use("/api/user", userRouter);
+app.use("/api/edit", editProfileRouter);
 
 connectDB().then(() => {
    app.listen(port, () => {
