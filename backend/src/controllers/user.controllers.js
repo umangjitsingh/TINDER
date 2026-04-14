@@ -53,11 +53,11 @@ export const loginController = async (req, res) => {
          return res.status(400).json({ message: "Please provide email/fullname and password" });
       }
 
-      let user;
+      let query = {};
 
       // Login using email
       if (option.includes("@")) {
-         user = await User.findOne({ email: option }).select("+password");
+         query.email = option;
       }
       // Login using full name
       else {
@@ -65,9 +65,12 @@ export const loginController = async (req, res) => {
          if (!firstName || !lastName) {
             return res.status(400).json({ message: "Please provide full name as 'First Last'" });
          }
-
-         user = await User.findOne({ firstName, lastName }).select("+password");
+         query.firstName = firstName;
+         query.lastName = lastName;
       }
+
+      // Always include password for login
+      const user = await User.findOne(query).select("+password");
 
       if (!user) {
          return res.status(400).json({ message: "User not found" });
@@ -79,15 +82,21 @@ export const loginController = async (req, res) => {
       }
 
       const token = generateToken(user._id);
-
       res.cookie("token", token, COOKIE_OPTIONS);
 
-      return res.status(200).json({ message: "Login successfully" });
+      // Remove password before sending
+      const { password: _, ...safeUser } = user._doc;
+
+      return res.status(200).json({
+         message: "Login successfully",
+         user: safeUser
+      });
 
    } catch (e) {
       return res.status(500).json({ message: `Login error: ${e.message}` });
    }
 };
+
 
 export async function logoutController(req, res) {
    try {

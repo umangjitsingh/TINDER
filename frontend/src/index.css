@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+@plugin "daisyui/theme" {
+    name: "nearrock";
+    default: true;
+    prefersdark: false;
+    color-scheme: "dark";
+    --color-base-100: oklch(14% 0.004 49.25);
+    --color-base-200: oklch(21% 0.006 56.043);
+    --color-base-300: oklch(26% 0.007 34.298);
+    --color-base-content: oklch(97% 0.001 106.424);
+    --color-primary: oklch(77% 0.152 181.912);
+    --color-primary-content: oklch(27% 0.046 192.524);
+    --color-secondary: oklch(67% 0.182 276.935);
+    --color-secondary-content: oklch(25% 0.09 281.288);
+    --color-accent: oklch(70% 0 0);
+    --color-accent-content: oklch(14% 0 0);
+    --color-neutral: oklch(44% 0.011 73.639);
+    --color-neutral-content: oklch(98% 0.001 106.423);
+    --color-info: oklch(58% 0.158 241.966);
+    --color-info-content: oklch(97% 0.013 236.62);
+    --color-success: oklch(62% 0.194 149.214);
+    --color-success-content: oklch(98% 0.018 155.826);
+    --color-warning: oklch(68% 0.162 75.834);
+    --color-warning-content: oklch(98% 0.026 102.212);
+    --color-error: oklch(58% 0.253 17.585);
+    --color-error-content: oklch(96% 0.015 12.422);
+    --radius-selector: 1rem;
+    --radius-field: 0.5rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1.5px;
+    --depth: 0;
+    --noise: 0;
+}
+
+/* Midnight Purple - Deep purple vibes with pink accents */
+@plugin "daisyui/theme" {
+    name: "midnight-purple";
+    default: false;
+    prefersdark: false;
+    color-scheme: "dark";
+    --color-base-100: oklch(12% 0.03 290);
+    --color-base-200: oklch(18% 0.04 290);
+    --color-base-300: oklch(24% 0.05 290);
+    --color-base-content: oklch(95% 0.01 290);
+    --color-primary: oklch(65% 0.25 320);
+    --color-primary-content: oklch(15% 0.05 320);
+    --color-secondary: oklch(70% 0.18 280);
+    --color-secondary-content: oklch(15% 0.04 280);
+    --color-accent: oklch(75% 0.22 350);
+    --color-accent-content: oklch(15% 0.05 350);
+    --color-neutral: oklch(35% 0.02 290);
+    --color-neutral-content: oklch(95% 0.01 290);
+    --color-info: oklch(60% 0.18 250);
+    --color-info-content: oklch(95% 0.02 250);
+    --color-success: oklch(65% 0.2 150);
+    --color-success-content: oklch(15% 0.04 150);
+    --color-warning: oklch(75% 0.18 80);
+    --color-warning-content: oklch(15% 0.04 80);
+    --color-error: oklch(60% 0.22 25);
+    --color-error-content: oklch(95% 0.02 25);
+    --radius-selector: 1rem;
+    --radius-field: 0.5rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1.5px;
+    --depth: 0;
+    --noise: 0;
+}
+
+/* Cyberpunk Neon - Electric blues and hot pinks */
+@plugin "daisyui/theme" {
+    name: "cyberpunk-neon";
+    default: false;
+    prefersdark: false;
+    color-scheme: "dark";
+    --color-base-100: oklch(8% 0.02 260);
+    --color-base-200: oklch(12% 0.03 260);
+    --color-base-300: oklch(18% 0.04 260);
+    --color-base-content: oklch(98% 0.005 260);
+    --color-primary: oklch(70% 0.28 200);
+    --color-primary-content: oklch(10% 0.05 200);
+    --color-secondary: oklch(75% 0.25 340);
+    --color-secondary-content: oklch(10% 0.05 340);
+    --color-accent: oklch(80% 0.22 160);
+    --color-accent-content: oklch(10% 0.04 160);
+    --color-neutral: oklch(25% 0.02 260);
+    --color-neutral-content: oklch(95% 0.01 260);
+    --color-info: oklch(65% 0.25 220);
+    --color-info-content: oklch(10% 0.04 220);
+    --color-success: oklch(70% 0.22 140);
+    --color-success-content: oklch(10% 0.04 140);
+    --color-warning: oklch(80% 0.2 90);
+    --color-warning-content: oklch(10% 0.04 90);
+    --color-error: oklch(65% 0.28 30);
+    --color-error-content: oklch(98% 0.02 30);
+    --radius-selector: 0.75rem;
+    --radius-field: 0.25rem;
+    --radius-box: 0.25rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 2px;
+    --depth: 1;
+    --noise: 0;
+}
+
+/* Forest Dark - Nature inspired greens and earth tones */
+@plugin "daisyui/theme" {
+    name: "forest-dark";
+    default: false;
+    prefersdark: false;
+    color-scheme: "dark";
+    --color-base-100: oklch(10% 0.02 140);
+    --color-base-200: oklch(15% 0.03 140);
+    --color-base-300: oklch(22% 0.04 140);
+    --color-base-content: oklch(96% 0.01 140);
+    --color-primary: oklch(65% 0.18 145);
+    --color-primary-content: oklch(12% 0.04 145);
+    --color-secondary: oklch(60% 0.15 180);
+    --color-secondary-content: oklch(12% 0.03 180);
+    --color-accent: oklch(70% 0.16 120);
+    --color-accent-content: oklch(12% 0.04 120);
+    --color-neutral: oklch(30% 0.02 140);
+    --color-neutral-content: oklch(95% 0.01 140);
+    --color-info: oklch(60% 0.15 220);
+    --color-info-content: oklch(95% 0.02 220);
+    --color-success: oklch(65% 0.18 145);
+    --color-success-content: oklch(12% 0.03 145);
+    --color-warning: oklch(70% 0.15 85);
+    --color-warning-content: oklch(12% 0.03 85);
+    --color-error: oklch(55% 0.2 30);
+    --color-error-content: oklch(95% 0.02 30);
+    --radius-selector: 1rem;
+    --radius-field: 0.5rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1.5px;
+    --depth: 0;
+    --noise: 0;
+}
+
+/* Sunset Dark - Warm oranges and deep reds */
+@plugin "daisyui/theme" {
+    name: "sunset-dark";
+    default: false;
+    prefersdark: false;
+    color-scheme: "dark";
+    --color-base-100: oklch(12% 0.03 30);
+    --color-base-200: oklch(18% 0.04 30);
+    --color-base-300: oklch(25% 0.05 30);
+    --color-base-content: oklch(96% 0.01 30);
+    --color-primary: oklch(70% 0.2 45);
+    --color-primary-content: oklch(12% 0.04 45);
+    --color-secondary: oklch(60% 0.18 25);
+    --color-secondary-content: oklch(12% 0.03 25);
+    --color-accent: oklch(75% 0.22 55);
+    --color-accent-content: oklch(12% 0.04 55);
+    --color-neutral: oklch(30% 0.02 30);
+    --color-neutral-content: oklch(95% 0.01 30);
+    --color-info: oklch(60% 0.15 230);
+    --color-info-content: oklch(95% 0.02 230);
+    --color-success: oklch(65% 0.18 140);
+    --color-success-content: oklch(12% 0.03 140);
+    --color-warning: oklch(75% 0.2 75);
+    --color-warning-content: oklch(12% 0.04 75);
+    --color-error: oklch(60% 0.25 25);
+    --color-error-content: oklch(95% 0.02 25);
+    --radius-selector: 1rem;
+    --radius-field: 0.5rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1.5px;
+    --depth: 0;
+    --noise: 0;
+}
+
+/* Nordic Frost - Cool blues and icy whites */
+@plugin "daisyui/theme" {
+    name: "nordic-frost";
+    default: false;
+    prefersdark: false;
+    color-scheme: "dark";
+    --color-base-100: oklch(15% 0.02 240);
+    --color-base-200: oklch(22% 0.03 240);
+    --color-base-300: oklch(30% 0.04 240);
+    --color-base-content: oklch(97% 0.005 240);
+    --color-primary: oklch(70% 0.15 220);
+    --color-primary-content: oklch(12% 0.03 220);
+    --color-secondary: oklch(75% 0.12 260);
+    --color-secondary-content: oklch(12% 0.025 260);
+    --color-accent: oklch(80% 0.14 200);
+    --color-accent-content: oklch(12% 0.03 200);
+    --color-neutral: oklch(40% 0.02 240);
+    --color-neutral-content: oklch(95% 0.01 240);
+    --color-info: oklch(65% 0.18 230);
+    --color-info-content: oklch(12% 0.03 230);
+    --color-success: oklch(70% 0.16 150);
+    --color-success-content: oklch(12% 0.03 150);
+    --color-warning: oklch(75% 0.15 85);
+    --color-warning-content: oklch(12% 0.03 85);
+    --color-error: oklch(60% 0.2 25);
+    --color-error-content: oklch(95% 0.02 25);
+    --radius-selector: 1rem;
+    --radius-field: 0.5rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1.5px;
+    --depth: 0;
+    --noise: 0;
+}
+
+
+@plugin "daisyui/theme" {
+    name: "glassmax";
+    default: false;
+    prefersdark: false;
+    color-scheme: "dark";
+    --color-base-100: oklch(14% 0.005 285.823);
+    --color-base-200: oklch(21% 0.006 285.885);
+    --color-base-300: oklch(27% 0.006 286.033);
+    --color-base-content: oklch(96% 0.001 286.375);
+    --color-primary: oklch(82% 0.12 346.018);
+    --color-primary-content: oklch(28% 0.109 3.907);
+    --color-secondary: oklch(81% 0.111 293.571);
+    --color-secondary-content: oklch(28% 0.141 291.089);
+    --color-accent: oklch(90% 0.182 98.111);
+    --color-accent-content: oklch(28% 0.066 53.813);
+    --color-neutral: oklch(44% 0.017 285.786);
+    --color-neutral-content: oklch(98% 0 0);
+    --color-info: oklch(78% 0.154 211.53);
+    --color-info-content: oklch(30% 0.056 229.695);
+    --color-success: oklch(84% 0.238 128.85);
+    --color-success-content: oklch(27% 0.072 132.109);
+    --color-warning: oklch(82% 0.189 84.429);
+    --color-warning-content: oklch(27% 0.077 45.635);
+    --color-error: oklch(71% 0.202 349.761);
+    --color-error-content: oklch(28% 0.109 3.907);
+    --radius-selector: 2rem;
+    --radius-field: 1rem;
+    --radius-box: 0.25rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 2px;
+    --depth: 0;
+    --noise: 0;
+}
+
+
+@plugin "daisyui/theme" {
+    name: "dancinglol";
+    default: false;
+    prefersdark: false;
+    color-scheme: "dark";
+    --color-base-100: oklch(12% 0.042 264.695);
+    --color-base-200: oklch(20% 0.042 265.755);
+    --color-base-300: oklch(27% 0.041 260.031);
+    --color-base-content: oklch(96% 0.007 247.896);
+    --color-primary: oklch(70% 0.015 286.067);
+    --color-primary-content: oklch(14% 0.005 285.823);
+    --color-secondary: oklch(82% 0.189 84.429);
+    --color-secondary-content: oklch(27% 0.077 45.635);
+    --color-accent: oklch(71% 0.203 305.504);
+    --color-accent-content: oklch(29% 0.149 302.717);
+    --color-neutral: oklch(37% 0.044 257.287);
+    --color-neutral-content: oklch(98% 0.003 247.858);
+    --color-info: oklch(58% 0.158 241.966);
+    --color-info-content: oklch(97% 0.013 236.62);
+    --color-success: oklch(62% 0.194 149.214);
+    --color-success-content: oklch(98% 0.018 155.826);
+    --color-warning: oklch(68% 0.162 75.834);
+    --color-warning-content: oklch(98% 0.026 102.212);
+    --color-error: oklch(59% 0.249 0.584);
+    --color-error-content: oklch(97% 0.014 343.198);
+    --radius-selector: 1rem;
+    --radius-field: 0.5rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
+}
+
