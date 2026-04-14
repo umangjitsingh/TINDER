@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
 
 
 export const sendMailToUser=async({emailId,randomToken})=>{
-   const info=await transporter.sendMail({
+  await transporter.sendMail({
       from: 'chyna14@ethereal.email',
       to: emailId,
       subject: "Verify your Email",
@@ -20,7 +20,5 @@ export const sendMailToUser=async({emailId,randomToken})=>{
       <p>You can use this token :<code>${randomToken}</code></p>
       `});
 
-   const testEmailUrl = `https://ethereal.email/message/${info.messageId}`;
-   console.log("test mail URL: %s", testEmailUrl)
 }
 

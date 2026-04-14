@@ -56,9 +56,15 @@ const userSchema = new mongoose.Schema(
          maxlength: 1000,
          default:"https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg"
       },
-      skills:{
+      skills   : {
          type: [String],
-         maxlength: 200,
+         validate(value) {
+            if (value.length > 7) {
+               console.log(value)
+
+               throw new Error('Only 7 skills allowed')
+            }
+         }
       },
       resetPasswordCode: String,
       resetPasswordCodeExpiry: Date,

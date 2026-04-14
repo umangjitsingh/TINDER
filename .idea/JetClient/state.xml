@@ -8,7 +8,7 @@
             <requestState>
               <option name="body">
                 <bodyState>
-                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;umang&quot;,&#10;  &quot;lastName&quot;: &quot;singh&quot;,&#10;  &quot;email&quot;: &quot;umangjit_1987@yahoo.com&quot;,&#10;  &quot;password&quot;: &quot;umang@12&quot;&#10;}" />
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;donald&quot;,&#10;  &quot;lastName&quot;: &quot;trump&quot;,&#10;  &quot;email&quot;: &quot;donald@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;donald@12&quot;&#10;}" />
                   <option name="type" value="JSON" />
                 </bodyState>
               </option>
@@ -20,7 +20,7 @@
             <requestState>
               <option name="body">
                 <bodyState>
-                  <option name="raw" value="{&#10;  //  &quot;firstName&quot;: &quot;harry&quot;,&#10;  //  &quot;lastName&quot;: &quot;potter&quot;,&#10;  &quot;option&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;Harry@12&quot;&#10;}" />
+                  <option name="raw" value="{&#10;  //  &quot;firstName&quot;: &quot;harry&quot;,&#10;  //  &quot;lastName&quot;: &quot;potter&quot;,&#10;  &quot;option&quot;: &quot;hulk@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;hulk@12&quot;&#10;}" />
                   <option name="type" value="JSON" />
                 </bodyState>
               </option>
@@ -46,7 +46,7 @@
                       </formDataParameterState>
                       <formDataParameterState>
                         <option name="key" value="skills" />
-                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
+                        <option name="value" value="cricket,hockey,basketball" />
                       </formDataParameterState>
                       <formDataParameterState>
                         <option name="key" value="about" />
@@ -74,7 +74,7 @@
             <requestState>
               <option name="body">
                 <bodyState>
-                  <option name="raw" value="{&quot;email&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;code&quot;: 826880,&#10; &quot;newPassword&quot;: &quot;harry@124&quot;&#10;}" />
+                  <option name="raw" value="{&quot;email&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;code&quot;: &quot;671396&quot;,&#10; &quot;newPassword&quot;: &quot;harry@12&quot;&#10;}" />
                   <option name="type" value="JSON" />
                 </bodyState>
               </option>
@@ -94,6 +94,72 @@
               <option name="method" value="POST" />
               <option name="name" value="forget password" />
               <option name="url" value="http://localhost:9999/api/edit/forget-password" />
+            </requestState>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="62fbab0f-87b2-411a-b5f7-3a7f1d151e87" />
+              <option name="method" value="POST" />
+              <option name="name" value="send request" />
+              <option name="pathVariables">
+                <list>
+                  <pathVariableState>
+                    <option name="key" value="status" />
+                    <option name="value" value="like" />
+                  </pathVariableState>
+                  <pathVariableState>
+                    <option name="key" value="receiverId" />
+                    <option name="value" value="69dbe3c56684a34ff2e41ce9" />
+                  </pathVariableState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:9999/api/connection/request/send/:status/:receiverId" />
+            </requestState>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="ecf1a1d4-fabb-41a6-bd44-5e2a766a2662" />
+              <option name="method" value="POST" />
+              <option name="name" value="review request" />
+              <option name="pathVariables">
+                <list>
+                  <pathVariableState>
+                    <option name="key" value="status" />
+                    <option name="value" value="accepted" />
+                  </pathVariableState>
+                  <pathVariableState>
+                    <option name="key" value="requestId" />
+                    <option name="value" value="69dbe3c56684a34ff2e41ce9" />
+                  </pathVariableState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:9999/api/connection/request/review/:status/:requestId" />
+            </requestState>
+            <requestState>
+              <option name="id" value="3e0e5b08-4314-4cf1-bada-582bbdb2abb9" />
+              <option name="method" value="GET" />
+              <option name="name" value="friend list" />
+              <option name="url" value="http://localhost:9999/api/connection/friend-list" />
+            </requestState>
+            <requestState>
+              <option name="id" value="48b07f2b-7272-4f9f-88d9-896c830711ba" />
+              <option name="method" value="GET" />
+              <option name="name" value="pending requests" />
+              <option name="url" value="http://localhost:9999/api/connection/pending-requests" />
+            </requestState>
+            <requestState>
+              <option name="id" value="fe25865e-1d8e-4448-824a-80596da14d96" />
+              <option name="method" value="GET" />
+              <option name="name" value="core" />
+              <option name="url" value="http://localhost:9999/api/connection/core" />
             </requestState>
           </list>
         </option>

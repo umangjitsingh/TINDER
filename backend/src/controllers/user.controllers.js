@@ -79,7 +79,7 @@ export const loginController = async (req, res) => {
       }
 
       const token = generateToken(user._id);
-      console.log("token-->",token)
+
       res.cookie("token", token, COOKIE_OPTIONS);
 
       return res.status(200).json({ message: "Login successfully" });
@@ -106,7 +106,7 @@ export async function logoutController(req, res) {
 export async function getMeController(req, res) {
    try {
       const user = req.user;
-      console.log("user",user)
+
       return res.status(200).json({user});
 
    } catch (err) {

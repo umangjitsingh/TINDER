@@ -17,7 +17,6 @@ import { v2 as cloudinary } from 'cloudinary';
       try{
          if(!imgPath) return null;
          const uploadResult = await cloudinary.uploader.upload(imgPath);
-         console.log(uploadResult)
          return uploadResult.secure_url;
 
       }catch (e) {

@@ -24,12 +24,12 @@ export const editProfile = async (req, res) => {
 
       const URL_BY_CLOUDINARY = await uploadImageOnCloudinary(dataUri);
 
-      // console.log(URL_BY_CLOUDINARY)
+
 
       const editedUser = await User.findOneAndUpdate({_id: loggedInUser._id}, {
          age, gender, skills, about,
          photoUrl: URL_BY_CLOUDINARY
-      }, {new: true, runValidators: true});
+      }, {returnDocument: "after", runValidators: true});
 
 
       return res.status(200).json({
@@ -77,7 +77,6 @@ export const forgetPassword = async (req, res) => {
       return res.status(500).json({ message: "Something went wrong" });
    }
 };
-
 
 export const resetPassword = async (req, res) => {
    try {
