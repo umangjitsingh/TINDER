@@ -6,6 +6,7 @@
       <node color="5" path="$PROJECT_DIR$/backend/src" />
       <node color="8" path="$PROJECT_DIR$/frontend" />
       <node color="4" path="$PROJECT_DIR$/frontend/src" />
+      <node color="7" path="$PROJECT_DIR$/frontend/src/store" />
     </files>
     <colors>
       <color id="1" value="#4f060d" name="Color 1" enabled="true" />

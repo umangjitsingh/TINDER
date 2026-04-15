@@ -6,8 +6,8 @@ import {BACKEND_URL} from '../BACKEND_URL.js'
 
 function Register() {
 
-   const[firstname,setFirstname]=useState("");
-   const[lastname,setLastname]=useState("");
+   const[firstName,setFirstname]=useState("");
+   const[lastName,setLastname]=useState("");
    const[email,setEmail]=useState("");
    const[password,setPassword]=useState("");
 
@@ -15,7 +15,7 @@ function Register() {
       e.preventDefault();
       try{
          const result =await axios.post(`${BACKEND_URL}/api/user/register`,
-            {firstname, lastname, email, password},
+            {firstName, lastName, email, password},
             {withCredentials: true});
          console.log(result.data);
       }catch (e) {
@@ -35,7 +35,7 @@ function Register() {
                   <input type="text"
                          className="input outline-none focus:outline-none focus:ring-1 focus:ring-primary"
                          placeholder="Firstname"
-                         value={firstname}
+                         value={firstName}
                          onChange={(e) => setFirstname(e.target.value)}
                   />
 
@@ -43,7 +43,7 @@ function Register() {
                   <input type="text"
                          className="input outline-none focus:outline-none focus:ring-1 focus:ring-primary"
                          placeholder="Lastname"
-                         value={lastname}
+                         value={lastName}
                          onChange={(e) => setLastname(e.target.value)}
                   />
 
@@ -75,4 +75,6 @@ function Register() {
    )
 }
 
-export default Register
+export default Register;
+
+

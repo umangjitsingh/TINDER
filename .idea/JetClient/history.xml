@@ -6902,6 +6902,78 @@
           </option>
           <option name="workspaceId" value="drafts" />
         </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776211441619" />
+          <option name="id" value="7cd53657-f703-4f44-8d5b-a516e09b78b8" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="7df78667-4eb0-42aa-8f20-1d05deb2b4b6" />
+              <option name="method" value="GET" />
+              <option name="name" value="me" />
+              <option name="url" value="http://localhost:9999/api/user/me" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJ1c2VyIjp7Il9pZCI6IjY5ZGU2NmQzMWQxYzc2OGVmYWU0OTNiZCIsImZpcnN0TmFtZSI6ImRvbmFsZCIsImxhc3ROYW1lIjoidHJ1bXAiLCJlbWFpbCI6ImRvbmFsZEBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vdGh1bWJzLmRyZWFtc3RpbWUuY29tL2IvZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci1pbGx1c3RyYXRpb24tZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci0xODk0OTUxNTguanBnIiwic2tpbGxzIjpbXSwiY3JlYXRlZEF0IjoiMjAyNi0wNC0xNFQxNjowOTo1NS4xNjJaIiwidXBkYXRlZEF0IjoiMjAyNi0wNC0xNFQxNjowOTo1NS4xNjJaIiwiX192IjowfX0=" />
+              <option name="bodyString" value="{&#10;  &quot;user&quot;: {&#10;    &quot;_id&quot;: &quot;69de66d31d1c768efae493bd&quot;,&#10;    &quot;firstName&quot;: &quot;donald&quot;,&#10;    &quot;lastName&quot;: &quot;trump&quot;,&#10;    &quot;email&quot;: &quot;donald@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;    &quot;skills&quot;: [],&#10;    &quot;createdAt&quot;: &quot;2026-04-14T16:09:55.162Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-14T16:09:55.162Z&quot;,&#10;    &quot;__v&quot;: 0&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="http://localhost:5173" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="392" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;188-hNgSBlanHDifOOMlBPEy9K0BHDo&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 Apr 2026 00:04:01 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="7cd53657-f703-4f44-8d5b-a516e09b78b8" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;user&quot;:{&quot;_id&quot;:&quot;69de66d31d1c768efae493bd&quot;,&quot;firstName&quot;:&quot;donald&quot;,&quot;lastName&quot;:&quot;trump&quot;,&quot;email&quot;:&quot;donald@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[],&quot;createdAt&quot;:&quot;2026-04-14T16:09:55.162Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-14T16:09:55.162Z&quot;,&quot;__v&quot;:0}}" />
+              <option name="size" value="392" />
+              <option name="time" value="151" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
       </list>
     </option>
   </component>

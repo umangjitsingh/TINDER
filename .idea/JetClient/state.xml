@@ -161,6 +161,12 @@
               <option name="name" value="core" />
               <option name="url" value="http://localhost:9999/api/connection/core" />
             </requestState>
+            <requestState>
+              <option name="id" value="7df78667-4eb0-42aa-8f20-1d05deb2b4b6" />
+              <option name="method" value="GET" />
+              <option name="name" value="me" />
+              <option name="url" value="http://localhost:9999/api/user/me" />
+            </requestState>
           </list>
         </option>
       </draftsState>
