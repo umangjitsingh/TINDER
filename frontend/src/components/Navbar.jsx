@@ -13,7 +13,7 @@ const location = useLocation();
    return (
       <div className="navbar bg-base-100 shadow-sm">
          <div className="w-1/3 flex items-center  gap-2  ">
-            <Link className="text-2xl font-bold" to="/">tinder. </Link>
+            <Link className="text-2xl sm:text-3xl font-bold" to="/">tinder. </Link>
 
             {location.pathname === '/' ? null : <ColorPallet/>}
 

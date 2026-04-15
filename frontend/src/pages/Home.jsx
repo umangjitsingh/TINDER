@@ -1,89 +1,21 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import gsap from 'gsap'
 import Footer from "../components/Footer.jsx";
+import { setTheme, selectCurrentTheme, selectCurrentPersonality, selectAllPersonalities } from '../store/themeSlice'
 
 const Home = () => {
    const userData = useSelector(state => state.user)
+   const dispatch = useDispatch()
    const heroRef = useRef(null)
    const taglineRef = useRef(null)
    const themesRef = useRef(null)
-   const [currentTheme, setCurrentTheme] = useState(() => {
-      // Initialize from localStorage immediately to avoid hydration mismatch
-      if (typeof window !== 'undefined') {
-         return localStorage.getItem('app-theme') || 'nearrock'
-      }
-      return 'nearrock'
-   })
 
-   // Theme personalities - each theme represents a different vibe/personality
-   const themePersonalities = [
-      {
-         name: 'nearrock',
-         label: 'The Classic',
-         mood: 'Balanced & Timeless',
-         description: 'For those who appreciate simplicity and elegance. A refined palette that never goes out of style.',
-         emoji: '🎭',
-         traits: ['Sophisticated', 'Reliable', 'Understated']
-      },
-      {
-         name: 'midnight-purple',
-         label: 'The Dreamer',
-         mood: 'Mysterious & Creative',
-         description: 'Deep purples for the imaginative souls. Perfect for night owls and creative minds.',
-         emoji: '🌙',
-         traits: ['Artistic', 'Intuitive', 'Enigmatic']
-      },
-      {
-         name: 'cyberpunk-neon',
-         label: 'The Rebel',
-         mood: 'Electric & Bold',
-         description: 'Neon lights and electric vibes. For those who live fast and stand out from the crowd.',
-         emoji: '⚡',
-         traits: ['Daring', 'Futuristic', 'Energetic']
-      },
-      {
-         name: 'forest-dark',
-         label: 'The Naturalist',
-         mood: 'Grounded & Calm',
-         description: 'Earthy greens for nature lovers. Find your peace in the digital wilderness.',
-         emoji: '🌲',
-         traits: ['Harmonious', 'Growth-oriented', 'Peaceful']
-      },
-      {
-         name: 'sunset-dark',
-         label: 'The Romantic',
-         mood: 'Warm & Passionate',
-         description: 'Warm oranges and deep reds. For the passionate hearts and sunset chasers.',
-         emoji: '🌅',
-         traits: ['Passionate', 'Warm', 'Adventurous']
-      },
-      {
-         name: 'nordic-frost',
-         label: 'The Minimalist',
-         mood: 'Cool & Focused',
-         description: 'Icy blues and clean aesthetics. Clarity and focus for the modern minimalist.',
-         emoji: '❄️',
-         traits: ['Clear-minded', 'Efficient', 'Serene']
-      },
-      {
-         name: 'glassymax',
-         label: 'The Optimist',
-         mood: 'Bright & Cheerful',
-         description: 'Soft pastels with a glass-like clarity. For those who see the world through rose-tinted glasses.',
-         emoji: '✨',
-         traits: ['Positive', 'Transparent', 'Joyful']
-      },
-      {
-         name: 'dancinglol',
-         label: 'The Playful',
-         mood: 'Fun & Quirky',
-         description: 'Vibrant and unexpected. For the free spirits who dance to their own beat.',
-         emoji: '🎉',
-         traits: ['Spontaneous', 'Fun-loving', 'Unique']
-      }
-   ]
+   // Get theme data from Redux store
+   const currentTheme = useSelector(selectCurrentTheme)
+   const currentPersonality = useSelector(selectCurrentPersonality)
+   const themePersonalities = useSelector(selectAllPersonalities)
 
    // Ensure theme is applied to root element on mount
    useEffect(() => {
@@ -131,27 +63,6 @@ const Home = () => {
 
       return () => ctx.revert()
    }, [])
-
-   // Listen for theme changes
-   useEffect(() => {
-      const observer = new MutationObserver((mutations) => {
-         mutations.forEach((mutation) => {
-            if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
-               const newTheme = document.getElementById('root')?.getAttribute('data-theme')
-               if (newTheme) setCurrentTheme(newTheme)
-            }
-         })
-      })
-
-      const root = document.getElementById('root')
-      if (root) {
-         observer.observe(root, { attributes: true })
-      }
-
-      return () => observer.disconnect()
-   }, [])
-
-   const currentPersonality = themePersonalities.find(t => t.name === currentTheme) || themePersonalities[0]
 
    return (
       <div ref={heroRef} className="min-h-screen bg-base-100 overflow-hidden">
@@ -275,11 +186,10 @@ const Home = () => {
                               : 'border-base-300 hover:border-primary/50'
                         }`}
                         onClick={() => {
+                           dispatch(setTheme(theme.name))
                            const root = document.getElementById('root')
                            if (root) {
                               root.setAttribute('data-theme', theme.name)
-                              localStorage.setItem('app-theme', theme.name)
-                              setCurrentTheme(theme.name)
                            }
                         }}
                      >
@@ -403,7 +313,7 @@ const Home = () => {
          </section>
 
          {/* Footer */}
-<Footer personality={currentPersonality}/>
+
       </div>
    )
 }

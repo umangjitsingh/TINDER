@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
+import {useSelector} from 'react-redux'
 import axios from 'axios'
 import {BACKEND_URL} from '../BACKEND_URL.js'
 import {FaRegEye, FaRegEyeSlash} from "react-icons/fa";
+import { selectCurrentPersonality } from '../store/themeSlice'
 
 
 function Register() {
@@ -12,26 +14,9 @@ function Register() {
    const [email, setEmail] = useState("");
    const [password, setPassword] = useState("");
    const [error, setError] = useState("");
-   const [currentTheme, setCurrentTheme] = useState('nearrock');
 
-
-   // Get current theme on mount
-   useEffect(() => {
-      const savedTheme = localStorage.getItem('app-theme') || 'nearrock';
-      setCurrentTheme(savedTheme);
-   }, []);
-
-   // Theme emojis for personality
-   const themeEmojis = {
-      'nearrock': '🎭',
-      'midnight-purple': '🌙',
-      'cyberpunk-neon': '⚡',
-      'forest-dark': '🌲',
-      'sunset-dark': '🌅',
-      'nordic-frost': '❄️',
-      'glassymax': '✨',
-      'dancinglol': '🎉'
-   };
+   // Get current personality from Redux store
+   const currentPersonality = useSelector(selectCurrentPersonality);
 
    async function handleRegister(e) {
       e.preventDefault();
@@ -65,7 +50,7 @@ function Register() {
             <div className="card-body">
                {/* Theme-aware emoji */}
                <div className="text-center mb-2">
-                  <span className="text-4xl">{themeEmojis[currentTheme] || '🚀'}</span>
+                  <span className="text-4xl">{currentPersonality?.emoji || '🚀'}</span>
                </div>
 
                <h2 className="card-title mx-auto text-2xl">Join the Vibe</h2>

@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { setTheme, selectCurrentTheme } from '../store/themeSlice'
 
 const themes = [
    { name: 'nearrock', label: 'Nearrock' },
@@ -12,42 +14,19 @@ const themes = [
 ]
 
 const ColorPallet = () => {
-   const [currentTheme, setCurrentTheme] = useState(() => {
-      return localStorage.getItem('app-theme') || 'nearrock'
-   })
+   const dispatch = useDispatch()
+   const currentTheme = useSelector(selectCurrentTheme)
 
-   // Apply theme + save to localStorage whenever it changes
+   // Apply theme to DOM whenever it changes
    useEffect(() => {
       const root = document.getElementById('root')
       if (root) {
          root.setAttribute('data-theme', currentTheme)
       }
-      localStorage.setItem('app-theme', currentTheme)
-   }, [currentTheme])
-
-   // Listen for theme changes from other components (like Home page)
-   useEffect(() => {
-      const observer = new MutationObserver((mutations) => {
-         mutations.forEach((mutation) => {
-            if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
-               const newTheme = document.getElementById('root')?.getAttribute('data-theme')
-               if (newTheme && newTheme !== currentTheme) {
-                  setCurrentTheme(newTheme)
-               }
-            }
-         })
-      })
-
-      const root = document.getElementById('root')
-      if (root) {
-         observer.observe(root, { attributes: true })
-      }
-
-      return () => observer.disconnect()
    }, [currentTheme])
 
    const handleThemeChange = (themeName) => {
-      setCurrentTheme(themeName)
+      dispatch(setTheme(themeName))
    }
 
    return (

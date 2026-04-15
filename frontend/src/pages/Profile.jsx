@@ -1,7 +1,11 @@
 import React from 'react'
 
 
+
 const Profile = () => {
+
+
+
    return (
       <div>
          <div className="absolute inset-0 pointer-events-none overflow-hidden">

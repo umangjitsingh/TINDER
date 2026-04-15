@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
-import {useDispatch} from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
 import axios from 'axios'
 import {BACKEND_URL} from '../BACKEND_URL.js';
 import {getMe} from '../store/userSlice.js'
 import {FaRegEye, FaRegEyeSlash} from "react-icons/fa";
+import { selectCurrentPersonality } from '../store/themeSlice'
 
 
 function Login() {
@@ -13,26 +14,10 @@ function Login() {
    const dispatch = useDispatch();
    const navigate = useNavigate();
    const [error, setError] = useState("");
-   const [currentTheme, setCurrentTheme] = useState('nearrock');
    const [showPassword, setShowPassword] = useState(false);
 
-   // Get current theme on mount
-   useEffect(() => {
-      const savedTheme = localStorage.getItem('app-theme') || 'nearrock';
-      setCurrentTheme(savedTheme);
-   }, []);
-
-   // Theme emojis for personality
-   const themeEmojis = {
-      'nearrock': '🎭',
-      'midnight-purple': '🌙',
-      'cyberpunk-neon': '⚡',
-      'forest-dark': '🌲',
-      'sunset-dark': '🌅',
-      'nordic-frost': '❄️',
-      'glassymax': '✨',
-      'dancinglol': '🎉'
-   };
+   // Get current personality from Redux store
+   const currentPersonality = useSelector(selectCurrentPersonality);
 
    async function handleLogin(e) {
       e.preventDefault();
@@ -71,7 +56,7 @@ function Login() {
             <div className="card-body">
                {/* Theme-aware emoji */}
                <div className="text-center mb-2">
-                  <span className="text-4xl">{themeEmojis[currentTheme] || '🔥'}</span>
+                  <span className="text-4xl">{currentPersonality?.emoji || '🔥'}</span>
                </div>
 
                <h2 className="card-title mx-auto text-2xl">Welcome Back</h2>

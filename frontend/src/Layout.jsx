@@ -3,13 +3,16 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Outlet, useNavigate, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
 import { getMe } from './store/userSlice.js'
+import {selectCurrentPersonality} from "./store/themeSlice.js";
+import Footer from "./components/Footer.jsx";
 
 const Layout = () => {
    const dispatch = useDispatch()
    const navigate = useNavigate()
    const location = useLocation()
 
-   const { user,loading, isAuthenticated } = useSelector(state => state.user)
+   const { user,loading, isAuthenticated } = useSelector(state => state.user);
+   const currentPersonality = useSelector(selectCurrentPersonality)
 
    // Public routes that don't require authentication
    const publicRoutes = ['/', '/login', '/register']
@@ -51,7 +54,7 @@ const Layout = () => {
       <div className="w-full min-h-screen px-10">
          <Navbar />
          <Outlet />
-
+         <Footer personality={currentPersonality} />
       </div>
    )
 }

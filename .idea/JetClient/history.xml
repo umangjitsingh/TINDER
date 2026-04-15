@@ -4,136 +4,6 @@
     <option name="requestHistoryStates">
       <list>
         <requestHistoryState>
-          <option name="dateTime" value="1776024065194" />
-          <option name="id" value="54a76447-ad8c-49f8-ad30-04af0f6dc76f" />
-          <option name="request">
-            <requestState>
-              <option name="id" value="9ec44cb9-b380-4357-8e5a-2161cd4c51fa" />
-              <option name="method" value="GET" />
-              <option name="name" value="logout user" />
-              <option name="url" value="http://localhost:9999/api/user/logout" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiTG9nb3V0IHN1Y2Nlc3NmdWwifQ==" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Logout successful&quot;&#10;}" />
-              <option name="code" value="200" />
-              <option name="connectionEstablishingTime" value="4" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Set-Cookie" />
-                    <option name="value" value="token=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="31" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;1f-vYmtThEV0qgPmOaoi5WLoJuDA80&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Sun, 12 Apr 2026 20:01:05 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="54a76447-ad8c-49f8-ad30-04af0f6dc76f" />
-              <option name="message" value="OK" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Logout successful&quot;}" />
-              <option name="size" value="31" />
-              <option name="time" value="248" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1776027134515" />
-          <option name="id" value="bb41664a-dc5a-45d0-bd65-4d638631cbac" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;harry&quot;,&#10;  &quot;lastName&quot;: &quot;potter&quot;,&#10;  &quot;email&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;Harry@12&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="id" value="102273ed-9d3d-4f74-85e2-eac02adee5d1" />
-              <option name="method" value="POST" />
-              <option name="name" value="register user" />
-              <option name="url" value="http://localhost:9999/api/user/register" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiVXNlciBhbHJlYWR5IHByZXNlbnQifQ==" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;User already present&quot;&#10;}" />
-              <option name="code" value="400" />
-              <option name="connectionEstablishingTime" value="102" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="34" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;22-qAfcJ6GYCaK15jeDMInm1WX5AAI&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Sun, 12 Apr 2026 20:52:14 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="bb41664a-dc5a-45d0-bd65-4d638631cbac" />
-              <option name="message" value="Bad Request" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;User already present&quot;}" />
-              <option name="size" value="34" />
-              <option name="time" value="212" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
           <option name="dateTime" value="1776091359042" />
           <option name="id" value="61beb734-7483-47ff-98c1-5cb6bf650a43" />
           <option name="request">
@@ -199,726 +69,6 @@
               <option name="rawBodyString" value="{&quot;message&quot;:&quot;User created successfully&quot;,&quot;safeUser&quot;:{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;email&quot;:&quot;spider@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[],&quot;createdAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;__v&quot;:0}}" />
               <option name="size" value="432" />
               <option name="time" value="370" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1776091483997" />
-          <option name="id" value="b5295abe-6405-48ce-bdae-11732774d513" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="formData">
-                    <list>
-                      <formDataParameterState>
-                        <option name="key" value="age" />
-                        <option name="value" value="20" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="skills" />
-                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="about" />
-                        <option name="value" value="&quot;i am jadugar&quot;" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="gender" />
-                        <option name="value" value="&quot;male&quot;" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="photoUrl" />
-                        <option name="type" value="FILE" />
-                        <option name="value" value="C:\Users\16479\Desktop\spiderman.webp" />
-                      </formDataParameterState>
-                    </list>
-                  </option>
-                  <option name="type" value="FORM_DATA" />
-                </bodyState>
-              </option>
-              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
-              <option name="method" value="PATCH" />
-              <option name="name" value="edit profile" />
-              <option name="url" value="http://localhost:9999/api/edit/profile" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiRXJyb3IgdXBkYXRpbmcgcHJvZmlsZTogVmFsaWRhdGlvbiBmYWlsZWQ6IGdlbmRlcjogYFwibWFsZVwiYCBpcyBub3QgYSB2YWxpZCBlbnVtIHZhbHVlIGZvciBwYXRoIGBnZW5kZXJgLiJ9" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Error updating profile: Validation failed: gender: `\&quot;male\&quot;` is not a valid enum value for path `gender`.&quot;&#10;}" />
-              <option name="code" value="500" />
-              <option name="connectionEstablishingTime" value="3" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="120" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;78-04fFgkd6fPVIsF/fmWCznz8a6t8&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 13 Apr 2026 14:44:43 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="b5295abe-6405-48ce-bdae-11732774d513" />
-              <option name="message" value="Internal Server Error" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Error updating profile: Validation failed: gender: `\&quot;male\&quot;` is not a valid enum value for path `gender`.&quot;}" />
-              <option name="size" value="120" />
-              <option name="time" value="194" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1776091550372" />
-          <option name="id" value="6e9b8b99-8dab-4527-874b-4fba08376924" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="formData">
-                    <list>
-                      <formDataParameterState>
-                        <option name="key" value="age" />
-                        <option name="value" value="20" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="skills" />
-                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="about" />
-                        <option name="value" value="i am jadugar" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="gender" />
-                        <option name="value" value="male" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="photoUrl" />
-                        <option name="type" value="FILE" />
-                        <option name="value" value="C:\Users\16479\Desktop\spiderman.webp" />
-                      </formDataParameterState>
-                    </list>
-                  </option>
-                  <option name="type" value="FORM_DATA" />
-                </bodyState>
-              </option>
-              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
-              <option name="method" value="PATCH" />
-              <option name="name" value="edit profile" />
-              <option name="url" value="http://localhost:9999/api/edit/profile" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZDAwZGU0ZTViNzU5ZWEzZjVhZTY0IiwiZmlyc3ROYW1lIjoic3BpZGVyIiwibGFzdE5hbWUiOiJtYW4iLCJlbWFpbCI6InNwaWRlckBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vdGh1bWJzLmRyZWFtc3RpbWUuY29tL2IvZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci1pbGx1c3RyYXRpb24tZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci0xODk0OTUxNTguanBnIiwic2tpbGxzIjpbIltcImhvY2tleVwiLFwiY3JpY2tldFwiXSJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQyOjM4LjgxNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQ1OjUwLjI5OFoiLCJfX3YiOjAsImFib3V0IjoiaSBhbSBqYWR1Z2FyIiwiYWdlIjoyMCwiZ2VuZGVyIjoibWFsZSJ9fQ==" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;firstName&quot;: &quot;spider&quot;,&#10;    &quot;lastName&quot;: &quot;man&quot;,&#10;    &quot;email&quot;: &quot;spider@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T14:42:38.814Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T14:45:50.298Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
-              <option name="code" value="200" />
-              <option name="connectionEstablishingTime" value="5" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="511" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;1ff-gZd2udfV4+7MVr/4ztZh893f8Gk&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 13 Apr 2026 14:45:50 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="6e9b8b99-8dab-4527-874b-4fba08376924" />
-              <option name="message" value="OK" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;email&quot;:&quot;spider@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[&quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;],&quot;createdAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T14:45:50.298Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}}" />
-              <option name="size" value="511" />
-              <option name="time" value="239" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1776091727089" />
-          <option name="id" value="a93705fe-2f7b-480f-8476-3dbe1fbd2a0d" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="formData">
-                    <list>
-                      <formDataParameterState>
-                        <option name="key" value="age" />
-                        <option name="value" value="20" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="skills" />
-                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="about" />
-                        <option name="value" value="i am jadugar" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="gender" />
-                        <option name="value" value="male" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="photoUrl" />
-                        <option name="type" value="FILE" />
-                        <option name="value" value="C:\Users\16479\Downloads\spiderman1776091688.jpg" />
-                      </formDataParameterState>
-                    </list>
-                  </option>
-                  <option name="type" value="FORM_DATA" />
-                </bodyState>
-              </option>
-              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
-              <option name="method" value="PATCH" />
-              <option name="name" value="edit profile" />
-              <option name="url" value="http://localhost:9999/api/edit/profile" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZDAwZGU0ZTViNzU5ZWEzZjVhZTY0IiwiZmlyc3ROYW1lIjoic3BpZGVyIiwibGFzdE5hbWUiOiJtYW4iLCJlbWFpbCI6InNwaWRlckBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vdGh1bWJzLmRyZWFtc3RpbWUuY29tL2IvZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci1pbGx1c3RyYXRpb24tZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci0xODk0OTUxNTguanBnIiwic2tpbGxzIjpbIltcImhvY2tleVwiLFwiY3JpY2tldFwiXSJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQyOjM4LjgxNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQ4OjQ3LjAwNFoiLCJfX3YiOjAsImFib3V0IjoiaSBhbSBqYWR1Z2FyIiwiYWdlIjoyMCwiZ2VuZGVyIjoibWFsZSJ9fQ==" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;firstName&quot;: &quot;spider&quot;,&#10;    &quot;lastName&quot;: &quot;man&quot;,&#10;    &quot;email&quot;: &quot;spider@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T14:42:38.814Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T14:48:47.004Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
-              <option name="code" value="200" />
-              <option name="connectionEstablishingTime" value="3" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="511" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;1ff-g6POo4vhx7VxXILDBYzqe/STAc8&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 13 Apr 2026 14:48:47 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="a93705fe-2f7b-480f-8476-3dbe1fbd2a0d" />
-              <option name="message" value="OK" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;email&quot;:&quot;spider@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[&quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;],&quot;createdAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T14:48:47.004Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}}" />
-              <option name="size" value="511" />
-              <option name="time" value="277" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1776091769034" />
-          <option name="id" value="e0333c72-4912-4767-8158-0be39152d4af" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="formData">
-                    <list>
-                      <formDataParameterState>
-                        <option name="key" value="age" />
-                        <option name="value" value="20" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="skills" />
-                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="about" />
-                        <option name="value" value="i am jadugar" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="gender" />
-                        <option name="value" value="male" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="photoUrl" />
-                        <option name="type" value="FILE" />
-                        <option name="value" value="C:\Users\16479\Downloads\spiderman1776091688.jpg" />
-                      </formDataParameterState>
-                    </list>
-                  </option>
-                  <option name="type" value="FORM_DATA" />
-                </bodyState>
-              </option>
-              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
-              <option name="method" value="PATCH" />
-              <option name="name" value="edit profile" />
-              <option name="url" value="http://localhost:9999/api/edit/profile" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZDAwZGU0ZTViNzU5ZWEzZjVhZTY0IiwiZmlyc3ROYW1lIjoic3BpZGVyIiwibGFzdE5hbWUiOiJtYW4iLCJlbWFpbCI6InNwaWRlckBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vdGh1bWJzLmRyZWFtc3RpbWUuY29tL2IvZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci1pbGx1c3RyYXRpb24tZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci0xODk0OTUxNTguanBnIiwic2tpbGxzIjpbIltcImhvY2tleVwiLFwiY3JpY2tldFwiXSJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQyOjM4LjgxNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQ5OjI4Ljk1MloiLCJfX3YiOjAsImFib3V0IjoiaSBhbSBqYWR1Z2FyIiwiYWdlIjoyMCwiZ2VuZGVyIjoibWFsZSJ9fQ==" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;firstName&quot;: &quot;spider&quot;,&#10;    &quot;lastName&quot;: &quot;man&quot;,&#10;    &quot;email&quot;: &quot;spider@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T14:42:38.814Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T14:49:28.952Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
-              <option name="code" value="200" />
-              <option name="connectionEstablishingTime" value="6" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="511" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;1ff-p4mkq/vZrEQ9pldteT0mVz2jVII&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 13 Apr 2026 14:49:29 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="e0333c72-4912-4767-8158-0be39152d4af" />
-              <option name="message" value="OK" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;email&quot;:&quot;spider@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[&quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;],&quot;createdAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T14:49:28.952Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}}" />
-              <option name="size" value="511" />
-              <option name="time" value="324" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1776091797352" />
-          <option name="id" value="1b6c5080-a1ea-4997-9ec7-00d7f095b7c4" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="formData">
-                    <list>
-                      <formDataParameterState>
-                        <option name="key" value="age" />
-                        <option name="value" value="20" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="skills" />
-                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="about" />
-                        <option name="value" value="i am jadugar" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="gender" />
-                        <option name="value" value="male" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="photoUrl" />
-                        <option name="type" value="FILE" />
-                        <option name="value" value="C:\Users\16479\Desktop\zyra.jpg" />
-                      </formDataParameterState>
-                    </list>
-                  </option>
-                  <option name="type" value="FORM_DATA" />
-                </bodyState>
-              </option>
-              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
-              <option name="method" value="PATCH" />
-              <option name="name" value="edit profile" />
-              <option name="url" value="http://localhost:9999/api/edit/profile" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZDAwZGU0ZTViNzU5ZWEzZjVhZTY0IiwiZmlyc3ROYW1lIjoic3BpZGVyIiwibGFzdE5hbWUiOiJtYW4iLCJlbWFpbCI6InNwaWRlckBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vdGh1bWJzLmRyZWFtc3RpbWUuY29tL2IvZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci1pbGx1c3RyYXRpb24tZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci0xODk0OTUxNTguanBnIiwic2tpbGxzIjpbIltcImhvY2tleVwiLFwiY3JpY2tldFwiXSJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQyOjM4LjgxNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQ5OjU3LjI4MloiLCJfX3YiOjAsImFib3V0IjoiaSBhbSBqYWR1Z2FyIiwiYWdlIjoyMCwiZ2VuZGVyIjoibWFsZSJ9fQ==" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;firstName&quot;: &quot;spider&quot;,&#10;    &quot;lastName&quot;: &quot;man&quot;,&#10;    &quot;email&quot;: &quot;spider@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T14:42:38.814Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T14:49:57.282Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
-              <option name="code" value="200" />
-              <option name="connectionEstablishingTime" value="5" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="511" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;1ff-G8JpR+TQ3s3t38OkyJj9cBMB4/E&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 13 Apr 2026 14:49:57 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="1b6c5080-a1ea-4997-9ec7-00d7f095b7c4" />
-              <option name="message" value="OK" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;email&quot;:&quot;spider@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[&quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;],&quot;createdAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T14:49:57.282Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}}" />
-              <option name="size" value="511" />
-              <option name="time" value="249" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1776091891337" />
-          <option name="id" value="da18bd53-9bba-4427-a9ec-6ad455fb7ffe" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="formData">
-                    <list>
-                      <formDataParameterState>
-                        <option name="key" value="age" />
-                        <option name="value" value="20" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="skills" />
-                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="about" />
-                        <option name="value" value="i am jadugar" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="gender" />
-                        <option name="value" value="male" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="photoUrl" />
-                        <option name="type" value="FILE" />
-                        <option name="value" value="C:\Users\16479\Desktop\zyra.jpg" />
-                      </formDataParameterState>
-                    </list>
-                  </option>
-                  <option name="type" value="FORM_DATA" />
-                </bodyState>
-              </option>
-              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
-              <option name="method" value="PATCH" />
-              <option name="name" value="edit profile" />
-              <option name="url" value="http://localhost:9999/api/edit/profile" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZDAwZGU0ZTViNzU5ZWEzZjVhZTY0IiwiZmlyc3ROYW1lIjoic3BpZGVyIiwibGFzdE5hbWUiOiJtYW4iLCJlbWFpbCI6InNwaWRlckBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vdGh1bWJzLmRyZWFtc3RpbWUuY29tL2IvZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci1pbGx1c3RyYXRpb24tZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci0xODk0OTUxNTguanBnIiwic2tpbGxzIjpbIltcImhvY2tleVwiLFwiY3JpY2tldFwiXSJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQyOjM4LjgxNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjUxOjMxLjI1NVoiLCJfX3YiOjAsImFib3V0IjoiaSBhbSBqYWR1Z2FyIiwiYWdlIjoyMCwiZ2VuZGVyIjoibWFsZSJ9fQ==" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;firstName&quot;: &quot;spider&quot;,&#10;    &quot;lastName&quot;: &quot;man&quot;,&#10;    &quot;email&quot;: &quot;spider@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T14:42:38.814Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T14:51:31.255Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
-              <option name="code" value="200" />
-              <option name="connectionEstablishingTime" value="7" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="511" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;1ff-PcecVjM5Tp8uwaRE964oGdp9DPc&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 13 Apr 2026 14:51:31 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="da18bd53-9bba-4427-a9ec-6ad455fb7ffe" />
-              <option name="message" value="OK" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;email&quot;:&quot;spider@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[&quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;],&quot;createdAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T14:51:31.255Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}}" />
-              <option name="size" value="511" />
-              <option name="time" value="301" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1776092023230" />
-          <option name="id" value="c6bce051-564a-4cbb-8105-650f8ea266ff" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="formData">
-                    <list>
-                      <formDataParameterState>
-                        <option name="key" value="age" />
-                        <option name="value" value="20" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="skills" />
-                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="about" />
-                        <option name="value" value="i am jadugar" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="gender" />
-                        <option name="value" value="male" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="photoUrl" />
-                        <option name="type" value="FILE" />
-                        <option name="value" value="C:\Users\16479\Desktop\zyra.jpg" />
-                      </formDataParameterState>
-                    </list>
-                  </option>
-                  <option name="type" value="FORM_DATA" />
-                </bodyState>
-              </option>
-              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
-              <option name="method" value="PATCH" />
-              <option name="name" value="edit profile" />
-              <option name="url" value="http://localhost:9999/api/edit/profile" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZDAwZGU0ZTViNzU5ZWEzZjVhZTY0IiwiZmlyc3ROYW1lIjoic3BpZGVyIiwibGFzdE5hbWUiOiJtYW4iLCJlbWFpbCI6InNwaWRlckBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2Rjb2ZxY3lxOC9pbWFnZS91cGxvYWQvdjE3NzYwOTIwMjIvemh6dDdydmpjNXVhY2VvcWNiY2IuanBnIiwic2tpbGxzIjpbIltcImhvY2tleVwiLFwiY3JpY2tldFwiXSJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjQyOjM4LjgxNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTEzVDE0OjUzOjQzLjEzMloiLCJfX3YiOjAsImFib3V0IjoiaSBhbSBqYWR1Z2FyIiwiYWdlIjoyMCwiZ2VuZGVyIjoibWFsZSJ9fQ==" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;firstName&quot;: &quot;spider&quot;,&#10;    &quot;lastName&quot;: &quot;man&quot;,&#10;    &quot;email&quot;: &quot;spider@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776092022/zhzt7rvjc5uaceoqcbcb.jpg&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T14:42:38.814Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T14:53:43.132Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
-              <option name="code" value="200" />
-              <option name="connectionEstablishingTime" value="5" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="427" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;1ab-jqxbM5ElkwUX1KX1nIZaEN08uSA&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 13 Apr 2026 14:53:43 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="c6bce051-564a-4cbb-8105-650f8ea266ff" />
-              <option name="message" value="OK" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;email&quot;:&quot;spider@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776092022/zhzt7rvjc5uaceoqcbcb.jpg&quot;,&quot;skills&quot;:[&quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;],&quot;createdAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T14:53:43.132Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}}" />
-              <option name="size" value="427" />
-              <option name="time" value="1373" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1776092042200" />
-          <option name="id" value="0e893fbc-01fb-4b12-bece-03286ad6fbef" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="formData">
-                    <list>
-                      <formDataParameterState>
-                        <option name="key" value="age" />
-                        <option name="value" value="20" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="skills" />
-                        <option name="value" value="[&quot;hockey&quot;,&quot;cricket&quot;]" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="about" />
-                        <option name="value" value="i am jadugar" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="gender" />
-                        <option name="value" value="male" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="photoUrl" />
-                        <option name="type" value="FILE" />
-                        <option name="value" value="C:\Users\16479\Desktop\spiderman.webp" />
-                      </formDataParameterState>
-                    </list>
-                  </option>
-                  <option name="type" value="FORM_DATA" />
-                </bodyState>
-              </option>
-              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
-              <option name="method" value="PATCH" />
-              <option name="name" value="edit profile" />
-              <option name="url" value="http://localhost:9999/api/edit/profile" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZDAwZGU0ZTViNzU5ZWEzZjVhZTY0IiwiZmlyc3ROYW1lIjoic3BpZGVyIiwibGFzdE5hbWUiOiJtYW4iLCJlbWFpbCI6InNwaWRlckBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2Rjb2ZxY3lxOC9pbWFnZS91cGxvYWQvdjE3NzYwOTIwNDEvbGFiZzF2cDh3bWI4NHY4ajlobmkud2VicCIsInNraWxscyI6WyJbXCJob2NrZXlcIixcImNyaWNrZXRcIl0iXSwiY3JlYXRlZEF0IjoiMjAyNi0wNC0xM1QxNDo0MjozOC44MTRaIiwidXBkYXRlZEF0IjoiMjAyNi0wNC0xM1QxNDo1NDowMi4xMTlaIiwiX192IjowLCJhYm91dCI6ImkgYW0gamFkdWdhciIsImFnZSI6MjAsImdlbmRlciI6Im1hbGUifX0=" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;firstName&quot;: &quot;spider&quot;,&#10;    &quot;lastName&quot;: &quot;man&quot;,&#10;    &quot;email&quot;: &quot;spider@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776092041/labg1vp8wmb84v8j9hni.webp&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T14:42:38.814Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-13T14:54:02.119Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
-              <option name="code" value="200" />
-              <option name="connectionEstablishingTime" value="4" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="428" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;1ac-68MAzTl3op5KRQn/kQG0AH4n7qk&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 13 Apr 2026 14:54:02 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="0e893fbc-01fb-4b12-bece-03286ad6fbef" />
-              <option name="message" value="OK" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;email&quot;:&quot;spider@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776092041/labg1vp8wmb84v8j9hni.webp&quot;,&quot;skills&quot;:[&quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;],&quot;createdAt&quot;:&quot;2026-04-13T14:42:38.814Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-13T14:54:02.119Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}}" />
-              <option name="size" value="428" />
-              <option name="time" value="1219" />
             </responseState>
           </option>
           <option name="workspaceId" value="drafts" />
@@ -2827,76 +1977,6 @@
           <option name="workspaceId" value="drafts" />
         </requestHistoryState>
         <requestHistoryState>
-          <option name="dateTime" value="1776128033048" />
-          <option name="id" value="0645a3dd-a6ca-4e69-805a-1ce97bd31050" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  //  &quot;firstName&quot;: &quot;harry&quot;,&#10;  //  &quot;lastName&quot;: &quot;potter&quot;,&#10;  &quot;option&quot;: &quot;harry@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;harry@12&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="id" value="bd41dbc0-215e-4b2e-8438-effd5a1e6017" />
-              <option name="method" value="POST" />
-              <option name="name" value="login user" />
-              <option name="url" value="http://localhost:9999/api/user/login" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiTG9naW4gc3VjY2Vzc2Z1bGx5In0=" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Login successfully&quot;&#10;}" />
-              <option name="code" value="200" />
-              <option name="connectionEstablishingTime" value="1" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Set-Cookie" />
-                    <option name="value" value="token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGJlM2M1NjY4NGEzNGZmMmU0MWNlOSIsImlhdCI6MTc3NjEyODAzMywiZXhwIjoxNzc2OTkyMDMzfQ.py4MHR1XwChkLN3VY6hNn6C-lkUPsGjVAV47rBSEems; Max-Age=864000; Path=/; Expires=Fri, 24 Apr 2026 00:53:53 GMT; HttpOnly; SameSite=Strict" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="32" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;20-1UOGHh8Wx9PTVQrIjyvCP5U06IQ&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Tue, 14 Apr 2026 00:53:53 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="0645a3dd-a6ca-4e69-805a-1ce97bd31050" />
-              <option name="message" value="OK" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Login successfully&quot;}" />
-              <option name="size" value="32" />
-              <option name="time" value="89" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
           <option name="dateTime" value="1776128052943" />
           <option name="id" value="4cf1beb8-436b-4b98-8cb4-3e06af9b6a2e" />
           <option name="request">
@@ -3509,76 +2589,6 @@
           <option name="workspaceId" value="drafts" />
         </requestHistoryState>
         <requestHistoryState>
-          <option name="dateTime" value="1776128880739" />
-          <option name="id" value="78755dae-9966-4250-afad-081b58f75e1b" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  //  &quot;firstName&quot;: &quot;harry&quot;,&#10;  //  &quot;lastName&quot;: &quot;potter&quot;,&#10;  &quot;option&quot;: &quot;elon@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;elon@12&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="id" value="bd41dbc0-215e-4b2e-8438-effd5a1e6017" />
-              <option name="method" value="POST" />
-              <option name="name" value="login user" />
-              <option name="url" value="http://localhost:9999/api/user/login" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiTG9naW4gc3VjY2Vzc2Z1bGx5In0=" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Login successfully&quot;&#10;}" />
-              <option name="code" value="200" />
-              <option name="connectionEstablishingTime" value="2" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Set-Cookie" />
-                    <option name="value" value="token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGQ2YTU4OGZiMjQxZjJlNmE1ZmYyNiIsImlhdCI6MTc3NjEyODg4MCwiZXhwIjoxNzc2OTkyODgwfQ.8EUy7H2KmJIiOeQD7Jhe_gnMAYy0U71rUFC9hWwS3yA; Max-Age=864000; Path=/; Expires=Fri, 24 Apr 2026 01:08:00 GMT; HttpOnly; SameSite=Strict" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="32" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;20-1UOGHh8Wx9PTVQrIjyvCP5U06IQ&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Tue, 14 Apr 2026 01:08:00 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="78755dae-9966-4250-afad-081b58f75e1b" />
-              <option name="message" value="OK" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Login successfully&quot;}" />
-              <option name="size" value="32" />
-              <option name="time" value="110" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
           <option name="dateTime" value="1776128888604" />
           <option name="id" value="3286aa22-606b-4a1c-8b9a-b092d48d3591" />
           <option name="request">
@@ -3694,186 +2704,6 @@
               <option name="rawBodyString" value="{&quot;message&quot;:&quot;success&quot;,&quot;friends&quot;:[{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776092041/labg1vp8wmb84v8j9hni.webp&quot;,&quot;skills&quot;:[&quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;],&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}]}" />
               <option name="size" value="293" />
               <option name="time" value="344" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1776129185702" />
-          <option name="id" value="06e8ac6d-8937-46fb-a847-e0b0a27a20b5" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="formData">
-                    <list>
-                      <formDataParameterState>
-                        <option name="key" value="age" />
-                        <option name="value" value="20" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="skills" />
-                        <option name="value" value="cricket,hocket" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="about" />
-                        <option name="value" value="i am jadugar" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="gender" />
-                        <option name="value" value="male" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="photoUrl" />
-                        <option name="type" value="FILE" />
-                        <option name="value" value="C:\Users\16479\Desktop\spiderman.webp" />
-                      </formDataParameterState>
-                    </list>
-                  </option>
-                  <option name="type" value="FORM_DATA" />
-                </bodyState>
-              </option>
-              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
-              <option name="method" value="PATCH" />
-              <option name="name" value="edit profile" />
-              <option name="url" value="http://localhost:9999/api/edit/profile" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZDZhNTg4ZmIyNDFmMmU2YTVmZjI2IiwiZmlyc3ROYW1lIjoiZWxvbiIsImxhc3ROYW1lIjoibXVzayIsImVtYWlsIjoiZWxvbkBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2Rjb2ZxY3lxOC9pbWFnZS91cGxvYWQvdjE3NzYxMjkxODQveXdwZ3k2bHl3Nm1rMGpmbnVlbGMud2VicCIsInNraWxscyI6WyJjcmlja2V0LGhvY2tldCJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTEzVDIyOjEyOjQwLjE1MloiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTE0VDAxOjEzOjA1LjYwNFoiLCJfX3YiOjAsImFib3V0IjoiaSBhbSBqYWR1Z2FyIiwiYWdlIjoyMCwiZ2VuZGVyIjoibWFsZSJ9fQ==" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd6a588fb241f2e6a5ff26&quot;,&#10;    &quot;firstName&quot;: &quot;elon&quot;,&#10;    &quot;lastName&quot;: &quot;musk&quot;,&#10;    &quot;email&quot;: &quot;elon@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776129184/ywpgy6lyw6mk0jfnuelc.webp&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;cricket,hocket&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T22:12:40.152Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-14T01:13:05.604Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
-              <option name="code" value="200" />
-              <option name="connectionEstablishingTime" value="12" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="415" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;19f-vnki3I0q7SRceauc7P5VvXD2+QM&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Tue, 14 Apr 2026 01:13:05 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="06e8ac6d-8937-46fb-a847-e0b0a27a20b5" />
-              <option name="message" value="OK" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dd6a588fb241f2e6a5ff26&quot;,&quot;firstName&quot;:&quot;elon&quot;,&quot;lastName&quot;:&quot;musk&quot;,&quot;email&quot;:&quot;elon@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776129184/ywpgy6lyw6mk0jfnuelc.webp&quot;,&quot;skills&quot;:[&quot;cricket,hocket&quot;],&quot;createdAt&quot;:&quot;2026-04-13T22:12:40.152Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-14T01:13:05.604Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}}" />
-              <option name="size" value="415" />
-              <option name="time" value="1379" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1776129201523" />
-          <option name="id" value="ca3781d0-889f-4aa0-bfe8-c7cdea7a1205" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="formData">
-                    <list>
-                      <formDataParameterState>
-                        <option name="key" value="age" />
-                        <option name="value" value="20" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="skills" />
-                        <option name="value" value="cricket,hockey,basketball" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="about" />
-                        <option name="value" value="i am jadugar" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="gender" />
-                        <option name="value" value="male" />
-                      </formDataParameterState>
-                      <formDataParameterState>
-                        <option name="key" value="photoUrl" />
-                        <option name="type" value="FILE" />
-                        <option name="value" value="C:\Users\16479\Desktop\spiderman.webp" />
-                      </formDataParameterState>
-                    </list>
-                  </option>
-                  <option name="type" value="FORM_DATA" />
-                </bodyState>
-              </option>
-              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
-              <option name="method" value="PATCH" />
-              <option name="name" value="edit profile" />
-              <option name="url" value="http://localhost:9999/api/edit/profile" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZDZhNTg4ZmIyNDFmMmU2YTVmZjI2IiwiZmlyc3ROYW1lIjoiZWxvbiIsImxhc3ROYW1lIjoibXVzayIsImVtYWlsIjoiZWxvbkBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2Rjb2ZxY3lxOC9pbWFnZS91cGxvYWQvdjE3NzYxMjkyMDAvbGpsYjN1dXV5YmszZGRxaXRvenMud2VicCIsInNraWxscyI6WyJjcmlja2V0LGhvY2tleSxiYXNrZXRiYWxsIl0sImNyZWF0ZWRBdCI6IjIwMjYtMDQtMTNUMjI6MTI6NDAuMTUyWiIsInVwZGF0ZWRBdCI6IjIwMjYtMDQtMTRUMDE6MTM6MjEuNDUzWiIsIl9fdiI6MCwiYWJvdXQiOiJpIGFtIGphZHVnYXIiLCJhZ2UiOjIwLCJnZW5kZXIiOiJtYWxlIn19" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dd6a588fb241f2e6a5ff26&quot;,&#10;    &quot;firstName&quot;: &quot;elon&quot;,&#10;    &quot;lastName&quot;: &quot;musk&quot;,&#10;    &quot;email&quot;: &quot;elon@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776129200/ljlb3uuuybk3ddqitozs.webp&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;cricket,hockey,basketball&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-13T22:12:40.152Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-14T01:13:21.453Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 20,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
-              <option name="code" value="200" />
-              <option name="connectionEstablishingTime" value="4" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="426" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;1aa-nuM8j/szwUa8Afi4sZ9nuEOjS9o&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Tue, 14 Apr 2026 01:13:21 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="ca3781d0-889f-4aa0-bfe8-c7cdea7a1205" />
-              <option name="message" value="OK" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dd6a588fb241f2e6a5ff26&quot;,&quot;firstName&quot;:&quot;elon&quot;,&quot;lastName&quot;:&quot;musk&quot;,&quot;email&quot;:&quot;elon@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776129200/ljlb3uuuybk3ddqitozs.webp&quot;,&quot;skills&quot;:[&quot;cricket,hockey,basketball&quot;],&quot;createdAt&quot;:&quot;2026-04-13T22:12:40.152Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-14T01:13:21.453Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;}}" />
-              <option name="size" value="426" />
-              <option name="time" value="1011" />
             </responseState>
           </option>
           <option name="workspaceId" value="drafts" />
@@ -6021,66 +4851,6 @@
           <option name="workspaceId" value="drafts" />
         </requestHistoryState>
         <requestHistoryState>
-          <option name="dateTime" value="1776182636918" />
-          <option name="id" value="a9d3cbd8-0af9-4dc6-a8ca-a9b6a15da55d" />
-          <option name="request">
-            <requestState>
-              <option name="id" value="fe25865e-1d8e-4448-824a-80596da14d96" />
-              <option name="method" value="GET" />
-              <option name="name" value="core" />
-              <option name="url" value="http://localhost:9999/api/connection/core" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoic3VjY2VzcyIsInVuaXF1ZUNvbm5lY3Rpb25zIjpbIjY5ZGQ2YTU4OGZiMjQxZjJlNmE1ZmYyNjY5ZGQwMGRlNGU1Yjc1OWVhM2Y1YWU2NCIsIjY5ZGQ1MWMwNGViZWUyYTQ5NWM0NDFkMTY5ZGQwMGRlNGU1Yjc1OWVhM2Y1YWU2NCIsIjY5ZGQwMGRlNGU1Yjc1OWVhM2Y1YWU2NDY5ZGJlM2M1NjY4NGEzNGZmMmU0MWNlOSJdLCJteUlkIjoiNjlkZDAwZGU0ZTViNzU5ZWEzZjVhZTY0In0=" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;success&quot;,&#10;  &quot;uniqueConnections&quot;: [&#10;    &quot;69dd6a588fb241f2e6a5ff2669dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;69dd51c04ebee2a495c441d169dd00de4e5b759ea3f5ae64&quot;,&#10;    &quot;69dd00de4e5b759ea3f5ae6469dbe3c56684a34ff2e41ce9&quot;&#10;  ],&#10;  &quot;myId&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;&#10;}" />
-              <option name="code" value="200" />
-              <option name="connectionEstablishingTime" value="3" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="X-Powered-By" />
-                    <option name="value" value="Express" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="230" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="ETag" />
-                    <option name="value" value="W/&quot;e6-xHmzA3rTdpDURTNTP56oAjipkVQ&quot;" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Tue, 14 Apr 2026 16:03:56 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Keep-Alive" />
-                    <option name="value" value="timeout=5" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="a9d3cbd8-0af9-4dc6-a8ca-a9b6a15da55d" />
-              <option name="message" value="OK" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;success&quot;,&quot;uniqueConnections&quot;:[&quot;69dd6a588fb241f2e6a5ff2669dd00de4e5b759ea3f5ae64&quot;,&quot;69dd51c04ebee2a495c441d169dd00de4e5b759ea3f5ae64&quot;,&quot;69dd00de4e5b759ea3f5ae6469dbe3c56684a34ff2e41ce9&quot;],&quot;myId&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;}" />
-              <option name="size" value="230" />
-              <option name="time" value="321" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
           <option name="dateTime" value="1776182702616" />
           <option name="id" value="12fd33de-7503-46fe-93a3-b4872569472e" />
           <option name="request">
@@ -6970,6 +5740,1398 @@
               <option name="rawBodyString" value="{&quot;user&quot;:{&quot;_id&quot;:&quot;69de66d31d1c768efae493bd&quot;,&quot;firstName&quot;:&quot;donald&quot;,&quot;lastName&quot;:&quot;trump&quot;,&quot;email&quot;:&quot;donald@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[],&quot;createdAt&quot;:&quot;2026-04-14T16:09:55.162Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-14T16:09:55.162Z&quot;,&quot;__v&quot;:0}}" />
               <option name="size" value="392" />
               <option name="time" value="151" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776288504498" />
+          <option name="id" value="974bd3ab-8ae0-419d-811b-5562caf1d326" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="fe25865e-1d8e-4448-824a-80596da14d96" />
+              <option name="method" value="GET" />
+              <option name="name" value="core" />
+              <option name="url" value="http://localhost:9999/api/connection/core" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoic3VjY2VzcyIsIm5vdF90b19hZGQiOlsiNjlkYmUzYzU2Njg0YTM0ZmYyZTQxY2U5Il0sIm1lSWQiOiI2OWRlNjZkMzFkMWM3NjhlZmFlNDkzYmQiLCJyZW1haW5pbmdVc2VycyI6W3siX2lkIjoiNjlkZDAwZGU0ZTViNzU5ZWEzZjVhZTY0IiwiZmlyc3ROYW1lIjoic3BpZGVyIiwibGFzdE5hbWUiOiJtYW4iLCJwaG90b1VybCI6Imh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2Rjb2ZxY3lxOC9pbWFnZS91cGxvYWQvdjE3NzYwOTIwNDEvbGFiZzF2cDh3bWI4NHY4ajlobmkud2VicCIsInNraWxscyI6WyJbXCJob2NrZXlcIixcImNyaWNrZXRcIl0iXSwiYWJvdXQiOiJpIGFtIGphZHVnYXIiLCJhZ2UiOjIwLCJnZW5kZXIiOiJtYWxlIn0seyJfaWQiOiI2OWRkNTFjMDRlYmVlMmE0OTVjNDQxZDEiLCJmaXJzdE5hbWUiOiJodWxrIiwibGFzdE5hbWUiOiJzaW5naCIsInBob3RvVXJsIjoiaHR0cHM6Ly90aHVtYnMuZHJlYW1zdGltZS5jb20vYi9kZWZhdWx0LXByb2ZpbGUtcGljdHVyZS1hdmF0YXItcGhvdG8tcGxhY2Vob2xkZXItdmVjdG9yLWlsbHVzdHJhdGlvbi1kZWZhdWx0LXByb2ZpbGUtcGljdHVyZS1hdmF0YXItcGhvdG8tcGxhY2Vob2xkZXItdmVjdG9yLTE4OTQ5NTE1OC5qcGciLCJza2lsbHMiOltdfSx7Il9pZCI6IjY5ZGQ2YTU4OGZiMjQxZjJlNmE1ZmYyNiIsImZpcnN0TmFtZSI6ImVsb24iLCJsYXN0TmFtZSI6Im11c2siLCJwaG90b1VybCI6Imh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2Rjb2ZxY3lxOC9pbWFnZS91cGxvYWQvdjE3NzYxMjkyMDAvbGpsYjN1dXV5YmszZGRxaXRvenMud2VicCIsInNraWxscyI6WyJjcmlja2V0LGhvY2tleSxiYXNrZXRiYWxsIl0sImFib3V0IjoiaSBhbSBqYWR1Z2FyIiwiYWdlIjoyMCwiZ2VuZGVyIjoibWFsZSJ9LHsiX2lkIjoiNjlkZWQ0Y2Y1ZGU1YmI2NDQ2OGYwZjM4IiwiZmlyc3ROYW1lIjoiaXJvbiIsImxhc3ROYW1lIjoibWFuIiwicGhvdG9VcmwiOiJodHRwczovL3RodW1icy5kcmVhbXN0aW1lLmNvbS9iL2RlZmF1bHQtcHJvZmlsZS1waWN0dXJlLWF2YXRhci1waG90by1wbGFjZWhvbGRlci12ZWN0b3ItaWxsdXN0cmF0aW9uLWRlZmF1bHQtcHJvZmlsZS1waWN0dXJlLWF2YXRhci1waG90by1wbGFjZWhvbGRlci12ZWN0b3ItMTg5NDk1MTU4LmpwZyIsInNraWxscyI6W119LHsiX2lkIjoiNjlkZmE5YzE4YTdmMjg1MGVmNGQ0NzRiIiwiZmlyc3ROYW1lIjoiYmF0IiwibGFzdE5hbWUiOiJtYW4iLCJwaG90b1VybCI6Imh0dHBzOi8vdGh1bWJzLmRyZWFtc3RpbWUuY29tL2IvZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci1pbGx1c3RyYXRpb24tZGVmYXVsdC1wcm9maWxlLXBpY3R1cmUtYXZhdGFyLXBob3RvLXBsYWNlaG9sZGVyLXZlY3Rvci0xODk0OTUxNTguanBnIiwic2tpbGxzIjpbXX0seyJfaWQiOiI2OWRmYzc4MjhhN2YyODUwZWY0ZDQ3NGMiLCJmaXJzdE5hbWUiOiJjYXB0YWluIiwibGFzdE5hbWUiOiJhbWVyaWNhIiwicGhvdG9VcmwiOiJodHRwczovL3RodW1icy5kcmVhbXN0aW1lLmNvbS9iL2RlZmF1bHQtcHJvZmlsZS1waWN0dXJlLWF2YXRhci1waG90by1wbGFjZWhvbGRlci12ZWN0b3ItaWxsdXN0cmF0aW9uLWRlZmF1bHQtcHJvZmlsZS1waWN0dXJlLWF2YXRhci1waG90by1wbGFjZWhvbGRlci12ZWN0b3ItMTg5NDk1MTU4LmpwZyIsInNraWxscyI6W119XX0=" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;success&quot;,&#10;  &quot;not_to_add&quot;: [&#10;    &quot;69dbe3c56684a34ff2e41ce9&quot;&#10;  ],&#10;  &quot;meId&quot;: &quot;69de66d31d1c768efae493bd&quot;,&#10;  &quot;remainingUsers&quot;: [&#10;    {&#10;      &quot;_id&quot;: &quot;69dd00de4e5b759ea3f5ae64&quot;,&#10;      &quot;firstName&quot;: &quot;spider&quot;,&#10;      &quot;lastName&quot;: &quot;man&quot;,&#10;      &quot;photoUrl&quot;: &quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776092041/labg1vp8wmb84v8j9hni.webp&quot;,&#10;      &quot;skills&quot;: [&#10;        &quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;&#10;      ],&#10;      &quot;about&quot;: &quot;i am jadugar&quot;,&#10;      &quot;age&quot;: 20,&#10;      &quot;gender&quot;: &quot;male&quot;&#10;    },&#10;    {&#10;      &quot;_id&quot;: &quot;69dd51c04ebee2a495c441d1&quot;,&#10;      &quot;firstName&quot;: &quot;hulk&quot;,&#10;      &quot;lastName&quot;: &quot;singh&quot;,&#10;      &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;      &quot;skills&quot;: []&#10;    },&#10;    {&#10;      &quot;_id&quot;: &quot;69dd6a588fb241f2e6a5ff26&quot;,&#10;      &quot;firstName&quot;: &quot;elon&quot;,&#10;      &quot;lastName&quot;: &quot;musk&quot;,&#10;      &quot;photoUrl&quot;: &quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776129200/ljlb3uuuybk3ddqitozs.webp&quot;,&#10;      &quot;skills&quot;: [&#10;        &quot;cricket,hockey,basketball&quot;&#10;      ],&#10;      &quot;about&quot;: &quot;i am jadugar&quot;,&#10;      &quot;age&quot;: 20,&#10;      &quot;gender&quot;: &quot;male&quot;&#10;    },&#10;    {&#10;      &quot;_id&quot;: &quot;69ded4cf5de5bb64468f0f38&quot;,&#10;      &quot;firstName&quot;: &quot;iron&quot;,&#10;      &quot;lastName&quot;: &quot;man&quot;,&#10;      &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;      &quot;skills&quot;: []&#10;    },&#10;    {&#10;      &quot;_id&quot;: &quot;69dfa9c18a7f2850ef4d474b&quot;,&#10;      &quot;firstName&quot;: &quot;bat&quot;,&#10;      &quot;lastName&quot;: &quot;man&quot;,&#10;      &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;      &quot;skills&quot;: []&#10;    },&#10;    {&#10;      &quot;_id&quot;: &quot;69dfc7828a7f2850ef4d474c&quot;,&#10;      &quot;firstName&quot;: &quot;captain&quot;,&#10;      &quot;lastName&quot;: &quot;america&quot;,&#10;      &quot;photoUrl&quot;: &quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&#10;      &quot;skills&quot;: []&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="128" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="http://localhost:5173" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="1712" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;6b0-1XwDxB/lEtsWBeF57MyxltpzSSs&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 Apr 2026 21:28:24 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="974bd3ab-8ae0-419d-811b-5562caf1d326" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;success&quot;,&quot;not_to_add&quot;:[&quot;69dbe3c56684a34ff2e41ce9&quot;],&quot;meId&quot;:&quot;69de66d31d1c768efae493bd&quot;,&quot;remainingUsers&quot;:[{&quot;_id&quot;:&quot;69dd00de4e5b759ea3f5ae64&quot;,&quot;firstName&quot;:&quot;spider&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776092041/labg1vp8wmb84v8j9hni.webp&quot;,&quot;skills&quot;:[&quot;[\&quot;hockey\&quot;,\&quot;cricket\&quot;]&quot;],&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;},{&quot;_id&quot;:&quot;69dd51c04ebee2a495c441d1&quot;,&quot;firstName&quot;:&quot;hulk&quot;,&quot;lastName&quot;:&quot;singh&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[]},{&quot;_id&quot;:&quot;69dd6a588fb241f2e6a5ff26&quot;,&quot;firstName&quot;:&quot;elon&quot;,&quot;lastName&quot;:&quot;musk&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776129200/ljlb3uuuybk3ddqitozs.webp&quot;,&quot;skills&quot;:[&quot;cricket,hockey,basketball&quot;],&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:20,&quot;gender&quot;:&quot;male&quot;},{&quot;_id&quot;:&quot;69ded4cf5de5bb64468f0f38&quot;,&quot;firstName&quot;:&quot;iron&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[]},{&quot;_id&quot;:&quot;69dfa9c18a7f2850ef4d474b&quot;,&quot;firstName&quot;:&quot;bat&quot;,&quot;lastName&quot;:&quot;man&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[]},{&quot;_id&quot;:&quot;69dfc7828a7f2850ef4d474c&quot;,&quot;firstName&quot;:&quot;captain&quot;,&quot;lastName&quot;:&quot;america&quot;,&quot;photoUrl&quot;:&quot;https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg&quot;,&quot;skills&quot;:[]}]}" />
+              <option name="size" value="1712" />
+              <option name="time" value="429" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776292464242" />
+          <option name="id" value="7714b4b2-5400-4282-af75-8aa46271682c" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="9ec44cb9-b380-4357-8e5a-2161cd4c51fa" />
+              <option name="method" value="GET" />
+              <option name="name" value="logout user" />
+              <option name="url" value="http://localhost:9999/api/user/logout" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiTG9nb3V0IHN1Y2Nlc3NmdWwifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Logout successful&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="http://localhost:5173" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="token=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="31" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1f-vYmtThEV0qgPmOaoi5WLoJuDA80&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 Apr 2026 22:34:24 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="7714b4b2-5400-4282-af75-8aa46271682c" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Logout successful&quot;}" />
+              <option name="size" value="31" />
+              <option name="time" value="242" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776292489917" />
+          <option name="id" value="19a097cd-1510-49a0-b5a8-32389c17cab1" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  //  &quot;firstName&quot;: &quot;harry&quot;,&#10;  //  &quot;lastName&quot;: &quot;potter&quot;,&#10;  &quot;option&quot;: &quot;captain@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;captain@12&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="bd41dbc0-215e-4b2e-8438-effd5a1e6017" />
+              <option name="method" value="POST" />
+              <option name="name" value="login user" />
+              <option name="url" value="http://localhost:9999/api/user/login" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiSW52YWxpZCBjcmVkZW50aWFscyJ9" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Invalid credentials&quot;&#10;}" />
+              <option name="code" value="400" />
+              <option name="connectionEstablishingTime" value="14" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="http://localhost:5173" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="33" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;21-dBEoW0UmTF+EGUMaprEp9/8zNNA&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 Apr 2026 22:34:49 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="19a097cd-1510-49a0-b5a8-32389c17cab1" />
+              <option name="message" value="Bad Request" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Invalid credentials&quot;}" />
+              <option name="size" value="33" />
+              <option name="time" value="147" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776292523623" />
+          <option name="id" value="6ec51fe6-cfe3-414d-bc21-66223bd3079d" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  //  &quot;firstName&quot;: &quot;harry&quot;,&#10;  //  &quot;lastName&quot;: &quot;potter&quot;,&#10;  &quot;option&quot;: &quot;captain@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;captain&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="bd41dbc0-215e-4b2e-8438-effd5a1e6017" />
+              <option name="method" value="POST" />
+              <option name="name" value="login user" />
+              <option name="url" value="http://localhost:9999/api/user/login" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiTG9naW4gc3VjY2Vzc2Z1bGx5IiwidXNlciI6eyJfaWQiOiI2OWRmYzc4MjhhN2YyODUwZWY0ZDQ3NGMiLCJmaXJzdE5hbWUiOiJjYXB0YWluIiwibGFzdE5hbWUiOiJhbWVyaWNhIiwiZW1haWwiOiJjYXB0YWluQGdtYWlsLmNvbSIsInBob3RvVXJsIjoiaHR0cHM6Ly9pbWdzLnNlYXJjaC5icmF2ZS5jb20vcmpGcGxDWVZyNl9qOHU2SFJyWFFOcmZXNU1RWm1vN0hRSkk4ejZTVXl2US9yczpmaXQ6ODYwOjA6MDowL2c6Y2UvYUhSMGNITTZMeTkzWVd4cy9jR0Z3WlhKallYWmxMbU52L2JTOTNjQzkzY0RVeE56TTEvTXpFdWFuQm4iLCJza2lsbHMiOltdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTE1VDE3OjE0OjQyLjMyNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTE1VDE3OjE0OjQyLjMyNFoiLCJfX3YiOjB9fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Login successfully&quot;,&#10;  &quot;user&quot;: {&#10;    &quot;_id&quot;: &quot;69dfc7828a7f2850ef4d474c&quot;,&#10;    &quot;firstName&quot;: &quot;captain&quot;,&#10;    &quot;lastName&quot;: &quot;america&quot;,&#10;    &quot;email&quot;: &quot;captain@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://imgs.search.brave.com/rjFplCYVr6_j8u6HRrXQNrfW5MQZmo7HQJI8z6SUyvQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDUxNzM1/MzEuanBn&quot;,&#10;    &quot;skills&quot;: [],&#10;    &quot;createdAt&quot;: &quot;2026-04-15T17:14:42.324Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-15T17:14:42.324Z&quot;,&#10;    &quot;__v&quot;: 0&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="4" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="http://localhost:5173" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Set-Cookie" />
+                    <option name="value" value="token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGZjNzgyOGE3ZjI4NTBlZjRkNDc0YyIsImlhdCI6MTc3NjI5MjUyMywiZXhwIjoxNzc3MTU2NTIzfQ.jM0uiLsDG2P8AMQeXuH1Fgp7BZaZtLihnLsRJyhzjiQ; Max-Age=864000; Path=/; Expires=Sat, 25 Apr 2026 22:35:23 GMT; HttpOnly; SameSite=Strict" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="412" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;19c-ts5Rzjq6NsioQ5hqv1dABhg4N6w&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 Apr 2026 22:35:23 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="6ec51fe6-cfe3-414d-bc21-66223bd3079d" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Login successfully&quot;,&quot;user&quot;:{&quot;_id&quot;:&quot;69dfc7828a7f2850ef4d474c&quot;,&quot;firstName&quot;:&quot;captain&quot;,&quot;lastName&quot;:&quot;america&quot;,&quot;email&quot;:&quot;captain@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://imgs.search.brave.com/rjFplCYVr6_j8u6HRrXQNrfW5MQZmo7HQJI8z6SUyvQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDUxNzM1/MzEuanBn&quot;,&quot;skills&quot;:[],&quot;createdAt&quot;:&quot;2026-04-15T17:14:42.324Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-15T17:14:42.324Z&quot;,&quot;__v&quot;:0}}" />
+              <option name="size" value="412" />
+              <option name="time" value="95" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776292768060" />
+          <option name="id" value="d07615bc-c25e-49bd-95f3-59f5b1bdb8bc" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="29" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills" />
+                        <option name="value" value="cricket,fly,war,super-hero" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\spiderman.webp" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="Captain America is a superhero created by Joe Simon. " />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiRXJyb3IgdXBkYXRpbmcgcHJvZmlsZTogQ2FzdCB0byBzdHJpbmcgZmFpbGVkIGZvciB2YWx1ZSBcIltcbiAgJ2kgYW0gamFkdWdhcicsXG4gICdDYXB0YWluIEFtZXJpY2EgaXMgYSBzdXBlcmhlcm8gY3JlYXRlZCBieSBKb2UgU2ltb24uICdcbl1cIiAodHlwZSBBcnJheSkgYXQgcGF0aCBcImFib3V0XCIifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Error updating profile: Cast to string failed for value \&quot;[\n  'i am jadugar',\n  'Captain America is a superhero created by Joe Simon. '\n]\&quot; (type Array) at path \&quot;about\&quot;&quot;&#10;}" />
+              <option name="code" value="500" />
+              <option name="connectionEstablishingTime" value="4" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="http://localhost:5173" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="187" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;bb-gN58og1V74Gi3Dzw23tznB1v+JM&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 Apr 2026 22:39:28 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="d07615bc-c25e-49bd-95f3-59f5b1bdb8bc" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Error updating profile: Cast to string failed for value \&quot;[\n  'i am jadugar',\n  'Captain America is a superhero created by Joe Simon. '\n]\&quot; (type Array) at path \&quot;about\&quot;&quot;}" />
+              <option name="size" value="187" />
+              <option name="time" value="1004" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776292804926" />
+          <option name="id" value="6c4891e4-43ff-4994-aee1-e24510268a75" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="29" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills" />
+                        <option name="value" value="cricket,fly,war,super-hero" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\spiderman.webp" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="disabled" value="true" />
+                        <option name="key" value="about" />
+                        <option name="value" value="Captain America is a superhero created by Joe Simon. " />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZmM3ODI4YTdmMjg1MGVmNGQ0NzRjIiwiZmlyc3ROYW1lIjoiY2FwdGFpbiIsImxhc3ROYW1lIjoiYW1lcmljYSIsImVtYWlsIjoiY2FwdGFpbkBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2Rjb2ZxY3lxOC9pbWFnZS91cGxvYWQvdjE3NzYyOTI4MDQvY2p4MDZzN3A2NzRqeXcyaXAyYnQud2VicCIsInNraWxscyI6WyJjcmlja2V0LGZseSx3YXIsc3VwZXItaGVybyJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTE1VDE3OjE0OjQyLjMyNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTE1VDIyOjQwOjA0LjgzMFoiLCJfX3YiOjAsImFib3V0IjoiaSBhbSBqYWR1Z2FyIiwiYWdlIjoyOSwiZ2VuZGVyIjoibWFsZSJ9fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dfc7828a7f2850ef4d474c&quot;,&#10;    &quot;firstName&quot;: &quot;captain&quot;,&#10;    &quot;lastName&quot;: &quot;america&quot;,&#10;    &quot;email&quot;: &quot;captain@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776292804/cjx06s7p674jyw2ip2bt.webp&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;cricket,fly,war,super-hero&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-15T17:14:42.324Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-15T22:40:04.830Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;i am jadugar&quot;,&#10;    &quot;age&quot;: 29,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="http://localhost:5173" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="436" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;1b4-QOjzvZ4q0zhOp8NDEIMgLiVNUeI&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 Apr 2026 22:40:04 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="6c4891e4-43ff-4994-aee1-e24510268a75" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dfc7828a7f2850ef4d474c&quot;,&quot;firstName&quot;:&quot;captain&quot;,&quot;lastName&quot;:&quot;america&quot;,&quot;email&quot;:&quot;captain@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776292804/cjx06s7p674jyw2ip2bt.webp&quot;,&quot;skills&quot;:[&quot;cricket,fly,war,super-hero&quot;],&quot;createdAt&quot;:&quot;2026-04-15T17:14:42.324Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-15T22:40:04.830Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;i am jadugar&quot;,&quot;age&quot;:29,&quot;gender&quot;:&quot;male&quot;}}" />
+              <option name="size" value="436" />
+              <option name="time" value="971" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776292857375" />
+          <option name="id" value="035e7f9b-1481-4cdd-bdce-ebea877c890d" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="29" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills" />
+                        <option name="value" value="cricket,fly,war,super-hero" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="disabled" value="true" />
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\spiderman.webp" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel." />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZmM3ODI4YTdmMjg1MGVmNGQ0NzRjIiwiZmlyc3ROYW1lIjoiY2FwdGFpbiIsImxhc3ROYW1lIjoiYW1lcmljYSIsImVtYWlsIjoiY2FwdGFpbkBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2Rjb2ZxY3lxOC9pbWFnZS91cGxvYWQvdjE3NzYyOTI4NTYvbG9oZW9ubGNtZzU3a3BjaWE5bXYud2VicCIsInNraWxscyI6WyJjcmlja2V0LGZseSx3YXIsc3VwZXItaGVybyJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTE1VDE3OjE0OjQyLjMyNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTE1VDIyOjQwOjU3LjI5NVoiLCJfX3YiOjAsImFib3V0IjoiQ2FwdGFpbiBBbWVyaWNhIGlzIGEgc3VwZXJoZXJvIGNyZWF0ZWQgYnkgSm9lIFNpbW9uIGFuZCBKYWNrIEtpcmJ5IHdobyBhcHBlYXJzIGluIEFtZXJpY2FuIGNvbWljIGJvb2tzIHB1Ymxpc2hlZCBieSBNYXJ2ZWwgQ29taWNzLiBUaGUgY2hhcmFjdGVyIGZpcnN0IGFwcGVhcmVkIGluIENhcHRhaW4gQW1lcmljYSBDb21pY3MgIzEsIHB1Ymxpc2hlZCBvbiBEZWNlbWJlciAyMCwgMTk0MCwgYnkgVGltZWx5IFB1YmxpY2F0aW9ucywgYSBjb3Jwb3JhdGUgcHJlZGVjZXNzb3IgdG8gTWFydmVsLiIsImFnZSI6MjksImdlbmRlciI6Im1hbGUifX0=" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dfc7828a7f2850ef4d474c&quot;,&#10;    &quot;firstName&quot;: &quot;captain&quot;,&#10;    &quot;lastName&quot;: &quot;america&quot;,&#10;    &quot;email&quot;: &quot;captain@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776292856/loheonlcmg57kpcia9mv.webp&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;cricket,fly,war,super-hero&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-15T17:14:42.324Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-15T22:40:57.295Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel.&quot;,&#10;    &quot;age&quot;: 29,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="6" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="http://localhost:5173" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="704" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;2c0-HqdOsgLiStqFSiRTL1fXK0KJM6c&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 Apr 2026 22:40:57 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="035e7f9b-1481-4cdd-bdce-ebea877c890d" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dfc7828a7f2850ef4d474c&quot;,&quot;firstName&quot;:&quot;captain&quot;,&quot;lastName&quot;:&quot;america&quot;,&quot;email&quot;:&quot;captain@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776292856/loheonlcmg57kpcia9mv.webp&quot;,&quot;skills&quot;:[&quot;cricket,fly,war,super-hero&quot;],&quot;createdAt&quot;:&quot;2026-04-15T17:14:42.324Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-15T22:40:57.295Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel.&quot;,&quot;age&quot;:29,&quot;gender&quot;:&quot;male&quot;}}" />
+              <option name="size" value="704" />
+              <option name="time" value="1300" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776292997228" />
+          <option name="id" value="b17fa773-d28c-4de9-9042-3b6ebcb3d0ad" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="29" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills" />
+                        <option name="value" value="cricket,fly,war,super-hero" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="disabled" value="true" />
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\captain.webp" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel." />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZmM3ODI4YTdmMjg1MGVmNGQ0NzRjIiwiZmlyc3ROYW1lIjoiY2FwdGFpbiIsImxhc3ROYW1lIjoiYW1lcmljYSIsImVtYWlsIjoiY2FwdGFpbkBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2Rjb2ZxY3lxOC9pbWFnZS91cGxvYWQvdjE3NzYyOTI5OTYvaXJuaHZieGc3N25xdndnbHlxdnYud2VicCIsInNraWxscyI6WyJjcmlja2V0LGZseSx3YXIsc3VwZXItaGVybyJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTE1VDE3OjE0OjQyLjMyNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTE1VDIyOjQzOjE3LjE0NloiLCJfX3YiOjAsImFib3V0IjoiQ2FwdGFpbiBBbWVyaWNhIGlzIGEgc3VwZXJoZXJvIGNyZWF0ZWQgYnkgSm9lIFNpbW9uIGFuZCBKYWNrIEtpcmJ5IHdobyBhcHBlYXJzIGluIEFtZXJpY2FuIGNvbWljIGJvb2tzIHB1Ymxpc2hlZCBieSBNYXJ2ZWwgQ29taWNzLiBUaGUgY2hhcmFjdGVyIGZpcnN0IGFwcGVhcmVkIGluIENhcHRhaW4gQW1lcmljYSBDb21pY3MgIzEsIHB1Ymxpc2hlZCBvbiBEZWNlbWJlciAyMCwgMTk0MCwgYnkgVGltZWx5IFB1YmxpY2F0aW9ucywgYSBjb3Jwb3JhdGUgcHJlZGVjZXNzb3IgdG8gTWFydmVsLiIsImFnZSI6MjksImdlbmRlciI6Im1hbGUifX0=" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dfc7828a7f2850ef4d474c&quot;,&#10;    &quot;firstName&quot;: &quot;captain&quot;,&#10;    &quot;lastName&quot;: &quot;america&quot;,&#10;    &quot;email&quot;: &quot;captain@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776292996/irnhvbxg77nqvwglyqvv.webp&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;cricket,fly,war,super-hero&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-15T17:14:42.324Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-15T22:43:17.146Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel.&quot;,&#10;    &quot;age&quot;: 29,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="6" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="http://localhost:5173" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="704" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;2c0-tocNwB73AJFdhjRgrzEYUYgcIv8&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 Apr 2026 22:43:17 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="b17fa773-d28c-4de9-9042-3b6ebcb3d0ad" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dfc7828a7f2850ef4d474c&quot;,&quot;firstName&quot;:&quot;captain&quot;,&quot;lastName&quot;:&quot;america&quot;,&quot;email&quot;:&quot;captain@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776292996/irnhvbxg77nqvwglyqvv.webp&quot;,&quot;skills&quot;:[&quot;cricket,fly,war,super-hero&quot;],&quot;createdAt&quot;:&quot;2026-04-15T17:14:42.324Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-15T22:43:17.146Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel.&quot;,&quot;age&quot;:29,&quot;gender&quot;:&quot;male&quot;}}" />
+              <option name="size" value="704" />
+              <option name="time" value="2127" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776293116817" />
+          <option name="id" value="374a3e87-fdf9-4a85-825e-d06e2caf4ad9" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="29" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills" />
+                        <option name="value" value="cricket,fly,war,super-hero" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="disabled" value="true" />
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\america.webp" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel." />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZmM3ODI4YTdmMjg1MGVmNGQ0NzRjIiwiZmlyc3ROYW1lIjoiY2FwdGFpbiIsImxhc3ROYW1lIjoiYW1lcmljYSIsImVtYWlsIjoiY2FwdGFpbkBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2Rjb2ZxY3lxOC9pbWFnZS91cGxvYWQvdjE3NzYyOTMxMTYvc3VhbnlzdGFja2V1NzhneGR0eDQud2VicCIsInNraWxscyI6WyJjcmlja2V0LGZseSx3YXIsc3VwZXItaGVybyJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTE1VDE3OjE0OjQyLjMyNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTE1VDIyOjQ1OjE2LjczN1oiLCJfX3YiOjAsImFib3V0IjoiQ2FwdGFpbiBBbWVyaWNhIGlzIGEgc3VwZXJoZXJvIGNyZWF0ZWQgYnkgSm9lIFNpbW9uIGFuZCBKYWNrIEtpcmJ5IHdobyBhcHBlYXJzIGluIEFtZXJpY2FuIGNvbWljIGJvb2tzIHB1Ymxpc2hlZCBieSBNYXJ2ZWwgQ29taWNzLiBUaGUgY2hhcmFjdGVyIGZpcnN0IGFwcGVhcmVkIGluIENhcHRhaW4gQW1lcmljYSBDb21pY3MgIzEsIHB1Ymxpc2hlZCBvbiBEZWNlbWJlciAyMCwgMTk0MCwgYnkgVGltZWx5IFB1YmxpY2F0aW9ucywgYSBjb3Jwb3JhdGUgcHJlZGVjZXNzb3IgdG8gTWFydmVsLiIsImFnZSI6MjksImdlbmRlciI6Im1hbGUifX0=" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dfc7828a7f2850ef4d474c&quot;,&#10;    &quot;firstName&quot;: &quot;captain&quot;,&#10;    &quot;lastName&quot;: &quot;america&quot;,&#10;    &quot;email&quot;: &quot;captain@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776293116/suanystackeu78gxdtx4.webp&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;cricket,fly,war,super-hero&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-15T17:14:42.324Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-15T22:45:16.737Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel.&quot;,&#10;    &quot;age&quot;: 29,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="3" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="http://localhost:5173" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="704" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;2c0-bgb/SED4bdK1jMciPI8SUggNn6E&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 Apr 2026 22:45:16 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="374a3e87-fdf9-4a85-825e-d06e2caf4ad9" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dfc7828a7f2850ef4d474c&quot;,&quot;firstName&quot;:&quot;captain&quot;,&quot;lastName&quot;:&quot;america&quot;,&quot;email&quot;:&quot;captain@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776293116/suanystackeu78gxdtx4.webp&quot;,&quot;skills&quot;:[&quot;cricket,fly,war,super-hero&quot;],&quot;createdAt&quot;:&quot;2026-04-15T17:14:42.324Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-15T22:45:16.737Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel.&quot;,&quot;age&quot;:29,&quot;gender&quot;:&quot;male&quot;}}" />
+              <option name="size" value="704" />
+              <option name="time" value="1257" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776294667654" />
+          <option name="id" value="19cc0027-7aca-422d-ac0b-500788484acf" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="29" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills[]" />
+                        <option name="value" value="cricket,hockey" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="disabled" value="true" />
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\america.webp" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel." />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZmM3ODI4YTdmMjg1MGVmNGQ0NzRjIiwiZmlyc3ROYW1lIjoiY2FwdGFpbiIsImxhc3ROYW1lIjoiYW1lcmljYSIsImVtYWlsIjoiY2FwdGFpbkBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2Rjb2ZxY3lxOC9pbWFnZS91cGxvYWQvdjE3NzYyOTQ2NjcveG83bzBmeTdlZXN6ZGZkeGRqYzYud2VicCIsInNraWxscyI6WyJjcmlja2V0LGhvY2tleSJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTE1VDE3OjE0OjQyLjMyNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTE1VDIzOjExOjA3LjU3M1oiLCJfX3YiOjAsImFib3V0IjoiQ2FwdGFpbiBBbWVyaWNhIGlzIGEgc3VwZXJoZXJvIGNyZWF0ZWQgYnkgSm9lIFNpbW9uIGFuZCBKYWNrIEtpcmJ5IHdobyBhcHBlYXJzIGluIEFtZXJpY2FuIGNvbWljIGJvb2tzIHB1Ymxpc2hlZCBieSBNYXJ2ZWwgQ29taWNzLiBUaGUgY2hhcmFjdGVyIGZpcnN0IGFwcGVhcmVkIGluIENhcHRhaW4gQW1lcmljYSBDb21pY3MgIzEsIHB1Ymxpc2hlZCBvbiBEZWNlbWJlciAyMCwgMTk0MCwgYnkgVGltZWx5IFB1YmxpY2F0aW9ucywgYSBjb3Jwb3JhdGUgcHJlZGVjZXNzb3IgdG8gTWFydmVsLiIsImFnZSI6MjksImdlbmRlciI6Im1hbGUifX0=" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dfc7828a7f2850ef4d474c&quot;,&#10;    &quot;firstName&quot;: &quot;captain&quot;,&#10;    &quot;lastName&quot;: &quot;america&quot;,&#10;    &quot;email&quot;: &quot;captain@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776294667/xo7o0fy7eeszdfdxdjc6.webp&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;cricket,hockey&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-15T17:14:42.324Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-15T23:11:07.573Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel.&quot;,&#10;    &quot;age&quot;: 29,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="http://localhost:5173" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="692" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;2b4-d+vtAH1LUqLMWaLRWo3DGvadpGk&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 Apr 2026 23:11:07 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="19cc0027-7aca-422d-ac0b-500788484acf" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dfc7828a7f2850ef4d474c&quot;,&quot;firstName&quot;:&quot;captain&quot;,&quot;lastName&quot;:&quot;america&quot;,&quot;email&quot;:&quot;captain@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776294667/xo7o0fy7eeszdfdxdjc6.webp&quot;,&quot;skills&quot;:[&quot;cricket,hockey&quot;],&quot;createdAt&quot;:&quot;2026-04-15T17:14:42.324Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-15T23:11:07.573Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel.&quot;,&quot;age&quot;:29,&quot;gender&quot;:&quot;male&quot;}}" />
+              <option name="size" value="692" />
+              <option name="time" value="1132" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776294739441" />
+          <option name="id" value="a9dfa28e-8526-4704-b02f-5bedb6d7f618" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="29" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills[]" />
+                        <option name="value" value="&quot;cricket&quot;,&quot;hockey&quot;" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="disabled" value="true" />
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\america.webp" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel." />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZmM3ODI4YTdmMjg1MGVmNGQ0NzRjIiwiZmlyc3ROYW1lIjoiY2FwdGFpbiIsImxhc3ROYW1lIjoiYW1lcmljYSIsImVtYWlsIjoiY2FwdGFpbkBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2Rjb2ZxY3lxOC9pbWFnZS91cGxvYWQvdjE3NzYyOTQ3MzgvbjZjeTl2MnN6b2U0dGllcnNybncud2VicCIsInNraWxscyI6WyJcImNyaWNrZXRcIixcImhvY2tleVwiIl0sImNyZWF0ZWRBdCI6IjIwMjYtMDQtMTVUMTc6MTQ6NDIuMzI0WiIsInVwZGF0ZWRBdCI6IjIwMjYtMDQtMTVUMjM6MTI6MTkuMzU5WiIsIl9fdiI6MCwiYWJvdXQiOiJDYXB0YWluIEFtZXJpY2EgaXMgYSBzdXBlcmhlcm8gY3JlYXRlZCBieSBKb2UgU2ltb24gYW5kIEphY2sgS2lyYnkgd2hvIGFwcGVhcnMgaW4gQW1lcmljYW4gY29taWMgYm9va3MgcHVibGlzaGVkIGJ5IE1hcnZlbCBDb21pY3MuIFRoZSBjaGFyYWN0ZXIgZmlyc3QgYXBwZWFyZWQgaW4gQ2FwdGFpbiBBbWVyaWNhIENvbWljcyAjMSwgcHVibGlzaGVkIG9uIERlY2VtYmVyIDIwLCAxOTQwLCBieSBUaW1lbHkgUHVibGljYXRpb25zLCBhIGNvcnBvcmF0ZSBwcmVkZWNlc3NvciB0byBNYXJ2ZWwuIiwiYWdlIjoyOSwiZ2VuZGVyIjoibWFsZSJ9fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dfc7828a7f2850ef4d474c&quot;,&#10;    &quot;firstName&quot;: &quot;captain&quot;,&#10;    &quot;lastName&quot;: &quot;america&quot;,&#10;    &quot;email&quot;: &quot;captain@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776294738/n6cy9v2szoe4tiersrnw.webp&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;\&quot;cricket\&quot;,\&quot;hockey\&quot;&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-15T17:14:42.324Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-15T23:12:19.359Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel.&quot;,&#10;    &quot;age&quot;: 29,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="http://localhost:5173" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="700" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;2bc-F7R6BWvj4L07Gy5m90SG5oOf+wY&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 Apr 2026 23:12:19 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="a9dfa28e-8526-4704-b02f-5bedb6d7f618" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dfc7828a7f2850ef4d474c&quot;,&quot;firstName&quot;:&quot;captain&quot;,&quot;lastName&quot;:&quot;america&quot;,&quot;email&quot;:&quot;captain@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776294738/n6cy9v2szoe4tiersrnw.webp&quot;,&quot;skills&quot;:[&quot;\&quot;cricket\&quot;,\&quot;hockey\&quot;&quot;],&quot;createdAt&quot;:&quot;2026-04-15T17:14:42.324Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-15T23:12:19.359Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel.&quot;,&quot;age&quot;:29,&quot;gender&quot;:&quot;male&quot;}}" />
+              <option name="size" value="700" />
+              <option name="time" value="1022" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776294783005" />
+          <option name="id" value="af1147f1-86c0-4954-8b33-51444c78118d" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="29" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="[skills]" />
+                        <option name="value" value="cricket,hockey" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="disabled" value="true" />
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\america.webp" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel." />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZmM3ODI4YTdmMjg1MGVmNGQ0NzRjIiwiZmlyc3ROYW1lIjoiY2FwdGFpbiIsImxhc3ROYW1lIjoiYW1lcmljYSIsImVtYWlsIjoiY2FwdGFpbkBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2Rjb2ZxY3lxOC9pbWFnZS91cGxvYWQvdjE3NzYyOTQ3ODIva25hOWdqenpuN25tcmpudHBqankud2VicCIsInNraWxscyI6WyJcImNyaWNrZXRcIixcImhvY2tleVwiIl0sImNyZWF0ZWRBdCI6IjIwMjYtMDQtMTVUMTc6MTQ6NDIuMzI0WiIsInVwZGF0ZWRBdCI6IjIwMjYtMDQtMTVUMjM6MTM6MDIuOTI1WiIsIl9fdiI6MCwiYWJvdXQiOiJDYXB0YWluIEFtZXJpY2EgaXMgYSBzdXBlcmhlcm8gY3JlYXRlZCBieSBKb2UgU2ltb24gYW5kIEphY2sgS2lyYnkgd2hvIGFwcGVhcnMgaW4gQW1lcmljYW4gY29taWMgYm9va3MgcHVibGlzaGVkIGJ5IE1hcnZlbCBDb21pY3MuIFRoZSBjaGFyYWN0ZXIgZmlyc3QgYXBwZWFyZWQgaW4gQ2FwdGFpbiBBbWVyaWNhIENvbWljcyAjMSwgcHVibGlzaGVkIG9uIERlY2VtYmVyIDIwLCAxOTQwLCBieSBUaW1lbHkgUHVibGljYXRpb25zLCBhIGNvcnBvcmF0ZSBwcmVkZWNlc3NvciB0byBNYXJ2ZWwuIiwiYWdlIjoyOSwiZ2VuZGVyIjoibWFsZSJ9fQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dfc7828a7f2850ef4d474c&quot;,&#10;    &quot;firstName&quot;: &quot;captain&quot;,&#10;    &quot;lastName&quot;: &quot;america&quot;,&#10;    &quot;email&quot;: &quot;captain@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776294782/kna9gjzzn7nmrjntpjjy.webp&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;\&quot;cricket\&quot;,\&quot;hockey\&quot;&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-15T17:14:42.324Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-15T23:13:02.925Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel.&quot;,&#10;    &quot;age&quot;: 29,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="4" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="http://localhost:5173" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="700" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;2bc-a4ixCSmdSyucpcYp40+K/bXgkQY&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 Apr 2026 23:13:03 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="af1147f1-86c0-4954-8b33-51444c78118d" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dfc7828a7f2850ef4d474c&quot;,&quot;firstName&quot;:&quot;captain&quot;,&quot;lastName&quot;:&quot;america&quot;,&quot;email&quot;:&quot;captain@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776294782/kna9gjzzn7nmrjntpjjy.webp&quot;,&quot;skills&quot;:[&quot;\&quot;cricket\&quot;,\&quot;hockey\&quot;&quot;],&quot;createdAt&quot;:&quot;2026-04-15T17:14:42.324Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-15T23:13:02.925Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel.&quot;,&quot;age&quot;:29,&quot;gender&quot;:&quot;male&quot;}}" />
+              <option name="size" value="700" />
+              <option name="time" value="1458" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776295008198" />
+          <option name="id" value="0e9360dd-c2a0-4513-8b65-e65dd01d0882" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="29" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills[0]" />
+                        <option name="value" value="cricket" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\america.webp" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel." />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills[1]" />
+                        <option name="value" value="fly" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills[2]" />
+                        <option name="value" value="kabaddi" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiRXJyb3IgdXBkYXRpbmcgcHJvZmlsZTogQ2FzdCB0byBzdHJpbmcgZmFpbGVkIGZvciB2YWx1ZSBcIltcbiAgJ2kgYW0gamFkdWdhcicsXG4gICdDYXB0YWluIEFtZXJpY2EgaXMgYSBzdXBlcmhlcm8gY3JlYXRlZCBieSBKb2UgU2ltb24gYW5kIEphY2sgS2lyYnkgd2hvIGFwcGVhcnMgaW4gQW1lcmljYW4gY29taWMgYm9va3MgcHVibGlzaGVkIGJ5IE1hcnZlbCBDb21pY3MuIFRoZSBjaGFyYWN0ZXIgZmlyc3QgYXBwZWFyZWQgaW4gQ2FwdGFpbiBBbWVyaWNhIENvbWljcyAjMSwgcHVibGlzaGVkIG9uIERlY2VtYmVyIDIwLCAxOTQwLCBieSBUaW1lbHkgUHVibGljYXRpb25zLCBhIGNvcnBvcmF0ZSBwcmVkZWNlc3NvciB0byBNYXJ2ZWwuJ1xuXVwiICh0eXBlIEFycmF5KSBhdCBwYXRoIFwiYWJvdXRcIiJ9" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Error updating profile: Cast to string failed for value \&quot;[\n  'i am jadugar',\n  'Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel.'\n]\&quot; (type Array) at path \&quot;about\&quot;&quot;&#10;}" />
+              <option name="code" value="500" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="http://localhost:5173" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="414" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;19e-zdkxZdyPv2GFp3nUr/CXw4klxpU&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 Apr 2026 23:16:48 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="0e9360dd-c2a0-4513-8b65-e65dd01d0882" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Error updating profile: Cast to string failed for value \&quot;[\n  'i am jadugar',\n  'Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel.'\n]\&quot; (type Array) at path \&quot;about\&quot;&quot;}" />
+              <option name="size" value="414" />
+              <option name="time" value="1623" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1776295026456" />
+          <option name="id" value="d0016f4d-513c-4d9f-8128-57ffaed6afe7" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="age" />
+                        <option name="value" value="29" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills[0]" />
+                        <option name="value" value="cricket" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="disabled" value="true" />
+                        <option name="key" value="about" />
+                        <option name="value" value="i am jadugar" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="male" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="photoUrl" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\16479\Desktop\america.webp" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="about" />
+                        <option name="value" value="Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel." />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills[1]" />
+                        <option name="value" value="fly" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="skills[2]" />
+                        <option name="value" value="kabaddi" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="id" value="62d3b972-f47f-4895-9e39-ca098b27e87d" />
+              <option name="method" value="PATCH" />
+              <option name="name" value="edit profile" />
+              <option name="url" value="http://localhost:9999/api/edit/profile" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZmlsZSB1cGRhdGVkIHN1Y2Nlc3NmdWxseSIsImVkaXRlZFVzZXIiOnsiX2lkIjoiNjlkZmM3ODI4YTdmMjg1MGVmNGQ0NzRjIiwiZmlyc3ROYW1lIjoiY2FwdGFpbiIsImxhc3ROYW1lIjoiYW1lcmljYSIsImVtYWlsIjoiY2FwdGFpbkBnbWFpbC5jb20iLCJwaG90b1VybCI6Imh0dHBzOi8vcmVzLmNsb3VkaW5hcnkuY29tL2Rjb2ZxY3lxOC9pbWFnZS91cGxvYWQvdjE3NzYyOTUwMjUvcWh4bmoyN3BlYndybGJtNW5tcHMud2VicCIsInNraWxscyI6WyJjcmlja2V0IiwiZmx5Iiwia2FiYWRkaSJdLCJjcmVhdGVkQXQiOiIyMDI2LTA0LTE1VDE3OjE0OjQyLjMyNFoiLCJ1cGRhdGVkQXQiOiIyMDI2LTA0LTE1VDIzOjE3OjA2LjM4M1oiLCJfX3YiOjAsImFib3V0IjoiQ2FwdGFpbiBBbWVyaWNhIGlzIGEgc3VwZXJoZXJvIGNyZWF0ZWQgYnkgSm9lIFNpbW9uIGFuZCBKYWNrIEtpcmJ5IHdobyBhcHBlYXJzIGluIEFtZXJpY2FuIGNvbWljIGJvb2tzIHB1Ymxpc2hlZCBieSBNYXJ2ZWwgQ29taWNzLiBUaGUgY2hhcmFjdGVyIGZpcnN0IGFwcGVhcmVkIGluIENhcHRhaW4gQW1lcmljYSBDb21pY3MgIzEsIHB1Ymxpc2hlZCBvbiBEZWNlbWJlciAyMCwgMTk0MCwgYnkgVGltZWx5IFB1YmxpY2F0aW9ucywgYSBjb3Jwb3JhdGUgcHJlZGVjZXNzb3IgdG8gTWFydmVsLiIsImFnZSI6MjksImdlbmRlciI6Im1hbGUifX0=" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Profile updated successfully&quot;,&#10;  &quot;editedUser&quot;: {&#10;    &quot;_id&quot;: &quot;69dfc7828a7f2850ef4d474c&quot;,&#10;    &quot;firstName&quot;: &quot;captain&quot;,&#10;    &quot;lastName&quot;: &quot;america&quot;,&#10;    &quot;email&quot;: &quot;captain@gmail.com&quot;,&#10;    &quot;photoUrl&quot;: &quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776295025/qhxnj27pebwrlbm5nmps.webp&quot;,&#10;    &quot;skills&quot;: [&#10;      &quot;cricket&quot;,&#10;      &quot;fly&quot;,&#10;      &quot;kabaddi&quot;&#10;    ],&#10;    &quot;createdAt&quot;: &quot;2026-04-15T17:14:42.324Z&quot;,&#10;    &quot;updatedAt&quot;: &quot;2026-04-15T23:17:06.383Z&quot;,&#10;    &quot;__v&quot;: 0,&#10;    &quot;about&quot;: &quot;Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel.&quot;,&#10;    &quot;age&quot;: 29,&#10;    &quot;gender&quot;: &quot;male&quot;&#10;  }&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="http://localhost:5173" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="701" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;2bd-5zeesh/WXMLUD8+cUqP1FJvq910&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Wed, 15 Apr 2026 23:17:06 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="d0016f4d-513c-4d9f-8128-57ffaed6afe7" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Profile updated successfully&quot;,&quot;editedUser&quot;:{&quot;_id&quot;:&quot;69dfc7828a7f2850ef4d474c&quot;,&quot;firstName&quot;:&quot;captain&quot;,&quot;lastName&quot;:&quot;america&quot;,&quot;email&quot;:&quot;captain@gmail.com&quot;,&quot;photoUrl&quot;:&quot;https://res.cloudinary.com/dcofqcyq8/image/upload/v1776295025/qhxnj27pebwrlbm5nmps.webp&quot;,&quot;skills&quot;:[&quot;cricket&quot;,&quot;fly&quot;,&quot;kabaddi&quot;],&quot;createdAt&quot;:&quot;2026-04-15T17:14:42.324Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-15T23:17:06.383Z&quot;,&quot;__v&quot;:0,&quot;about&quot;:&quot;Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel.&quot;,&quot;age&quot;:29,&quot;gender&quot;:&quot;male&quot;}}" />
+              <option name="size" value="701" />
+              <option name="time" value="1146" />
             </responseState>
           </option>
           <option name="workspaceId" value="drafts" />
