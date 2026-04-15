@@ -376,7 +376,7 @@ const Home = () => {
          {/* Bottom CTA */}
          <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-               <div className="card bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 border border-base-300">
+               <div className="card bg-linear-to-br from-primary/10 via-secondary/10 to-accent/10 border border-base-300">
                   <div className="card-body items-center text-center p-12">
                      <div className="text-5xl mb-4">{currentPersonality.emoji}</div>
                      <h2 className="text-3xl sm:text-4xl font-bold mb-4">

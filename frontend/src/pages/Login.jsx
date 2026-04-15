@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import {useDispatch} from 'react-redux'
-import {useState} from 'react'
 import axios from 'axios'
 import {BACKEND_URL} from '../BACKEND_URL.js';
 import {getMe} from '../store/userSlice.js'
@@ -13,7 +12,25 @@ function Login() {
    const dispatch = useDispatch();
    const navigate = useNavigate();
    const [error, setError] = useState("");
+   const [currentTheme, setCurrentTheme] = useState('nearrock');
 
+   // Get current theme on mount
+   useEffect(() => {
+      const savedTheme = localStorage.getItem('app-theme') || 'nearrock';
+      setCurrentTheme(savedTheme);
+   }, []);
+
+   // Theme emojis for personality
+   const themeEmojis = {
+      'nearrock': '🎭',
+      'midnight-purple': '🌙',
+      'cyberpunk-neon': '⚡',
+      'forest-dark': '🌲',
+      'sunset-dark': '🌅',
+      'nordic-frost': '❄️',
+      'glassymax': '✨',
+      'dancinglol': '🎉'
+   };
 
    async function handleLogin(e) {
       e.preventDefault();
@@ -25,7 +42,6 @@ function Login() {
          if (result.status === 200) {
             dispatch(getMe());
             navigate('/dashboard')
-
          }
 
       } catch (error) {
@@ -34,47 +50,80 @@ function Login() {
    }
 
    return (
-      <div className="w-full h-screen flex justify-center items-center">
-         <div className="card card-dash bg-base-100 p-1 w-96">
-            <div className="card-body ">
-               <h2 className="card-title mx-auto text-3xl leading-3">Welcome
-                  Back </h2>
-               <p className="text-center text-gray-200/40 mb-4">Sign
-                  in to your account</p>
-               {/* form elements*/}
-               <form className="fieldset bg-base-200/20 border-base-300 rounded-box w-xs border p-4">
+      <div className="w-full min-h-screen flex justify-center items-center relative overflow-hidden">
+         {/* Subtle background decoration */}
+         <div className="absolute inset-0 pointer-events-none">
+            <div className="absolute top-20 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+            <div className="absolute bottom-20 right-10 w-80 h-80 bg-secondary/5 rounded-full blur-3xl" />
+         </div>
 
-                  <label className="label">Email or
-                     Username</label>
+         {/* Floating emojis */}
+         <div className="absolute inset-0 pointer-events-none overflow-hidden">
+            <span className="absolute top-[15%] left-[15%] text-2xl opacity-10 animate-bounce" style={{ animationDelay: '0s' }}>💕</span>
+            <span className="absolute top-[25%] right-[20%] text-2xl opacity-10 animate-bounce" style={{ animationDelay: '1s' }}>💬</span>
+            <span className="absolute bottom-[20%] left-[20%] text-2xl opacity-10 animate-bounce" style={{ animationDelay: '2s' }}>🔥</span>
+            <span className="absolute bottom-[30%] right-[15%] text-2xl opacity-10 animate-bounce" style={{ animationDelay: '0.5s' }}>✨</span>
+         </div>
+
+         <div className="card bg-base-100/80 backdrop-blur-sm shadow-2xl w-96 relative z-10 border border-base-300">
+            <div className="card-body">
+               {/* Theme-aware emoji */}
+               <div className="text-center mb-2">
+                  <span className="text-4xl">{themeEmojis[currentTheme] || '🔥'}</span>
+               </div>
+
+               <h2 className="card-title mx-auto text-2xl">Welcome Back</h2>
+               <p className="text-center text-base-content/50 text-sm mb-4">
+                  We missed you! Sign in to continue
+               </p>
+
+               {/* form elements */}
+               <form className="fieldset bg-base-200/30 border-base-300 rounded-box border p-4">
+                  <label className="label text-sm">📧 Email or Username</label>
                   <input type="text"
-                         className="input outline-none focus:outline-none focus:ring-1 focus:ring-primary "
-                         placeholder="Email/Username"
+                         className="input input-sm bg-base-100 focus:ring-2 focus:ring-primary/50"
+                         placeholder="your@email.com"
                          autoComplete="off"
                          value={option}
                          onChange={(e) => setOption(e.target.value)}
                   />
 
-                  <label className="label">Password</label>
+                  <label className="label text-sm mt-2">🔒 Password</label>
                   <input type="password"
-                         className="input outline-none focus:outline-none focus:ring-1 focus:ring-primary"
-                         placeholder="Password"
+                         className="input input-sm bg-base-100 focus:ring-2 focus:ring-primary/50"
+                         placeholder="••••••••"
                          autoComplete="current-password"
                          value={password}
                          onChange={(e) => setPassword(e.target.value)}
                   />
 
-                  <button className="btn btn-neutral   mt-4" onClick={(e) => handleLogin(e)}>Login</button>
+                  <button 
+                     className="btn btn-primary mt-4 gap-2" 
+                     onClick={(e) => handleLogin(e)}
+                  >
+                     <span>Sign In</span>
+                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                     </svg>
+                  </button>
                </form>
-               <div className="text-center text-xs">Don't
-                  have an
-                  account? <Link to="/register" className="text-primary">Register</Link>
+
+               <div className="text-center text-sm mt-4">
+                  <span className="text-base-content/60">Don't have an account?</span>
+                  <Link to="/register" className="text-primary hover:underline ml-1 font-medium">Join us 🚀</Link>
                </div>
 
+               {error && (
+                  <div className="alert alert-error alert-sm mt-4">
+                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                     </svg>
+                     <span className="text-xs">{error}</span>
+                  </div>
+               )}
             </div>
-            {error && <p className="text-error text-xs text-center">{error}</p>}
          </div>
       </div>
-
    )
 }
 
