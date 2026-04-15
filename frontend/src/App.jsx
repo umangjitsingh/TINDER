@@ -6,6 +6,7 @@ import Layout from './Layout'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import Dashboard from './pages/Dashboard'
 import appStore from './store/appStore.js'
 
 
@@ -27,6 +28,10 @@ function App() {
         {
           path:"/register",
           element:<Register/>
+        },
+        {
+          path:"/dashboard",
+          element:<Dashboard/>
         }
       ]
     }

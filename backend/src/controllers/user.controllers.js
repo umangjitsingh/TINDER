@@ -63,7 +63,7 @@ export const loginController = async (req, res) => {
       else {
          const [firstName, lastName] = option.split(" ");
          if (!firstName || !lastName) {
-            return res.status(400).json({ message: "Please provide full name as 'First Last'" });
+            return res.status(400).json({ message: "Please provide username as 'Firstname Lastname'" });
          }
          query.firstName = firstName;
          query.lastName = lastName;

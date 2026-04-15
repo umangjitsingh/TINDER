@@ -3,6 +3,7 @@ import {createAsyncThunk} from '@reduxjs/toolkit'
 import {BACKEND_URL} from '../BACKEND_URL.js';
 import axios from 'axios';
 
+
 export const getMe = createAsyncThunk(
    "user/getMe",
    async (_, { rejectWithValue }) => {

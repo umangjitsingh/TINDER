@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import {useDispatch} from 'react-redux'
 import {useState} from 'react'
 import axios from 'axios'
@@ -11,6 +11,9 @@ function Login() {
    const [option, setOption] = useState("");
    const [password, setPassword] = useState("");
    const dispatch = useDispatch();
+   const navigate = useNavigate();
+   const [error, setError] = useState("");
+
 
    async function handleLogin(e) {
       e.preventDefault();
@@ -18,12 +21,15 @@ function Login() {
          const result = await axios.post(`${BACKEND_URL}/api/user/login`,
             {option, password},
             {withCredentials: true});
-         console.log(result.data);
+
          if (result.status === 200) {
-            dispatch(getMe())
+            dispatch(getMe());
+            navigate('/dashboard')
+
          }
-      } catch (e) {
-         console.log(e)
+
+      } catch (error) {
+         setError(error?.response?.data?.message || error.message)
       }
    }
 
@@ -63,7 +69,9 @@ function Login() {
                   have an
                   account? <Link to="/register" className="text-primary">Register</Link>
                </div>
+
             </div>
+            {error && <p className="text-error text-xs text-center">{error}</p>}
          </div>
       </div>
 
