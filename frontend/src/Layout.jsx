@@ -51,6 +51,7 @@ const Layout = () => {
       <div className="w-full min-h-screen px-10">
          <Navbar />
          <Outlet />
+
       </div>
    )
 }

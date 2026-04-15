@@ -2,15 +2,18 @@ import React, { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 import {BACKEND_URL} from '../BACKEND_URL.js'
+import {FaRegEye, FaRegEyeSlash} from "react-icons/fa";
 
 
 function Register() {
+   const[showPassword,setShowPassword]=useState(false)
    const [firstName, setFirstname] = useState("");
    const [lastName, setLastname] = useState("");
    const [email, setEmail] = useState("");
    const [password, setPassword] = useState("");
    const [error, setError] = useState("");
    const [currentTheme, setCurrentTheme] = useState('nearrock');
+
 
    // Get current theme on mount
    useEffect(() => {
@@ -74,7 +77,7 @@ function Register() {
                <form className="fieldset bg-base-200/30 border-base-300 rounded-box border p-4">
                   <label className="label text-sm">👤 First Name</label>
                   <input type="text"
-                         className="input input-sm bg-base-100 focus:ring-2 focus:ring-primary/50"
+                         className="input input-sm bg-base-100 focus:ring-1 focus:ring-primary/50"
                          placeholder="John"
                          value={firstName}
                          onChange={(e) => setFirstname(e.target.value)}
@@ -82,7 +85,7 @@ function Register() {
 
                   <label className="label text-sm mt-2">👤 Last Name</label>
                   <input type="text"
-                         className="input input-sm bg-base-100 focus:ring-2 focus:ring-primary/50"
+                         className="input input-sm bg-base-100 focus:ring-1 focus:ring-primary/50"
                          placeholder="Doe"
                          value={lastName}
                          onChange={(e) => setLastname(e.target.value)}
@@ -90,21 +93,30 @@ function Register() {
 
                   <label className="label text-sm mt-2">📧 Email</label>
                   <input type="text"
-                         className="input input-sm bg-base-100 focus:ring-2 focus:ring-primary/50"
+                         className="input input-sm bg-base-100 focus:ring-1 focus:ring-primary/50"
                          placeholder="john@example.com"
                          autoComplete="current-email"
                          value={email}
                          onChange={(e) => setEmail(e.target.value)}
                   />
 
-                  <label className="label text-sm mt-2">🔒 Password</label>
-                  <input type="password"
-                         className="input input-sm bg-base-100 focus:ring-2 focus:ring-primary/50"
-                         autoComplete="current-password"
-                         placeholder="••••••••"
-                         value={password}
-                         onChange={(e) => setPassword(e.target.value)}
-                  />
+
+                  <div className="relative">
+                     <label className="label text-sm mt-2">🔒 Password</label>
+                     <input type={showPassword ? "text" : "password"}
+                            className="input input-sm bg-base-100 focus:ring-1 focus:ring-primary/50 relative"
+                            autoComplete="current-password"
+                            placeholder="••••••••"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                     />
+                     <span onClick={() => setShowPassword(!showPassword)}>
+                        {showPassword ? <FaRegEyeSlash className="absolute text-primary/60 h-4 w-4 top-[60%] right-2" /> : <FaRegEye className="absolute text-primary/60 h-4 w-4 top-[60%] right-2"/>}
+                     </span>
+                  </div>
+
+
+
 
                   <button 
                      className="btn btn-primary mt-4 gap-2" 
