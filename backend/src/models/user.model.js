@@ -49,7 +49,7 @@ const userSchema = new mongoose.Schema(
       },
       about:{
          type: String,
-         maxlength: 1000,
+         maxlength: 290,
       },
       photoUrl:{
          type: String,

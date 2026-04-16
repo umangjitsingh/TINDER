@@ -18,7 +18,7 @@ const location = useLocation();
             {location.pathname === '/' ? null : <ColorPallet/>}
 
          </div>
-         <div className="flex gap-2 items-center justify-end bg-zinc-700/10 w-2/3">
+         <div className="flex gap-2 items-center justify-end  w-2/3">
             {/**/}
 
             <div className="dropdown dropdown-end">

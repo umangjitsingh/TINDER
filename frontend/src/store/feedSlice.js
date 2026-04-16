@@ -19,7 +19,11 @@ export const feedSlice = createSlice({
       feed   : null,
       loading: false,
    },
-   reducers     : {},
+   reducers     : {
+      resetFeed:(state,action)=>{
+         state.feed = state.feed.filter((item) => item._id.toString() !== action.payload)
+      }
+   },
    extraReducers: (builder) => {
       builder.addCase(fetchFeed.pending, (state) => {
          state.loading = true;
@@ -36,5 +40,5 @@ export const feedSlice = createSlice({
 });
 
 
-export const {} = feedSlice.actions;
+export const {resetFeed} = feedSlice.actions;
 export default feedSlice.reducer;
