@@ -1,24 +1,193 @@
-import React from 'react'
-
+import React, {useState} from 'react'
+import {useSelector} from "react-redux";
 
 
 const Profile = () => {
+   const user = useSelector(state => state.user.user)
+   console.log(user);
 
-
-
+   const [age, setAge] = useState("");
+   const [gender, setGender] = useState("");
+   const [about, setAbout] = useState("");
+   const [skills, setSkills] = useState("");
+   const[image,setImage]=useState("")
    return (
       <div>
+
          <div className="absolute inset-0 pointer-events-none overflow-hidden">
-            <span className="absolute top-[15%] right-[15%] text-2xl opacity-20 animate-bounce" style={{ animationDelay: '0s' }}>🌟</span>
-            <span className="absolute top-[25%] left-[20%] text-2xl opacity-20 animate-bounce" style={{ animationDelay: '1s' }}>🔥</span>
-            <span className="absolute bottom-[20%] right-[20%] text-2xl opacity-20 animate-bounce" style={{ animationDelay: '2s' }}>🎯</span>
-            <span className="absolute bottom-[30%] left-[15%] text-2xl opacity-20 animate-bounce" style={{ animationDelay: '0.5s' }}>🌈</span>
+            <span className="absolute top-[15%] right-[15%] text-2xl opacity-20 animate-bounce" style={{animationDelay: '0s'}}>🌟</span>
+            <span className="absolute top-[25%] left-[20%] text-2xl opacity-20 animate-bounce" style={{animationDelay: '1s'}}>🔥</span>
+            <span className="absolute bottom-[20%] right-[20%] text-2xl opacity-20 animate-bounce" style={{animationDelay: '2s'}}>🎯</span>
+            <span className="absolute bottom-[30%] left-[15%] text-2xl opacity-20 animate-bounce" style={{animationDelay: '0.5s'}}>🌈</span>
          </div>
          <div className="flex flex-col justify-center items-center w-full mt-20">
-            <h1 className="text-2xl font-bold ">Edit Your Profile</h1>
-            <p className=" text-accent/70">Manage your profile information and preferences.</p>
+            <h1 className="text-2xl font-bold ">Edit Your
+               Profile</h1>
+            <p className=" text-accent/70">Manage your
+               profile information and preferences.</p>
          </div>
 
+         <div className="flex items-center justify-center gap-8 w-full flex-col sm:flex-row ">
+
+
+            {/*card*/}
+
+            <div className={`hover-3d  pt-10 `}
+            >
+
+               <figure className="w-88 sm:w-80 lg:w-100 pt-0 rounded-2xl ">
+
+
+                  <img src={user?.photoUrl} alt="Tailwind CSS 3D card" className="relative w-full h-140 lg:h-180 object-cover object-center rounded-2xl border-4 border-black -translate-z-2"/>
+                  <section className="bg-linear-to-b from-transparent via-base-200/60 to-base-100 absolute bottom-0 w-full h-120">
+                     <div className="absolute -bottom-2 w-full h-52">
+                        <span className="absolute -top-6 right-10">{user?.gender}</span><span className="absolute -top-6 right-4 ">{user?.age}</span>
+                        <p className="text-base-content text-4xl text-center font-bold capitalize captain mb-2">{user?.firstName} {user?.lastName}</p>
+                        <ul className="flex items-center justify-between pt-2 mx-4">
+                           {user.skills?.map((skill, ind) =>
+                              <li key={ind} className="px-4 py-1 bg-secondary rounded-full text-secondary-content text-xs ">{skill}</li>)}
+                        </ul>
+
+                        <h4 className="text-xs px-4 py-2">{user?.about}</h4>
+                     </div>
+
+                  </section>
+
+
+               </figure>
+               {/* 8 empty divs needed for the 3D effect */}
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               {/* */}
+
+
+               {/*   */}
+            </div>
+
+            {/*   input*/}
+            <div className=" pt-10">
+
+               <form className="flex flex-col gap-6 max-w-sm bg-base-200/50 backdrop-blur-sm p-6 rounded-2xl border border-base-300 shadow-xl  h-140 lg:h-180  w-full">
+                  {/* Age Field */}
+                  <div className="form-control">
+                     <label className="label">
+                      <span className="label-text flex items-center gap-2 text-sm font-medium">
+                         <span className="text-lg">🔖</span> Age
+                      </span>
+                     </label>
+                     <input
+                        type="number"
+                        min="18"
+                        max="100"
+                        className="input input-bordered bg-base-100 focus:input-primary transition-all"
+                        placeholder="Enter your age"
+                        autoComplete="off"
+                        value={age}
+                        onChange={(e) => setAge(e.target.value)}
+                     />
+                  </div>
+
+                  {/* Gender Field */}
+                  <div className="form-control">
+                     <label className="label">
+                      <span className="label-text flex items-center gap-2 text-sm font-medium">
+                         <span className="text-lg">🌈</span> Gender
+                      </span>
+                     </label>
+                     <div className="flex flex-wrap gap-3 mt-1">
+                        <label className="label cursor-pointer justify-start gap-2 bg-base-100/50 px-4 py-2 rounded-xl border border-base-300 hover:border-primary/50 transition-all">
+                           <input
+                              type="radio"
+                              name="gender"
+                              className="radio radio-primary radio-sm"
+                              checked={gender === "male"}
+                              value="male"
+                              onChange={(e) => setGender(e.target.value)}
+                           />
+                           <span className="label-text text-sm">Male</span>
+                        </label>
+
+                        <label className="label cursor-pointer justify-start gap-2 bg-base-100/50 px-4 py-2 rounded-xl border border-base-300 hover:border-primary/50 transition-all">
+                           <input
+                              type="radio"
+                              name="gender"
+                              className="radio radio-primary radio-sm"
+                              checked={gender === "female"}
+                              value="female"
+                              onChange={(e) => setGender(e.target.value)}
+                           />
+                           <span className="label-text text-sm">Female</span>
+                        </label>
+
+                        <label className="label cursor-pointer justify-start gap-2 bg-base-100/50 px-4 py-2 rounded-xl border border-base-300 hover:border-primary/50 transition-all">
+                           <input
+                              type="radio"
+                              name="gender"
+                              className="radio radio-primary radio-sm"
+                              checked={gender === "others"}
+                              value="others"
+                              onChange={(e) => setGender(e.target.value)}
+                           />
+                           <span className="label-text text-sm">Others</span>
+                        </label>
+
+                        <label className=" cursor-pointer justify-start gap-2 bg-base-100/50 px-4 py-2 rounded-xl border border-base-300 hover:border-primary/50 transition-all">
+                           <textarea
+                              cols={40}
+                              rows={6}
+                              placeholder="Enter about yourself ...."
+                              value={about}
+                              onChange={(e) => setAbout(e.target.value)}
+                           />
+                        </label>
+
+                        <label className="label ">
+                      <span className="label-text flex items-center gap-2 text-sm font-medium">
+                         <span className="text-lg">⛷️</span> Skills
+                      </span>
+                        </label>
+                        <input
+                           type="text"
+                           value={skills}
+                           onChange={(e) => setSkills(e.target.value)}
+                           className="input input-bordered bg-base-100 focus:input-primary transition-all -mt-2 "
+                           placeholder="Enter your skills comma seperated"
+
+                        />
+
+                        <label className="label ">
+                      <span className="label-text flex items-center gap-2 text-sm font-medium">
+                         <span className="text-lg">😎</span> Upload a photo
+                      </span>
+                        </label>
+                        <input
+                           type="file"
+                           value={image}
+                           onChange={(e) => setImage(e.target.value)}
+                           className="file-input  bg-base-100 focus:input-primary transition-all -mt-2 "
+                           placeholder="Enter your skills comma seperated"
+
+                        />
+
+                     </div>
+                  </div>
+
+                  {/* Submit Button */}
+                  <button
+                     type="submit"
+                     className="btn btn-primary w-full mt-2 shadow-lg hover:shadow-xl transition-all"
+                  >
+                     Save Changes 💾
+                  </button>
+               </form>
+            </div>
+         </div>
       </div>
    )
 }

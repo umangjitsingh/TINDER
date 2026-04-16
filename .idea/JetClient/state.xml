@@ -8,7 +8,7 @@
             <requestState>
               <option name="body">
                 <bodyState>
-                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;donald&quot;,&#10;  &quot;lastName&quot;: &quot;trump&quot;,&#10;  &quot;email&quot;: &quot;donald@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;donald@12&quot;&#10;}" />
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;navjot&quot;,&#10;  &quot;lastName&quot;: &quot;sidhu&quot;,&#10;  &quot;email&quot;: &quot;navjot@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;navjot@12&quot;&#10;}" />
                   <option name="type" value="JSON" />
                 </bodyState>
               </option>
@@ -60,19 +60,19 @@
                       <formDataParameterState>
                         <option name="key" value="photoUrl" />
                         <option name="type" value="FILE" />
-                        <option name="value" value="C:\Users\16479\Desktop\america.webp" />
+                        <option name="value" value="C:\Users\16479\Desktop\amritsar-india-april-8-congress-workers-and-supporters-warmly-welcoming-former-punjab-pradesh.webp" />
                       </formDataParameterState>
                       <formDataParameterState>
                         <option name="key" value="about" />
-                        <option name="value" value="Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel." />
+                        <option name="value" value="Navjot Singh Sidhu (born 20 October 1963) is an Indian former cricketer, television personality and politician from the Indian National Congress." />
                       </formDataParameterState>
                       <formDataParameterState>
                         <option name="key" value="skills[1]" />
-                        <option name="value" value="fly" />
+                        <option name="value" value="commentry" />
                       </formDataParameterState>
                       <formDataParameterState>
                         <option name="key" value="skills[2]" />
-                        <option name="value" value="kabaddi" />
+                        <option name="value" value="politics" />
                       </formDataParameterState>
                     </list>
                   </option>

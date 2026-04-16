@@ -51,9 +51,11 @@ const Layout = () => {
    }
 
    return (
-      <div className="w-full min-h-screen px-10">
+      <div className="w-full min-h-screen flex flex-col px-4 sm:px-6 lg:px-10 ">
          <Navbar />
-         <Outlet />
+         <main className="flex-1 flex flex-col relative">
+            <Outlet />
+         </main>
          <Footer personality={currentPersonality} />
       </div>
    )
