@@ -1,14 +1,31 @@
 
-import { Link } from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 import ColorPallet from './ColorPallet'
-import {useSelector} from "react-redux";
+import {useSelector, useDispatch} from "react-redux";
+import axios from "axios";
+import {BACKEND_URL} from "../BACKEND_URL.js";
+import { logout } from "../store/userSlice.js";
 
 
 
 const Navbar = () => {
 const userData=useSelector(state=>state.user);
 const location = useLocation();
+const navigate=useNavigate()
+const dispatch = useDispatch();
+
+   const handleLogout = async () => {
+      try{
+         const response = await axios.get(`${BACKEND_URL}/api/user/logout`, {withCredentials: true});
+         if(response?.status === 200 && response?.data?.message === "Logout successful") {
+            dispatch(logout());
+            navigate('/login');
+         }
+      }catch (e) {
+         console.log(e.response?.data || e.message)
+      }
+   }
 
    return (
       <div className="navbar bg-base-100 shadow-sm">
@@ -53,7 +70,7 @@ const location = useLocation();
                      </Link>
                   </li>
                   <li><a>Settings</a></li>
-                  <li><a>Logout</a></li>
+                  <li><button onClick={() => handleLogout()}>Logout</button></li>
                </ul>
             </div>
 

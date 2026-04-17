@@ -5,6 +5,7 @@ import Navbar from './components/Navbar.jsx'
 import { getMe } from './store/userSlice.js'
 import {selectCurrentPersonality} from "./store/themeSlice.js";
 import Footer from "./components/Footer.jsx";
+import Sidebar from "./components/Sidebar.jsx";
 
 const Layout = () => {
    const dispatch = useDispatch()
@@ -25,12 +26,18 @@ const Layout = () => {
       }
    }, [])
 
-   // Redirect when loading finishes and user is NOT authenticated (only for protected routes)
    useEffect(() => {
-      if (!loading && !isAuthenticated && !isPublicRoute) {
-         navigate('/login')
+      if (!loading) {
+         if (!isAuthenticated && !isPublicRoute) {
+            navigate('/login')
+         }
+
+         if (isAuthenticated && (location.pathname === '/login' || location.pathname === '/register')) {
+            navigate('/profile')
+         }
       }
-   }, [loading, isAuthenticated, navigate, isPublicRoute])
+   }, [loading, isAuthenticated, location.pathname])
+
 
    if (loading) {
       return (
@@ -54,6 +61,7 @@ const Layout = () => {
       <div className="w-full min-h-screen flex flex-col px-4 sm:px-6 lg:px-10 ">
          <Navbar />
          <main className="flex-1 flex flex-col relative">
+            <Sidebar/>
             <Outlet />
          </main>
          <Footer personality={currentPersonality} />

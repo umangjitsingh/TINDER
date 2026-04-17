@@ -1,16 +1,52 @@
 import React, {useState} from 'react'
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {editProfile} from "../store/profileSlice.js";
 
 
 const Profile = () => {
-   const user = useSelector(state => state.user.user)
+   const user = useSelector(state => state.user.user);
+   const dispatch = useDispatch();
+
    console.log(user);
 
    const [age, setAge] = useState("");
    const [gender, setGender] = useState("");
    const [about, setAbout] = useState("");
-   const [skills, setSkills] = useState("");
-   const[image,setImage]=useState("")
+   const [skillsString, setSkillsString] = useState("");
+   const[image,setImage]=useState(null);
+   const[preview, setPreview]=useState(null);
+
+      let skillArr= skillsString.split(",");
+
+
+   console.log(image)
+
+   function handleUpdateProfile(e) {
+      e.preventDefault();
+
+      const formData = new FormData();
+      formData.append('age', age);
+      formData.append('gender', gender);
+      formData.append('about', about);
+      skillArr.forEach((skill, index) => {
+         formData.append(`skills[${index}]`, skill);
+      });
+      if (image) {
+         formData.append('photoUrl', image);
+      }
+
+      dispatch(editProfile(formData));
+   }
+   const handleImageChange = (e) => {
+      const file = e.target.files[0];
+      setImage(file);
+
+      if (file) {
+         setPreview(URL.createObjectURL(file));
+      }
+   };
+
+
    return (
       <div>
 
@@ -38,17 +74,18 @@ const Profile = () => {
                <figure className="w-88 sm:w-80 lg:w-100 pt-0 rounded-2xl ">
 
 
-                  <img src={user?.photoUrl} alt="Tailwind CSS 3D card" className="relative w-full h-140 lg:h-180 object-cover object-center rounded-2xl border-4 border-black -translate-z-2"/>
+                  <img src={preview || user?.photoUrl} alt="Tailwind CSS 3D card" className="relative w-full h-140 lg:h-180 object-cover object-center rounded-2xl border-4 border-black -translate-z-2"/>
                   <section className="bg-linear-to-b from-transparent via-base-200/60 to-base-100 absolute bottom-0 w-full h-120">
-                     <div className="absolute -bottom-2 w-full h-52">
-                        <span className="absolute -top-6 right-10">{user?.gender}</span><span className="absolute -top-6 right-4 ">{user?.age}</span>
+                     <div className="absolute -bottom-2 w-full h-60">
+                        <span className="absolute -top-6 right-10">{gender || user?.gender}</span><span className="absolute -top-6 right-4 ">{age || user?.age}</span>
                         <p className="text-base-content text-4xl text-center font-bold capitalize captain mb-2">{user?.firstName} {user?.lastName}</p>
-                        <ul className="flex items-center justify-between pt-2 mx-4">
-                           {user.skills?.map((skill, ind) =>
+                        <ul className="flex items-center justify-between pt-2 mx-4 flex-wrap pb-2">
+                           {skillArr.map((skill, ind) =>
+                              <li key={ind} className="px-4 py-1 bg-secondary rounded-full text-secondary-content text-xs my-0.5">{skill}</li>) || user.skills?.map((skill, ind) =>
                               <li key={ind} className="px-4 py-1 bg-secondary rounded-full text-secondary-content text-xs ">{skill}</li>)}
                         </ul>
 
-                        <h4 className="text-xs px-4 py-2">{user?.about}</h4>
+                        <h4 className="text-xs px-4 py-2">{about || user?.about}</h4>
                      </div>
 
                   </section>
@@ -154,8 +191,8 @@ const Profile = () => {
                         </label>
                         <input
                            type="text"
-                           value={skills}
-                           onChange={(e) => setSkills(e.target.value)}
+                           value={skillsString}
+                           onChange={(e) => setSkillsString(e.target.value)}
                            className="input input-bordered bg-base-100 focus:input-primary transition-all -mt-2 "
                            placeholder="Enter your skills comma seperated"
 
@@ -168,8 +205,8 @@ const Profile = () => {
                         </label>
                         <input
                            type="file"
-                           value={image}
-                           onChange={(e) => setImage(e.target.value)}
+                           accept="image/*"
+                           onChange={handleImageChange}
                            className="file-input  bg-base-100 focus:input-primary transition-all -mt-2 "
                            placeholder="Enter your skills comma seperated"
 
@@ -182,6 +219,7 @@ const Profile = () => {
                   <button
                      type="submit"
                      className="btn btn-primary w-full mt-2 shadow-lg hover:shadow-xl transition-all"
+                     onClick={(e) => handleUpdateProfile(e)}
                   >
                      Save Changes 💾
                   </button>

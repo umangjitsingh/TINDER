@@ -3,13 +3,18 @@ import axios from "axios";
 import {BACKEND_URL} from "../BACKEND_URL.js";
 
 
-export const editProfile = createAsyncThunk("myProfile/editProfile", async (postData, rejectWithValue) => {
+export const editProfile = createAsyncThunk("myProfile/editProfile", async (postData, {rejectWithValue}) => {
 
    try {
-      const response = await axios.post(`${BACKEND_URL}/api/edit/profile`, postData, {withCredentials: true});
+      const response = await axios.patch(`${BACKEND_URL}/api/edit/profile`, postData, {
+         withCredentials: true,
+         headers: {
+            'Content-Type': 'multipart/form-data'
+         }
+      });
       return response.data;
    } catch (error) {
-      return rejectWithValue(error.message);
+      return rejectWithValue(error.response?.data?.message || error.message);
    }
 })
 

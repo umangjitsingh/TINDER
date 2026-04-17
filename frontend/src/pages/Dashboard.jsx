@@ -80,6 +80,7 @@ try{
          </div>
       );
    return (
+
       <div className=" w-full  h-[calc(100vh-8rem)] flex justify-center items-start bg-linear-to-br from-base/10 to-accent/10 relative overflow-hidden rounded-4xl">
          <div className="absolute inset-0 pointer-events-none overflow-hidden">
             <span className="absolute top-[15%] left-[15%] text-2xl opacity-20 animate-bounce" style={{animationDelay: '0s'}}>💕</span>
@@ -105,7 +106,7 @@ try{
 
                      <img src={friend?.photoUrl} alt="Tailwind CSS 3D card" className="relative w-full h-100 lg:h-160 object-cover object-center rounded-2xl border-4 border-black -translate-z-2"/>
                      <section className="bg-linear-to-b from-transparent via-base-200/60 to-base-100 absolute bottom-0 w-full h-120">
-                        <div className="absolute -bottom-2 w-full h-52">
+                        <div className="absolute -bottom-2 w-full h-60">
                            <span className="absolute -top-6 right-10">{friend?.gender}</span><span className="absolute -top-6 right-4 ">{friend?.age}</span>
                            <p className="text-base-content text-4xl text-center font-bold capitalize captain mb-2">{friend?.firstName} {friend?.lastName}</p>
                            <ul className="flex items-center justify-between pt-2 mx-4">
@@ -121,14 +122,14 @@ try{
 
                   </figure>
                   {/* 8 empty divs needed for the 3D effect */}
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
+                  <div key="div1"></div>
+                  <div key="div2"></div>
+                  <div key="div3"></div>
+                  <div key="div4"></div>
+                  <div key="div5"></div>
+                  <div key="div6"></div>
+                  <div key="div7"></div>
+                  <div key="div8"></div>
                   {/* */}
 
 
@@ -164,7 +165,7 @@ try{
 
          {toast && (
             <div className={`fixed top-20 left-1/2 -translate-x-1/2 z-50 animate-bounce`}>
-               <div className={`alert ${toast.type === 'like' ? 'alert-error' : 'alert-info'} shadow-2xl border-2 ${toast.type === 'like' ? 'border-pink-400' : 'border-cyan-400'} min-w-[260px] sm:min-w-70`}>
+               <div className={`alert ${toast.type === 'like' ? 'alert-error' : 'alert-info'} shadow-2xl border-2 ${toast.type === 'like' ? 'border-pink-400' : 'border-cyan-400'} min-w-65 sm:min-w-70`}>
                   <span className="text-base sm:text-lg font-semibold">{toast.message}</span>
                </div>
             </div>

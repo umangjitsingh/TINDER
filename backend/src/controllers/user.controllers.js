@@ -97,20 +97,24 @@ export const loginController = async (req, res) => {
    }
 };
 
-
 export async function logoutController(req, res) {
    try {
-    const token =req.cookies.token;
+      const token = req.cookies.token;
 
-    await blacklistedToken.create({token});
+      if (!token) {
+         return res.status(400).json({ message: "No token provided" });
+      }
 
-    res.clearCookie("token");
-    return res.status(200).json({message: "Logout successful"});
+      await blacklistedToken.create({ token });
+
+      res.clearCookie("token");
+      return res.status(200).json({ message: "Logout successful" });
 
    } catch (e) {
-      return res.status(500).json({message: `Logout error: ${e.message}`});
+      return res.status(500).json({ message: `Logout error: ${e.message}` });
    }
 }
+
 
 export async function getMeController(req, res) {
    try {

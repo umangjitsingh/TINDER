@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90c21c9f-65bd-4d3c-ab8b-874bb411c3f7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/JetClient/history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JetClient/history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JetClient/state.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JetClient/state.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Connections.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/PendingRequests.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/controllers/user.controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/user.controllers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/SwipeCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Dashboard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/appStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/appStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/profileSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/profileSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/userSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/userSlice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +93,9 @@
       <workItem from="1776179189361" duration="31149000" />
       <workItem from="1776260842397" duration="31121000" />
       <workItem from="1776347311679" duration="251000" />
-      <workItem from="1776347589099" duration="18936000" />
+      <workItem from="1776347589099" duration="25725000" />
+      <workItem from="1776435123590" duration="120000" />
+      <workItem from="1776435264891" duration="9269000" />
     </task>
     <servers />
   </component>
