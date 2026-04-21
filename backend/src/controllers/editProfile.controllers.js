@@ -16,19 +16,19 @@ export const editProfile = async (req, res) => {
 
 
       const {age, gender, skills, about} = req.body;
-      const {buffer, mimetype} = req.file;
 
-      // Convert buffer to base64 data URI format that Cloudinary accepts
-      const base64String = buffer.toString('base64');
-      const dataUri = `data:${mimetype};base64,${base64String}`;
+      let photoUrl = loggedInUser.photoUrl;
 
-      const URL_BY_CLOUDINARY = await uploadImageOnCloudinary(dataUri);
-
-
+      if (req.file) {
+         const {buffer, mimetype} = req.file;
+         const base64String = buffer.toString('base64');
+         const dataUri = `data:${mimetype};base64,${base64String}`;
+         photoUrl = await uploadImageOnCloudinary(dataUri);
+      }
 
       const editedUser = await User.findOneAndUpdate({_id: loggedInUser._id}, {
          age, gender, skills, about,
-         photoUrl: URL_BY_CLOUDINARY
+         photoUrl
       }, {returnDocument: "after", runValidators: true});
 
 

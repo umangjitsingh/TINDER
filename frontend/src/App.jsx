@@ -11,7 +11,7 @@ import Profile from './pages/Profile'
 import appStore from './store/appStore.js'
 import PendingRequests from "./pages/PendingRequests.jsx";
 import Connections from "./pages/Connections.jsx";
-import ReviewRequest from "./pages/ReviewRequest.jsx";
+
 
 
 
@@ -50,10 +50,7 @@ function App() {
           path:"/connections",
           element:<Connections/>
         },
-        {
-          path:"/review-request",
-          element:<ReviewRequest/>
-        },
+
       ]
     }
   ])

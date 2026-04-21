@@ -1,50 +1,56 @@
 import React from 'react'
-import { NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { FiUsers, FiClock, FiUserCheck } from "react-icons/fi"
 
 const Sidebar = () => {
+   const navItems = [
+      { to: "/dashboard", icon: FiUsers, label: "Feed" },
+      { to: "/pending-request", icon: FiClock, label: "Pending" },
+      { to: "/connections", icon: FiUserCheck, label: "Friends" },
+   ]
+
    return (
-      <div className="fixed left-0 top-1/2 -translate-y-1/2 flex flex-col gap-8 py-4 z-40">
-
-         {/* Review Requests */}
-         <NavLink
-            to="/review-request"
-            className={({isActive})=> isActive ? "active flex justify-between items-center gap-2 py-6 px-2 bg-secondary-200/80 hover:bg-secondary hover:text-secondary-content rounded-r-xl shadow-lg backdrop-blur-sm transition-all duration-300 border-l-4 border-transparent hover:border-secondary":"flex justify-between items-center gap-2 py-6 px-2 bg-base-200/80 hover:bg-primary hover:text-primary-content rounded-r-xl shadow-lg backdrop-blur-sm transition-all duration-300 border-l-4 border-transparent hover:border-primary"}
-         >
-        <span className="text-xs h-40 font-medium whitespace-nowrap rotate-90 origin-center -translate-x-3/4">
-          <span className="flex items-center gap-2">
-            <FiUsers className="text-xl" />
-            Review Requests
-          </span>
-        </span>
-         </NavLink>
-
-         {/* Pending Requests */}
-         <NavLink
-            to="/pending-request"
-            className={({isActive})=> isActive ? "active flex justify-between items-center gap-2 py-6 px-2 bg-secondary-200/80 hover:bg-secondary hover:text-secondary-content rounded-r-xl shadow-lg backdrop-blur-sm transition-all duration-300 border-l-4 border-transparent hover:border-secondary":"flex justify-between items-center gap-2 py-6 px-2 bg-base-200/80 hover:bg-primary hover:text-primary-content rounded-r-xl shadow-lg backdrop-blur-sm transition-all duration-300 border-l-4 border-transparent hover:border-primary"}
-         >
-        <span className="text-xs h-40 font-medium whitespace-nowrap rotate-90 origin-center -translate-x-3/4">
-          <span className="flex items-center gap-2">
-            <FiClock className="text-xl" />
-            Pending Requests
-          </span>
-        </span>
-         </NavLink>
-
-         {/* Connections */}
-         <NavLink
-            to="/connections"
-            className={({isActive})=> isActive ? "active flex justify-between items-center gap-2 py-6 px-2 bg-secondary-200/80 hover:bg-secondary hover:text-secondary-content rounded-r-xl shadow-lg backdrop-blur-sm transition-all duration-300 border-l-4 border-transparent hover:border-secondary":"flex justify-between items-center gap-2 py-6 px-2 bg-base-200/80 hover:bg-primary hover:text-primary-content rounded-r-xl shadow-lg backdrop-blur-sm transition-all duration-300 border-l-4 border-transparent hover:border-primary"}
-         >
-        <span className="text-xs h-40 font-medium whitespace-nowrap rotate-90 origin-center -translate-x-3/4">
-          <span className="flex items-center gap-2">
-            <FiUserCheck className="text-xl" />
-            Connections
-          </span>
-        </span>
-         </NavLink>
-
+      <div className="fixed left-0 top-1/2 -translate-y-1/2 flex flex-col gap-2 py-2 z-40">
+         {navItems.map((item) => {
+            const Icon = item.icon
+            return (
+               <NavLink
+                  key={item.to}
+                  to={item.to}
+                  className={({ isActive }) => `
+                     group relative flex items-center justify-center w-12 h-12 mx-1
+                     rounded-xl transition-all duration-300 ease-out
+                     ${isActive 
+                        ? 'bg-primary text-primary-content shadow-lg shadow-primary/30' 
+                        : 'bg-base-200/80 text-base-content/60 hover:bg-primary/20 hover:text-primary'
+                     }
+                  `}
+               >
+                  {({ isActive }) => (
+                     <>
+                        <Icon className="w-5 h-5" />
+                        
+                        {/* Tooltip */}
+                        <span className="
+                           absolute left-14 px-3 py-1.5 min-w-max
+                           bg-base-300 text-base-content text-xs font-medium
+                           rounded-lg opacity-0 invisible
+                           group-hover:opacity-100 group-hover:visible
+                           transition-all duration-200 translate-x-2 group-hover:translate-x-0
+                           shadow-lg border border-base-content/10
+                        ">
+                           {item.label}
+                        </span>
+                        
+                        {/* Active indicator dot */}
+                        {isActive && (
+                           <span className="absolute -right-1 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-primary rounded-full" />
+                        )}
+                     </>
+                  )}
+               </NavLink>
+            )
+         })}
       </div>
    )
 }

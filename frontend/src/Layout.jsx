@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Outlet, useNavigate, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
@@ -11,9 +11,11 @@ const Layout = () => {
    const dispatch = useDispatch()
    const navigate = useNavigate()
    const location = useLocation()
+   const hasFetched = useRef(false);
 
    const { user,loading, isAuthenticated } = useSelector(state => state.user);
    const currentPersonality = useSelector(selectCurrentPersonality)
+
 
    // Public routes that don't require authentication
    const publicRoutes = ['/', '/login', '/register']
@@ -21,10 +23,11 @@ const Layout = () => {
 
    // Fetch user on mount
    useEffect(() => {
-      if(!user && !loading){
+      if(!hasFetched.current && !user && !loading){
+         hasFetched.current = true;
          dispatch(getMe())
       }
-   }, [])
+   }, [user, loading, dispatch])
 
    useEffect(() => {
       if (!loading) {
@@ -33,7 +36,7 @@ const Layout = () => {
          }
 
          if (isAuthenticated && (location.pathname === '/login' || location.pathname === '/register')) {
-            navigate('/profile')
+            navigate('/dashboard')
          }
       }
    }, [loading, isAuthenticated, location.pathname])

@@ -1,5 +1,6 @@
 import ConnectionModel from "../models/connection.models.js";
 import User from "../models/user.model.js"
+import mongoose from "mongoose";
 
 
 const SAFE_DATA_STRING = "firstName lastName about age gender photoUrl skills"
@@ -70,9 +71,13 @@ export const receivedRequest = async (req, res) => {
    const ALLOWED_STATUS = ["accepted", "rejected"];
 
    try {
-      const receiverId = req.user._id;
-      const senderId = req.params.requestId;
+      const receiverId = new mongoose.Types.ObjectId(req.user._id);
+      const senderId = new mongoose.Types.ObjectId(req.params.requestId);
       const statusR = req.params.status;
+
+      console.log(statusR);
+      console.log("receiverId---->",receiverId);
+      console.log("senderId---->",senderId)
 
       if (!receiverId) {
          return res.status(400).json({message: "Please login again"});
@@ -88,20 +93,15 @@ export const receivedRequest = async (req, res) => {
 
       // 1. Find the connection first
       let connection = await ConnectionModel.findOne({
+         status: "like",
          $or: [
-            {status: "like", senderId, receiverId},
-            {
-               status    : "like", senderId: receiverId,
-               receiverId: senderId
-            }
+            { senderId, receiverId },
+            { senderId: receiverId, receiverId: senderId }
          ]
       })
-         .populate({
-            path: 'senderId', select: 'firstName lastName'
-         })
-         .populate({
-            path: 'receiverId', select: 'firstName lastName'
-         });
+         .populate("senderId", "firstName lastName")
+         .populate("receiverId", "firstName lastName");
+
 
       // 2. If no connection found
       if (!connection) {
@@ -196,14 +196,16 @@ export const pendingConnectionRequests = async (req, res) => {
       });
 
 
-      const requestsPending = pendingConnections.map((p) => {
-         return p.senderId._id.toString() === me._id.toString() ? p.receiverId : p.senderId
-      })
+      const requests = pendingConnections.map((p) => {
+         const isIncoming = p.senderId._id.toString() !== me._id.toString();
+         return {
+            user: isIncoming ? p.senderId : p.receiverId,
+            isIncoming,
+            connectionId: p._id,
+         };
+      });
 
-      res.status(200).json({
-         requestsPending,
-
-      })
+      res.status(200).json({ requests })
    } catch (e) {
       return res.status(500).json({
          message: "Server Error"
@@ -222,7 +224,12 @@ export const core = async (req, res) => {
             {senderId: me._id,},
             {receiverId: me._id,}
          ]
+      }).select("status").populate({
+         path: 'senderId', select: 'firstName lastName'
       })
+         .populate({
+            path: 'receiverId', select: 'firstName lastName'
+         });
 
 
 
@@ -250,8 +257,7 @@ export const core = async (req, res) => {
 
 
       return res.status(200).json({
-         message   : "success",
-         not_to_add: uniqueConnectionsIds,
+         not_to_add: myConnections,
          meId,
          remainingUsers
       });

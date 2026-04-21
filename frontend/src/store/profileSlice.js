@@ -29,9 +29,13 @@ export const profileSlice = createSlice({
       builder.addCase(editProfile.pending, (state) => {
          state.loading = true;
       });
-         builder.addCase(editProfile.fulfilled, (state, action) => {
-            state.myProfile = action.payload;
-         })
+      builder.addCase(editProfile.fulfilled, (state, action) => {
+         state.myProfile = action.payload;
+         state.loading = false;
+      });
+      builder.addCase(editProfile.rejected, (state) => {
+         state.loading = false;
+      });
    }
 })
 
