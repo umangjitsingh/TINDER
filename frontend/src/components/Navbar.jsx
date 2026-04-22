@@ -17,7 +17,7 @@ const dispatch = useDispatch();
 
    const handleLogout = async () => {
       try{
-         const response = await axios.get(`${BACKEND_URL}/api/user/logout`, {withCredentials: true});
+         const response = await axios.get(`${BACKEND_URL}/user/logout`, {withCredentials: true});
          if(response?.status === 200 && response?.data?.message === "Logout successful") {
             dispatch(logout());
             navigate('/login');
