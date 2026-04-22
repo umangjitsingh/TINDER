@@ -108,7 +108,7 @@ export async function logoutController(req, res) {
 
       await blacklistedToken.create({ token });
 
-      res.clearCookie("token");
+      res.clearCookie("token", COOKIE_OPTIONS);
       return res.status(200).json({ message: "Logout successful" });
 
    } catch (e) {
