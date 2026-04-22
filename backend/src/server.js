@@ -20,9 +20,9 @@ app.use(cors({
 }))
 
 
-app.use("/api/user", userRouter);
-app.use("/api/edit", editProfileRouter);
-app.use("/api/connection", connectionRouter)
+app.use("/user", userRouter);
+app.use("/edit", editProfileRouter);
+app.use("/connection", connectionRouter)
 
 connectDB().then(() => {
    app.listen(port, () => {

@@ -6,7 +6,7 @@ export const getConnections = createAsyncThunk(
    'connections/getConnections',
    async (_, {rejectWithValue})=>{
       try{
-         const response=await axios.get(`${BACKEND_URL}/api/connection/friend-list`,{withCredentials:true}  );
+         const response=await axios.get(`${BACKEND_URL}/connection/friend-list`,{withCredentials:true}  );
          return response?.data
       }catch (e) {
          console.log(rejectWithValue(e.response.data))

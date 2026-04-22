@@ -7,10 +7,11 @@ import blacklistedToken from "../models/blacklistedToken.model.js";
 const COOKIE_OPTIONS = {
    httpOnly: true,
    secure: process.env.NODE_ENV === "production",
-   sameSite: "strict",
+   sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
    maxAge: 10 * 24 * 60 * 60 * 1000,
    path: "/",
 };
+
 
 export const registerController = async (req, res) => {
    try {

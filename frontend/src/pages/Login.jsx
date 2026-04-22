@@ -22,7 +22,7 @@ function Login() {
    async function handleLogin(e) {
       e.preventDefault();
       try {
-         const result = await axios.post(`${BACKEND_URL}/api/user/login`,
+         const result = await axios.post(`${BACKEND_URL}/user/login`,
             {option, password},
             {withCredentials: true});
 

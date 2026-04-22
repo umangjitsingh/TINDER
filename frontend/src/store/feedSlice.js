@@ -5,7 +5,7 @@ import {BACKEND_URL} from "../BACKEND_URL.js";
 
 export const fetchFeed = createAsyncThunk("core/feed/", async (_, {rejectWithValue}) => {
    try {
-      const result = await axios.get(`${BACKEND_URL}/api/connection/core`,{withCredentials:true});
+      const result = await axios.get(`${BACKEND_URL}/connection/core`,{withCredentials:true});
      return result?.data
    } catch (e) {
       return rejectWithValue(e.response?.data?.message || e.message);

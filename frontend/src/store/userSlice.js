@@ -8,7 +8,7 @@ export const getMe = createAsyncThunk(
    "user/getMe",
    async (_, { rejectWithValue }) => {
       try {
-         const result = await axios.get(`${BACKEND_URL}/api/user/me`,{withCredentials:true});
+         const result = await axios.get(`${BACKEND_URL}/user/me`,{withCredentials:true});
          return result.data.user; // <-- return the user
       } catch (e) {
          return rejectWithValue(e.response?.data?.message || e.message);

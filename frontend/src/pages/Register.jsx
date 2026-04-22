@@ -21,7 +21,7 @@ function Register() {
    async function handleRegister(e) {
       e.preventDefault();
       try {
-         const result = await axios.post(`${BACKEND_URL}/api/user/register`,
+         const result = await axios.post(`${BACKEND_URL}/user/register`,
             {firstName, lastName, email, password},
             {withCredentials: true});
          setError("")

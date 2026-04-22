@@ -9,7 +9,7 @@ const PendingRequests = () => {
 
    const fetchPendingRequests = async () => {
       try {
-         const response = await axios.get(`${BACKEND_URL}/api/connection/pending-requests`, { withCredentials: true });
+         const response = await axios.get(`${BACKEND_URL}/connection/pending-requests`, { withCredentials: true });
          setPendingRequests(response?.data?.requests || [])
       } catch (e) {
          console.log(e.response)
@@ -33,7 +33,7 @@ const PendingRequests = () => {
    const handleRequest = async (status, id) => {
       try {
          const response = await axios.post(
-            `${BACKEND_URL}/api/connection/request/review/${status}/${id}`,
+            `${BACKEND_URL}/connection/request/review/${status}/${id}`,
             {},
             { withCredentials: true }
          );

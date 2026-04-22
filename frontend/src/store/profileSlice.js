@@ -6,7 +6,7 @@ import {BACKEND_URL} from "../BACKEND_URL.js";
 export const editProfile = createAsyncThunk("myProfile/editProfile", async (postData, {rejectWithValue}) => {
 
    try {
-      const response = await axios.patch(`${BACKEND_URL}/api/edit/profile`, postData, {
+      const response = await axios.patch(`${BACKEND_URL}/edit/profile`, postData, {
          withCredentials: true,
          headers: {
             'Content-Type': 'multipart/form-data'

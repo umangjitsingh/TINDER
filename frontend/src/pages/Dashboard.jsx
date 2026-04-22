@@ -32,7 +32,7 @@ const Dashboard = () => {
    const handleReview = useCallback(async (status, id) => {
       try {
          const result = await axios.post(
-            `${BACKEND_URL}/api/connection/request/send/${status}/${id}`,
+            `${BACKEND_URL}/connection/request/send/${status}/${id}`,
             {},
             {withCredentials: true}
          );
