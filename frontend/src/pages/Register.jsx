@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import {Link} from 'react-router-dom'
-import {useSelector} from 'react-redux'
+import {Link, useNavigate} from 'react-router-dom'
+import {useSelector, useDispatch} from 'react-redux'
 import axios from 'axios'
 import {BACKEND_URL} from '../BACKEND_URL.js'
 import {FaRegEye, FaRegEyeSlash} from "react-icons/fa";
 import { selectCurrentPersonality } from '../store/themeSlice'
+import {getMe} from '../store/userSlice.js'
 
 
 function Register() {
@@ -14,6 +15,8 @@ function Register() {
    const [email, setEmail] = useState("");
    const [password, setPassword] = useState("");
    const [error, setError] = useState("");
+   const dispatch = useDispatch();
+   const navigate = useNavigate();
 
    // Get current personality from Redux store
    const currentPersonality = useSelector(selectCurrentPersonality);
@@ -25,6 +28,10 @@ function Register() {
             {firstName, lastName, email, password},
             {withCredentials: true});
          setError("")
+         if (result.status === 201) {
+            await dispatch(getMe()).unwrap();
+            navigate('/dashboard');
+         }
       } catch (e) {
          setError(e.response?.data?.message || e.message)
       }

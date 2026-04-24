@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react'
 import {getConnections} from "../store/friendSlice.js";
 import { Heart, User, Loader2 } from "lucide-react";
+import {Link} from 'react-router-dom'
 
 const Connections = () => {
    const dispatch = useDispatch()
@@ -116,7 +117,13 @@ const Connections = () => {
                               <Heart className="w-5 h-5 text-primary fill-primary" />
                               <span className="text-sm text-primary font-medium">Matched</span>
                            </div>
+
+                           <div className="pt-6">
+                              <Link to={`/chat/${connection._id}`} className="bg-zinc-900/90 border border-black py-2 px-12 rounded-md hover:bg-red-600/60 transition-all">Chat</Link>
+                           </div>
+
                         </div>
+
                      </div>
                   ))}
                </div>

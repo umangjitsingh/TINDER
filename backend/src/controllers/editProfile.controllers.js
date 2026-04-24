@@ -63,8 +63,10 @@ export const forgetPassword = async (req, res) => {
       await user.save();
 
       await sendMailToUser({
-         emailId: user.email,
-         randomToken: code
+         to: user.email,
+         subject: "Verify your Email",
+         html: `<h1>Verify your Email</h1>
+         <p>You can use this token: <code>${code}</code></p>`
       });
 
       return res.status(200).json({

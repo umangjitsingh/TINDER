@@ -6,8 +6,10 @@ import blacklistedToken from "../models/blacklistedToken.model.js";
 
 const COOKIE_OPTIONS = {
    httpOnly: true,
-   secure: process.env.COOKIE_SECURE === "true",
-   sameSite: "lax",
+   // secure: process.env.COOKIE_SECURE === "true",
+   // sameSite: "lax",
+   secure:"false",
+   sameSite:"strict",
    maxAge: 10 * 24 * 60 * 60 * 1000,
    path: "/",
 };

@@ -27,7 +27,7 @@ function Login() {
             {withCredentials: true});
 
          if (result.status === 200) {
-            dispatch(getMe());
+            await dispatch(getMe()).unwrap();
             navigate('/dashboard')
          }
 

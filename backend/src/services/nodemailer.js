@@ -5,20 +5,19 @@ const transporter = nodemailer.createTransport({
    host: 'smtp.ethereal.email',
    port: 587,
    auth: {
-      user: 'chyna14@ethereal.email',
-      pass: 'R4WBwp7N3XyfZ2wVhF'
+      user: 'constance.schuster@ethereal.email',
+      pass: 'hEHT7DTd8bvWnY5rf6'
    }
 });
 
 
-export const sendMailToUser=async({emailId,randomToken})=>{
-  await transporter.sendMail({
-      from: 'chyna14@ethereal.email',
-      to: emailId,
-      subject: "Verify your Email",
-      html: `<h1>Verify your Email</h1>
-      <p>You can use this token :<code>${randomToken}</code></p>
-      `});
-
+export const sendMailToUser = async ({ to, subject, html, text }) => {
+   await transporter.sendMail({
+      from: 'constance.schuster@ethereal.email',
+      to,
+      subject,
+      html,
+      text,
+   });
 }
 

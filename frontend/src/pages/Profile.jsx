@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import {useDispatch, useSelector} from "react-redux";
 import {editProfile} from "../store/profileSlice.js";
+import {useNavigate} from "react-router-dom";
 
 
 const Profile = () => {
    const user = useSelector(state => state.user.user);
    const dispatch = useDispatch();
+   const navigate=useNavigate()
 
    const [age, setAge] = useState("");
    const [gender, setGender] = useState("");
@@ -30,7 +32,7 @@ const Profile = () => {
 
    const displaySkills = skillArr.length > 0 ? skillArr : (user?.skills || []);
 
-   function handleUpdateProfile(e) {
+   async function handleUpdateProfile(e) {
       e.preventDefault();
 
       const formData = new FormData();
@@ -44,7 +46,8 @@ const Profile = () => {
          formData.append('photoUrl', image);
       }
 
-      dispatch(editProfile(formData));
+     await dispatch(editProfile(formData).unwrap());
+      navigate("/dashboard")
    }
    const handleImageChange = (e) => {
       const file = e.target.files[0];

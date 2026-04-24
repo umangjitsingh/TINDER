@@ -1,1 +1,1 @@
-export const BACKEND_URL="/api"
+export const BACKEND_URL = location.hostname === "localhost" ? "http://localhost:9999" : "/api"

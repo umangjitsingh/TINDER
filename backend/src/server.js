@@ -8,6 +8,11 @@ import userRouter from "./routes/user.routes.js";
 import editProfileRouter from "./routes/editProfile.routes.js";
 import connectionRouter from "./routes/connection.route.js";
 import { FRONTEND_URL  }from "./FRONTEND_URL.js";
+import cronJobs from "./services/cronjobs.js";
+import  http from 'http';
+import initializeSocket from "./services/socket.js";
+
+
 
 const port = process.env.PORT;
 const app= express()
@@ -19,8 +24,11 @@ app.use(cors({
    credentials: true,
 }))
 
+cronJobs();
 
+const appServer=http.createServer(app);
 
+initializeSocket(appServer);
 
 app.use("/user", userRouter);
 app.use("/edit", editProfileRouter);
@@ -34,7 +42,7 @@ app.use((req, res, next) => {
 });
 
 connectDB().then(() => {
-   app.listen(port, () => {
+   appServer.listen(port, () => {
       console.log(`Server is running on port ${port}`);
    });
 });
