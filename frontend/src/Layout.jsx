@@ -44,15 +44,15 @@ const Layout = () => {
 
    if (loading) {
       return (
-         <div className="min-h-screen w-full bg-linear-to-br from-gray-950 via-gray-900 to-gray-950 flex items-center justify-center">
+         <div className="min-h-screen w-full bg-base-100 flex items-center justify-center">
             <div className="flex flex-col items-center gap-6">
                <div className="relative">
-                  <div className="w-20 h-20 rounded-2xl bg-linear-to-br from-pink-500 to-purple-600 flex items-center justify-center shadow-2xl shadow-pink-500/30 animate-pulse">
-                     <span className="text-white font-bold text-4xl">tinder 🔥</span>
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-2xl shadow-primary/30 animate-pulse">
+                     <span className="text-primary-content font-bold text-4xl">tinder 🔥</span>
                   </div>
-                  <div className="absolute inset-0 blur-xl bg-pink-500/50 rounded-2xl animate-pulse"></div>
+                  <div className="absolute inset-0 blur-xl bg-primary/50 rounded-2xl animate-pulse"></div>
                </div>
-               <p className="text-gray-300 text-xl tracking-wide font-medium">
+               <p className="text-base-content/70 text-xl tracking-wide font-medium">
                   Loading, please wait...
                </p>
             </div>

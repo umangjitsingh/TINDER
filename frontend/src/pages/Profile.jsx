@@ -68,11 +68,9 @@ const Profile = () => {
             <span className="absolute bottom-[20%] right-[20%] text-2xl opacity-20 animate-bounce" style={{animationDelay: '2s'}}>🎯</span>
             <span className="absolute bottom-[30%] left-[15%] text-2xl opacity-20 animate-bounce" style={{animationDelay: '0.5s'}}>🌈</span>
          </div>
-         <div className="flex flex-col justify-center items-center w-full mt-20">
-            <h1 className="text-2xl font-bold ">Edit Your
-               Profile</h1>
-            <p className=" text-accent/70">Manage your
-               profile information and preferences.</p>
+         <div className="flex flex-col justify-center items-center w-full mt-16 mb-4">
+            <h1 className="text-3xl font-bold text-base-content">Edit Your Profile</h1>
+            <p className="text-base-content/60 mt-1">Manage your profile information and preferences.</p>
          </div>
 
          <div className="flex items-center justify-center gap-8 w-full flex-col sm:flex-row ">
@@ -87,7 +85,7 @@ const Profile = () => {
                   <img
                      src={preview || user?.photoUrl}
                      alt="Profile preview"
-                     className="relative w-full h-140 lg:h-180 object-cover object-center rounded-2xl border-4 border-black"
+                     className="relative w-full h-140 lg:h-180 object-cover object-center rounded-2xl border-4 border-base-300 shadow-2xl"
                   />
                   <section className="bg-linear-to-b from-transparent via-base-200/60 to-base-100 absolute bottom-0 w-full h-120 pointer-events-none">
                      <div className="absolute -bottom-2 w-full h-60">
@@ -117,9 +115,7 @@ const Profile = () => {
                   {/* Age Field */}
                   <div className="form-control">
                      <label className="label">
-                        <span className="label-text flex items-center gap-2 text-sm font-medium">
-                           <span>🔖</span> Age
-                        </span>
+                        <span className="label-text text-sm font-medium">Age</span>
                      </label>
                      <input
                         type="number"
@@ -136,9 +132,7 @@ const Profile = () => {
                   {/* Gender Field */}
                   <div className="form-control">
                      <label className="label">
-                        <span className="label-text flex items-center gap-2 text-sm font-medium">
-                           <span>🌈</span> Gender
-                        </span>
+                        <span className="label-text text-sm font-medium">Gender</span>
                      </label>
                      <div className="flex flex-wrap gap-3 mt-1">
                         <label className="label cursor-pointer justify-start gap-2 bg-base-100/50 px-4 py-2 rounded-xl border border-base-300 hover:border-primary/50 transition-all">
@@ -182,9 +176,7 @@ const Profile = () => {
                   {/* About Field */}
                   <div className="form-control">
                      <label className="label">
-                        <span className="label-text flex items-center gap-2 text-sm font-medium">
-                           <span>📝</span> About
-                        </span>
+                        <span className="label-text text-sm font-medium">About</span>
                      </label>
                      <textarea
                         rows={3}
@@ -198,9 +190,7 @@ const Profile = () => {
                   {/* Skills Field */}
                   <div className="form-control">
                      <label className="label">
-                        <span className="label-text flex items-center gap-2 text-sm font-medium">
-                           <span>⛷️</span> Skills
-                        </span>
+                        <span className="label-text text-sm font-medium">Skills</span>
                      </label>
                      <input
                         type="text"
@@ -217,9 +207,7 @@ const Profile = () => {
                   {/* Photo Field */}
                   <div className="form-control">
                      <label className="label">
-                        <span className="label-text flex items-center gap-2 text-sm font-medium">
-                           <span>😎</span> Upload a photo
-                        </span>
+                        <span className="label-text text-sm font-medium">Upload a photo</span>
                      </label>
                      <input
                         type="file"
@@ -234,7 +222,7 @@ const Profile = () => {
                      type="submit"
                      className="btn btn-primary w-full mt-2 shadow-lg hover:shadow-xl transition-all"
                   >
-                     Save Changes 💾
+                     Save Changes
                   </button>
                </form>
             </div>

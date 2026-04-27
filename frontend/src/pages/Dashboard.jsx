@@ -123,7 +123,7 @@ const Dashboard = () => {
                   <img
                      src={friend?.photoUrl}
                      alt={`${friend?.firstName} ${friend?.lastName}`}
-                     className="relative w-full h-100 lg:h-160 object-cover object-center rounded-2xl border-4 border-black"
+                     className="relative w-full h-100 lg:h-160 object-cover object-center rounded-2xl border-4 border-base-300 shadow-2xl"
                      loading="eager"
                   />
                   <section className="bg-linear-to-b from-transparent via-base-200/60 to-base-100 absolute bottom-0 w-full h-120 pointer-events-none">
@@ -145,25 +145,25 @@ const Dashboard = () => {
 
                <div className="absolute -bottom-18 flex items-center gap-4 justify-center w-full z-50">
                   <button
-                     className="px-5 py-2.5 rounded-xl border border-cyan-400 text-cyan-300 shadow-[0_0_4px_rgba(0,255,255,0.4)] hover:shadow-[0_0_10px_rgba(0,255,255,0.6)] transition-all duration-300 font-medium active:scale-95"
+                     className="btn btn-outline btn-secondary btn-md rounded-xl shadow-lg shadow-secondary/20 hover:shadow-secondary/40 transition-all duration-300 active:scale-95 min-w-[7rem]"
                      onClick={() => handleReview("pass", friend._id)}
                   >
-                     Pass ☃️
+                     Pass
                   </button>
 
                   <button
-                     className="px-5 py-2.5 rounded-xl bg-pink-600 text-white shadow-[0_0_15px_rgba(255,0,128,0.2)] hover:shadow-[0_0_25px_rgba(255,0,128,0.5)] transition-all duration-300 font-medium active:scale-95"
+                     className="btn btn-primary btn-md rounded-xl shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-all duration-300 active:scale-95 min-w-[7rem]"
                      onClick={() => handleReview("like", friend._id)}
                   >
-                     Like 🔥
+                     Like
                   </button>
                </div>
             </div>
          ))}
 
          {toast && (
-            <div className="fixed top-20 left-1/2 -translate-x-1/2 z-50 animate-bounce">
-               <div className={`alert ${toast.type === 'like' ? 'alert-error' : toast.type === 'error' ? 'alert-warning' : 'alert-info'} shadow-2xl border-2 ${toast.type === 'like' ? 'border-pink-400' : toast.type === 'error' ? 'border-yellow-400' : 'border-cyan-400'} min-w-65 sm:min-w-70`}>
+            <div className="fixed top-24 left-1/2 -translate-x-1/2 z-50">
+               <div className={`alert ${toast.type === 'like' ? 'alert-error' : toast.type === 'error' ? 'alert-warning' : 'alert-info'} shadow-2xl min-w-[16rem] sm:min-w-[18rem] animate-[bounce_0.5s_ease-in-out]`}>
                   <span className="text-base sm:text-lg font-semibold">{toast.message}</span>
                </div>
             </div>

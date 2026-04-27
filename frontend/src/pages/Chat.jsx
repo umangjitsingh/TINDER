@@ -6,20 +6,51 @@ import {useParams, useNavigate} from "react-router-dom";
 import {ArrowLeft, Send, User} from "lucide-react";
 import createSocketConnection from "../socketIoConfig.js";
 import {useSelector} from "react-redux";
-
+import {BACKEND_URL} from "../BACKEND_URL.js";
+import axios from "axios"
 
 const Chat = () => {
    const {targetUserId} = useParams();
    const me = useSelector(state => state.user?.user)
 
    const [messageText, setMessageText] = useState("")
-   const[reply,setReply]=useState([])
    const loggedInUserId = me?._id?.toString();
    const navigate = useNavigate();
    const friendsData = useSelector((state) => state.connections?.connections);
    const friends = friendsData?.friends || [];
    const targetUser = friends.find((f) => f._id?.toString() === targetUserId);
    const messagesEndRef = useRef(null);
+   const [reply, setReply] = useState([])
+
+
+
+   // eslint-disable-next-line react-hooks/exhaustive-deps
+   async function fetchChat(){
+      try{
+         const response = await axios.get(`${BACKEND_URL}/room/chat/${targetUserId}`, {withCredentials:true});
+         if (response.data && response.data.messages) {
+            // Transform old messages to match the format expected by the UI
+            const formattedMessages = response.data.messages.map((m) => ({
+               text: m.messageBody.text,
+               time: m.messageBody.time,
+               sender: m.messageBody.sender,
+               myFirstName: me?.firstName,
+               myLastName: me?.lastName,
+               myPhotoUrl: me?.photoUrl,
+               targetFirstName: targetUser?.firstName,
+               targetLastName: targetUser?.lastName,
+               targetPhotoUrl: targetUser?.photoUrl
+            }));
+            setReply(formattedMessages);
+         }
+      }catch (e) {
+         console.log(e.message)
+      }
+   }
+
+   useEffect(()=>{
+      fetchChat()
+   },[fetchChat])
 
    useEffect(() => {
       messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -74,7 +105,7 @@ const Chat = () => {
    }
 
    return (
-      <div className="flex flex-col h-[calc(100vh-10rem)] min-h-[28rem] bg-base-200 rounded-2xl overflow-hidden border border-base-300 shadow-lg w-full max-w-3xl mx-auto">
+      <div className="flex flex-col h-[calc(100vh-10rem)] min-h-112 bg-base-200 rounded-2xl overflow-hidden border border-base-300 shadow-lg w-full max-w-3xl mx-auto">
          {/* Chat Header */}
          <div className="flex items-center gap-3 px-4 py-3 bg-base-100 border-b border-base-300 shrink-0">
             <button
@@ -93,7 +124,7 @@ const Chat = () => {
                      className="w-10 h-10 rounded-full object-cover border border-base-300"
                   />
                ) : (
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-full bg-linear-to-br from-primary to-secondary flex items-center justify-center">
                      <User className="w-5 h-5 text-base-100" />
                   </div>
                )}

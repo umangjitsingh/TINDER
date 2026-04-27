@@ -3,14 +3,17 @@ import { useSelector, useDispatch } from 'react-redux'
 import { setTheme, selectCurrentTheme } from '../store/themeSlice'
 
 const themes = [
-   { name: 'nearrock', label: 'Nearrock' },
-   { name: 'midnight-purple', label: 'Midnight Purple' },
-   { name: 'cyberpunk-neon', label: 'Cyberpunk Neon' },
-   { name: 'forest-dark', label: 'Forest Dark' },
-   { name: 'sunset-dark', label: 'Sunset Dark' },
-   { name: 'nordic-frost', label: 'Nordic Frost' },
-   { name: 'glassymax', label: 'Glassymax' },
-   { name: 'dancinglol', label: 'Dancinglol' },
+   { name: 'nearrock', label: 'Nearrock', mode: 'dark' },
+   { name: 'midnight-purple', label: 'Midnight Purple', mode: 'dark' },
+   { name: 'cyberpunk-neon', label: 'Cyberpunk Neon', mode: 'dark' },
+   { name: 'forest-dark', label: 'Forest Dark', mode: 'dark' },
+   { name: 'sunset-dark', label: 'Sunset Dark', mode: 'dark' },
+   { name: 'nordic-frost', label: 'Nordic Frost', mode: 'dark' },
+   { name: 'glassymax', label: 'Glassymax', mode: 'dark' },
+   { name: 'dancinglol', label: 'Dancinglol', mode: 'dark' },
+   { name: 'soft-light', label: 'Soft Light', mode: 'light' },
+   { name: 'warm-light', label: 'Warm Light', mode: 'light' },
+   { name: 'nord-light', label: 'Nord Light', mode: 'light' },
 ]
 
 const ColorPallet = () => {
@@ -40,19 +43,38 @@ const ColorPallet = () => {
 
             <ul
                tabIndex={0}
-               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-40 p-2 shadow pl-2"
+               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[100] mt-3 w-52 p-2 shadow-xl border border-base-300"
             >
-               {themes.map((theme) => (
+               <li className="menu-title text-xs text-base-content/50 uppercase tracking-wider px-3 py-2">Dark Themes</li>
+               {themes.filter(t => t.mode === 'dark').map((theme) => (
                   <li key={theme.name}>
                      <button
                         onClick={() => handleThemeChange(theme.name)}
-                        className={currentTheme === theme.name ? 'active' : ''}
+                        className={`rounded-lg ${currentTheme === theme.name ? 'active' : 'hover:bg-base-200'}`}
                      >
                         {currentTheme === theme.name && (
                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                            </svg>
                         )}
+                        <span className={`w-3 h-3 rounded-full border border-base-content/20 ${theme.name === currentTheme ? 'bg-primary' : 'bg-neutral'}`} />
+                        {theme.label}
+                     </button>
+                  </li>
+               ))}
+               <li className="menu-title text-xs text-base-content/50 uppercase tracking-wider px-3 py-2 mt-1">Light Themes</li>
+               {themes.filter(t => t.mode === 'light').map((theme) => (
+                  <li key={theme.name}>
+                     <button
+                        onClick={() => handleThemeChange(theme.name)}
+                        className={`rounded-lg ${currentTheme === theme.name ? 'active' : 'hover:bg-base-200'}`}
+                     >
+                        {currentTheme === theme.name && (
+                           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                           </svg>
+                        )}
+                        <span className="w-3 h-3 rounded-full bg-primary/80 border border-base-content/20" />
                         {theme.label}
                      </button>
                   </li>

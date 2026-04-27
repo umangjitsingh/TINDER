@@ -11,6 +11,7 @@ import { FRONTEND_URL  }from "./FRONTEND_URL.js";
 import cronJobs from "./services/cronjobs.js";
 import  http from 'http';
 import initializeSocket from "./services/socket.js";
+import chatRouter from "./routes/chat.routes.js";
 
 
 
@@ -32,7 +33,8 @@ initializeSocket(appServer);
 
 app.use("/user", userRouter);
 app.use("/edit", editProfileRouter);
-app.use("/connection", connectionRouter)
+app.use("/connection", connectionRouter);
+app.use("/room",chatRouter)
 
 app.use((req, res, next) => {
    res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');

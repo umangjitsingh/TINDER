@@ -66,52 +66,48 @@ function Register() {
                </p>
 
                {/* form elements */}
-               <form className="fieldset bg-base-200/30 border-base-300 rounded-box border p-4">
-                  <label className="label text-sm">👤 First Name</label>
+               <form className="fieldset bg-base-200/30 border-base-300 rounded-box border p-5 space-y-1">
+                  <label className="label text-sm font-medium">First Name</label>
                   <input type="text"
-                         className="input input-sm bg-base-100 focus:ring-1 focus:ring-primary/50"
+                         className="input bg-base-100 focus:ring-1 focus:ring-primary/50"
                          placeholder="John"
                          value={firstName}
                          onChange={(e) => setFirstname(e.target.value)}
                   />
 
-                  <label className="label text-sm mt-2">👤 Last Name</label>
+                  <label className="label text-sm font-medium mt-2">Last Name</label>
                   <input type="text"
-                         className="input input-sm bg-base-100 focus:ring-1 focus:ring-primary/50"
+                         className="input bg-base-100 focus:ring-1 focus:ring-primary/50"
                          placeholder="Doe"
                          value={lastName}
                          onChange={(e) => setLastname(e.target.value)}
                   />
 
-                  <label className="label text-sm mt-2">📧 Email</label>
+                  <label className="label text-sm font-medium mt-2">Email</label>
                   <input type="text"
-                         className="input input-sm bg-base-100 focus:ring-1 focus:ring-primary/50"
+                         className="input bg-base-100 focus:ring-1 focus:ring-primary/50"
                          placeholder="john@example.com"
                          autoComplete="current-email"
                          value={email}
                          onChange={(e) => setEmail(e.target.value)}
                   />
 
-
                   <div className="relative">
-                     <label className="label text-sm mt-2">🔒 Password</label>
+                     <label className="label text-sm font-medium mt-2">Password</label>
                      <input type={showPassword ? "text" : "password"}
-                            className="input input-sm bg-base-100 focus:ring-1 focus:ring-primary/50 relative"
+                            className="input bg-base-100 focus:ring-1 focus:ring-primary/50 relative pr-10"
                             autoComplete="current-password"
                             placeholder="••••••••"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                      />
-                     <span onClick={() => setShowPassword(!showPassword)}>
-                        {showPassword ? <FaRegEyeSlash className="absolute text-primary/60 h-4 w-4 top-[60%] right-2" /> : <FaRegEye className="absolute text-primary/60 h-4 w-4 top-[60%] right-2"/>}
+                     <span onClick={() => setShowPassword(!showPassword)} className="absolute top-[60%] right-3 cursor-pointer hover:text-primary transition-colors">
+                        {showPassword ? <FaRegEyeSlash className="text-base-content/40 h-5 w-5" /> : <FaRegEye className="text-base-content/40 h-5 w-5"/>}
                      </span>
                   </div>
 
-
-
-
-                  <button 
-                     className="btn btn-primary mt-4 gap-2" 
+                  <button
+                     className="btn btn-primary mt-5 gap-2 w-full"
                      onClick={(e) => handleRegister(e)}
                   >
                      <span>Create Account</span>

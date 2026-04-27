@@ -65,6 +65,30 @@ export const themePersonalities = [
       description: 'Vibrant and unexpected. For the free spirits who dance to their own beat.',
       emoji: '🎉',
       traits: ['Spontaneous', 'Fun-loving', 'Unique']
+   },
+   {
+      name: 'soft-light',
+      label: 'The Professional',
+      mood: 'Clean & Focused',
+      description: 'A crisp, modern light theme for productive days and clear thinking.',
+      emoji: '☀️',
+      traits: ['Organized', 'Clear', 'Efficient']
+   },
+   {
+      name: 'warm-light',
+      label: 'The Cozy',
+      mood: 'Warm & Inviting',
+      description: 'Soft cream tones that feel like your favorite coffee shop on a Sunday morning.',
+      emoji: '🍂',
+      traits: ['Welcoming', 'Warm', 'Relaxed']
+   },
+   {
+      name: 'nord-light',
+      label: 'The Minimalist',
+      mood: 'Pure & Simple',
+      description: 'Snow-white clarity with subtle blue accents. Less is more.',
+      emoji: '🤍',
+      traits: ['Minimal', 'Sharp', 'Elegant']
    }
 ];
 
