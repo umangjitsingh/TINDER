@@ -22,9 +22,19 @@ const Chat = () => {
    const messagesEndRef = useRef(null);
    const [reply, setReply] = useState([])
 
+   // Helper function to format time to "5:10 PM" format
+   const formatTime = (timeValue) => {
+      if (!timeValue) return "";
+      const date = new Date(timeValue);
+      return date.toLocaleTimeString('en-US', {
+         hour: 'numeric',
+         minute: '2-digit',
+         hour12: true
+      });
+   }
 
 
-   // eslint-disable-next-line react-hooks/exhaustive-deps
+
    async function fetchChat(){
       try{
          const response = await axios.get(`${BACKEND_URL}/room/chat/${targetUserId}`, {withCredentials:true});
@@ -50,7 +60,7 @@ const Chat = () => {
 
    useEffect(()=>{
       fetchChat()
-   },[fetchChat])
+   },[targetUserId])
 
    useEffect(() => {
       messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -91,7 +101,7 @@ const Chat = () => {
    function handleSendMessage() {
       const newMessage = {
          text  : messageText,
-         time  : new Date(Date.now()).toLocaleTimeString(),
+         time  : new Date().toISOString(),
          sender: `${me?.firstName} ${me?.lastName}`
       }
 
@@ -179,7 +189,7 @@ const Chat = () => {
                                  {isMe ? "You" : r?.myFirstName}
                               </span>
                               <time className="text-[10px] opacity-50 ml-1">
-                                 {r.time}
+                                 {formatTime(r.time)}
                               </time>
                            </div>
                            <div

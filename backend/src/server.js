@@ -8,7 +8,7 @@ import userRouter from "./routes/user.routes.js";
 import editProfileRouter from "./routes/editProfile.routes.js";
 import connectionRouter from "./routes/connection.route.js";
 import { FRONTEND_URL  }from "./FRONTEND_URL.js";
-import cronJobs from "./services/cronjobs.js";
+import { startMessageCleanupJob } from "./services/cronjobs.js";
 import  http from 'http';
 import initializeSocket from "./services/socket.js";
 import chatRouter from "./routes/chat.routes.js";
@@ -25,7 +25,7 @@ app.use(cors({
    credentials: true,
 }))
 
-cronJobs();
+startMessageCleanupJob();
 
 const appServer=http.createServer(app);
 
